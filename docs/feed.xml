@@ -1,4 +1,219 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="http://jekyllrb.com" version="3.4.3">Jekyll</generator><link href="https://orange-ape.cloudvent.net//feed.xml" rel="self" type="application/atom+xml" /><link href="https://orange-ape.cloudvent.net//" rel="alternate" type="text/html" /><updated>2017-06-16T22:25:47+08:00</updated><id>https://orange-ape.cloudvent.net//</id><title type="html">Base</title><subtitle>Knowledge base template for Jekyll.</subtitle><author><name>{&quot;name&quot;=&gt;nil, &quot;email&quot;=&gt;nil, &quot;twitter&quot;=&gt;nil}</name></author><entry><title type="html">Urban</title><link href="https://orange-ape.cloudvent.net//themes/urban/" rel="alternate" type="text/html" title="Urban" /><published>2017-01-16T00:00:00+08:00</published><updated>2017-01-16T00:00:00+08:00</updated><id>https://orange-ape.cloudvent.net//themes/urban</id><content type="html" xml:base="https://orange-ape.cloudvent.net//themes/urban/">&lt;p&gt;Jekyll is a simple, blog-aware, static site generator. It takes a template directory containing raw text files in various formats, runs it through a converter (like Markdown) and our Liquid renderer, and spits out a complete, ready-to-publish static website suitable for serving with your favorite web server.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="http://jekyllrb.com" version="3.4.3">Jekyll</generator><link href="http://docs.cattheme.com/feed.xml" rel="self" type="application/atom+xml" /><link href="http://docs.cattheme.com/" rel="alternate" type="text/html" /><updated>2017-06-17T00:54:52+08:00</updated><id>http://docs.cattheme.com/</id><title type="html">Cattheme Docs</title><subtitle>Cattheme.com Document.</subtitle><author><name>{&quot;name&quot;=&gt;nil, &quot;email&quot;=&gt;nil, &quot;twitter&quot;=&gt;nil}</name></author><entry><title type="html">Use Redis for Magento2 cache and session</title><link href="http://docs.cattheme.com/tutorial/magento2-redis/" rel="alternate" type="text/html" title="Use Redis for Magento2 cache and session" /><published>2017-06-16T00:00:00+08:00</published><updated>2017-06-16T00:00:00+08:00</updated><id>http://docs.cattheme.com/tutorial/magento2-redis</id><content type="html" xml:base="http://docs.cattheme.com/tutorial/magento2-redis/">&lt;h2 id=&quot;install-redis&quot;&gt;Install Redis&lt;/h2&gt;
+&lt;p&gt;We use Ubuntu 16.04 as our main os, we will install redis now.&lt;/p&gt;
+
+&lt;p&gt;Prerequisites:&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ sudo apt-get update
+$ sudo apt-get install build-essential
+$ sudo apt-get install tcl8.5
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;Installing Redis&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ wget http://download.redis.io/releases/redis-stable.tar.gz
+$ tar xzf redis-stable.tar.gz
+$ cd redis-stable
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;Proceed to with the make command&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ make
+$ make test
+$ sudo make install
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;Once the program has been installed, Redis comes with a built in script that sets up Redis to run as a background daemon.&lt;/p&gt;
+
+&lt;p&gt;To access the script move into the utils directory:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;cd utils
+sudo ./install-server.sh
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;As the script runs, you can choose the default options by pressing enter. Once the script completes, the redis-server will be running in the background.&lt;/p&gt;
+
+&lt;p&gt;You can start and stop redis with these commands (the number depends on the port you set during the installation. 6379 is the default port setting):&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ sudo service redis_6379 start
+$ sudo service redis_6379 stop      
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;securing-redis&quot;&gt;Securing Redis&lt;/h2&gt;
+
+&lt;p&gt;By default, Redis server allows connections from anywhere which is insecure. Binding to localhost will restrict access to the server itself and is a good first step to protecting your server.&lt;/p&gt;
+
+&lt;p&gt;Open the Redis configuration file for editing:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo vi /etc/redis/6379.conf
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Locate this line and make sure it is uncommented (remove the &lt;code class=&quot;highlighter-rouge&quot;&gt;#&lt;/code&gt; if it exists):&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;bind 127.0.0.1
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;This is only a first step to securing your Redis instance, You may need more actions to protect your server.&lt;/p&gt;
+
+&lt;h2 id=&quot;test-the-redis-instance-functionality&quot;&gt;Test the Redis Instance Functionality&lt;/h2&gt;
+
+&lt;p&gt;To test that your service is functioning correctly, input:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ redis-cli ping
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;You should see:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;PONG
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;configure-magento-to-use-redis-for-default-and-page-caching&quot;&gt;Configure Magento to use Redis for default and page caching&lt;/h2&gt;
+&lt;p&gt;Following is a sample configuration that causes Magento to use Redis for both the default cache (default array) and the full page cache (page_cache array).&lt;/p&gt;
+
+&lt;p&gt;Add a configuration similar to the following to &lt;your Magento=&quot;&quot; install=&quot;&quot; dir=&quot;&quot;&gt;app/etc/env.php:&lt;/your&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;'cache' =&amp;gt;
+array(
+   'frontend' =&amp;gt;
+   array(
+      'default' =&amp;gt;
+      array(
+         'backend' =&amp;gt; 'Cm_Cache_Backend_Redis',
+         'backend_options' =&amp;gt;
+         array(
+            'server' =&amp;gt; '127.0.0.1',
+            'database' =&amp;gt; '0',
+            'port' =&amp;gt; '6379'
+            ),
+    ),
+    'page_cache' =&amp;gt;
+    array(
+      'backend' =&amp;gt; 'Cm_Cache_Backend_Redis',
+      'backend_options' =&amp;gt;
+       array(
+         'server' =&amp;gt; '127.0.0.1',
+         'port' =&amp;gt; '6379',
+         'database' =&amp;gt; '1',
+         'compress_data' =&amp;gt; '0'
+       )
+    )
+  )
+),
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;configure-magento-to-use-redis-for-session-storage&quot;&gt;Configure Magento to use Redis for session storage&lt;/h2&gt;
+&lt;p&gt;Open &lt;your Magento=&quot;&quot; install=&quot;&quot; dir=&quot;&quot;&gt;app/etc/env.php, it may has session configure before, you can find below lines in env.php&lt;/your&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  'session' =&amp;gt; 
+  array (
+    'save' =&amp;gt; 'files',
+  ),
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Replace them by below configuration:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;'session' =&amp;gt; 
+   array (
+   'save' =&amp;gt; 'redis',
+   'redis' =&amp;gt; 
+      array (
+	'host' =&amp;gt; '127.0.0.1',
+	'port' =&amp;gt; '6379',
+	'password' =&amp;gt; '',
+	'timeout' =&amp;gt; '2.5',
+	'persistent_identifier' =&amp;gt; '',
+	'database' =&amp;gt; '2',
+	'compression_threshold' =&amp;gt; '2048',
+	'compression_library' =&amp;gt; 'gzip',
+	'log_level' =&amp;gt; '1',
+	'max_concurrency' =&amp;gt; '6',
+	'break_after_frontend' =&amp;gt; '5',
+	'break_after_adminhtml' =&amp;gt; '30',
+	'first_lifetime' =&amp;gt; '600',
+	'bot_first_lifetime' =&amp;gt; '60',
+	'bot_lifetime' =&amp;gt; '7200',
+	'disable_locking' =&amp;gt; '0',
+	'min_lifetime' =&amp;gt; '60',
+	'max_lifetime' =&amp;gt; '2592000'
+    )
+),
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;redis-monitor-command&quot;&gt;Redis monitor command&lt;/h2&gt;
+
+&lt;p&gt;In a command prompt on the server on which Redis is running, enter:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ redis-cli monitor
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Refresh your storefront page and you’ll see output similar to the following.&lt;/p&gt;
+
+&lt;p&gt;If you use Redis for session storage, you’ll see output similar to the following:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;1476824834.187250 [0 127.0.0.1:52353] &quot;select&quot; &quot;0&quot;
+1476824834.187587 [0 127.0.0.1:52353] &quot;hmget&quot; &quot;sess_sgmeh2k3t7obl2tsot3h2ss0p1&quot; &quot;data&quot; &quot;writes&quot;
+1476824834.187939 [0 127.0.0.1:52353] &quot;expire&quot; &quot;sess_sgmeh2k3t7obl2tsot3h2ss0p1&quot; &quot;1200&quot;
+1476824834.257226 [0 127.0.0.1:52353] &quot;select&quot; &quot;0&quot;
+1476824834.257239 [0 127.0.0.1:52353] &quot;hmset&quot; &quot;sess_sgmeh2k3t7obl2tsot3h2ss0p1&quot; &quot;data&quot; &quot;_session_validator_data|a:4:{s:11:\&quot;remote_addr\&quot;;s:12:\&quot;10.235.34.14\&quot;;s:8:\&quot;http_via\&quot;;s:0:\&quot;\&quot;;s:20:\&quot;http_x_forwarded_for\&quot;;s:0:\&quot;\&quot;;s:15:\&quot;http_user_agent\&quot;;s:115:\&quot;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36\&quot;;}_session_hosts|a:1:{s:12:\&quot;10.235.32.10\&quot;;b:1;}admin|a:0:{}default|a:2:{s:9:\&quot;_form_key\&quot;;s:16:\&quot;e331ugBN7vRjGMgk\&quot;;s:12:\&quot;visitor_data\&quot;;a:3:{s:13:\&quot;last_visit_at\&quot;;s:19:\&quot;2016-10-18 21:06:37\&quot;;s:10:\&quot;session_id\&quot;;s:26:\&quot;sgmeh2k3t7obl2tsot3h2ss0p1\&quot;;s:10:\&quot;visitor_id\&quot;;s:1:\&quot;9\&quot;;}}adminhtml|a:0:{}customer_base|a:1:{s:20:\&quot;customer_segment_ids\&quot;;a:1:{i:1;a:0:{}}}checkout|a:0:{}&quot; &quot;lock&quot; &quot;0&quot;
+
+... more ...
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;If you use Redis for page caching, you’ll see output similar to the following:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;1476826133.810090 [0 127.0.0.1:52366] &quot;select&quot; &quot;1&quot;
+1476826133.816293 [0 127.0.0.1:52367] &quot;select&quot; &quot;0&quot;
+1476826133.817461 [0 127.0.0.1:52367] &quot;hget&quot; &quot;zc:k:ea6_GLOBAL__DICONFIG&quot; &quot;d&quot;
+1476826133.829666 [0 127.0.0.1:52367] &quot;hget&quot; &quot;zc:k:ea6_DICONFIG049005964B465901F774DB9751971818&quot; &quot;d&quot;
+1476826133.837854 [0 127.0.0.1:52367] &quot;hget&quot; &quot;zc:k:ea6_INTERCEPTION&quot; &quot;d&quot;
+1476826133.868374 [0 127.0.0.1:52368] &quot;select&quot; &quot;1&quot;
+1476826133.869011 [0 127.0.0.1:52369] &quot;select&quot; &quot;0&quot;
+1476826133.869601 [0 127.0.0.1:52369] &quot;hget&quot; &quot;zc:k:ea6_DEFAULT_CONFIG_CACHE_DEFAULT__10__235__32__1080MAGENTO2&quot; &quot;d&quot;
+1476826133.872317 [0 127.0.0.1:52369] &quot;hget&quot; &quot;zc:k:ea6_INITIAL_CONFIG&quot; &quot;d&quot;
+1476826133.879267 [0 127.0.0.1:52369] &quot;hget&quot; &quot;zc:k:ea6_GLOBAL_PRIMARY_PLUGIN_LIST&quot; &quot;d&quot;
+1476826133.883312 [0 127.0.0.1:52369] &quot;hget&quot; &quot;zc:k:ea6_GLOBAL__EVENT_CONFIG_CACHE&quot; &quot;d&quot;
+1476826133.898431 [0 127.0.0.1:52369] &quot;hget&quot; &quot;zc:k:ea6_DB_PDO_MYSQL_DDL_STAGING_UPDATE_1&quot; &quot;d&quot;
+1476826133.898794 [0 127.0.0.1:52369] &quot;hget&quot; &quot;zc:k:ea6_RESOLVED_STORES_D1BEFA03C79CA0B84ECC488DEA96BC68&quot; &quot;d&quot;
+1476826133.905738 [0 127.0.0.1:52369] &quot;hget&quot; &quot;zc:k:ea6_DEFAULT_CONFIG_CACHE_STORE_DEFAULT_10__235__32__1080MAGENTO2&quot; &quot;d&quot;
+
+... more ...
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;notice&quot;&gt;Notice&lt;/h2&gt;
+&lt;p&gt;If the redis server is down, the Magneto2 site will crash also, to test it, stop redis server:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo service redis_6379 stop
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Then refresh Magento2 site, you will got below error message:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;CredisException: Connection to Redis failed after 2 failures.Last Error : (111) Connection refused in /var/www/html/magento2/vendor/colinmollenhour/credis/Client.php:448 Stack trace: #0 /var/www/html/magento2/vendor/colinmollenhour/credis/Client.php(444): Credis_Client-&amp;gt;connect() #1 /var/www/html/magento2/vendor/colinmollenhour/credis/Client.php(774): Credis_Client-&amp;gt;connect() #2 /var/www/html/magento2/vendor/colinmollenhour/credis/Client.php(604): Credis_Client-&amp;gt;__call('select', Array) #3 /var/www/html/magento2/vendor/colinmollenhour/cache-backend-redis/Cm/Cache/Backend/Redis.php(144): Credis_Client-&amp;gt;select(1) #4 /var/www/html/magento2/vendor/magento/zendframework1/library/Zend/Cache.php(153): Cm_Cache_Backend_Redis-&amp;gt;__construct(Array) #5 /var/www/html/magento2/vendor/magento/zendframework1/library/Zend/Cache.php(94): Zend_Cache::_makeBackend('Cm_Cache_Backen...', Array, true, true) #6 /var/www/html/magento2/vendor/magento/framework/App/Cache/Frontend/Factory.php(155): Zend_Cache::factory('Magento\\Framewo...', 'Cm_Cache_Backen...', Array, Array, true, true, true) #7 /var/www/html/magento2/vendor/magento/framework/App/Cache/Frontend/Pool.php(67): Magento\Framework\App\Cache\Frontend\Factory-&amp;gt;create(Array) #8 /var/www/html/magento2/vendor/magento/framework/App/Cache/Frontend/Pool.php(146): Magento\Framework\App\Cache\Frontend\Pool-&amp;gt;_initialize() #9 /var/www/html/magento2/vendor/magento/framework/App/Cache/Type/FrontendPool.php(84): Magento\Framework\App\Cache\Frontend\Pool-&amp;gt;get('default') #10 /var/www/html/magento2/vendor/magento/framework/App/Cache/Type/Config.php(49): Magento\Framework\App\Cache\Type\FrontendPool-&amp;gt;get('config') #11 /var/www/html/magento2/vendor/magento/framework/Cache/Frontend/Decorator/Bare.php(65): Magento\Framework\App\Cache\Type\Config-&amp;gt;_getFrontend() #12 /var/www/html/magento2/vendor/magento/framework/App/ObjectManager/ConfigLoader.php(66): Magento\Framework\Cache\Frontend\Decorator\Bare-&amp;gt;load('global::DiConfi...') #13 /var/www/html/magento2/vendor/magento/framework/App/ObjectManager/Environment/Developer.php(77): Magento\Framework\App\ObjectManager\ConfigLoader-&amp;gt;load('global') #14 /var/www/html/magento2/vendor/magento/framework/App/ObjectManagerFactory.php(194): Magento\Framework\App\ObjectManager\Environment\Developer-&amp;gt;configureObjectManager(Object(Magento\Framework\Interception\ObjectManager\Config\Developer), Array) #15 /var/www/html/magento2/vendor/magento/framework/App/Bootstrap.php(385): Magento\Framework\App\ObjectManagerFactory-&amp;gt;create(Array) #16 /var/www/html/magento2/vendor/magento/framework/App/Bootstrap.php(232): Magento\Framework\App\Bootstrap-&amp;gt;initObjectManager() #17 /var/www/html/magento2/index.php(38): Magento\Framework\App\Bootstrap-&amp;gt;createApplication('Magento\\Framewo...') #18 {main}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Enter below command to start redis server:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo servcie redis_6379 start
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Refresh Magento2 site, it restore normal.&lt;/p&gt;
+
+&lt;h2 id=&quot;reference&quot;&gt;Reference&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Magento DevDocs &lt;a href=&quot;http://devdocs.magento.com/guides/v2.0/config-guide/redis/config-redis.html&quot;&gt;DevDocs&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Redis Official Site &lt;a href=&quot;https://redis.io/topics/quickstart&quot;&gt;redis.io&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;DigitalOcean &lt;a href=&quot;https://www.digitalocean.com/community/tutorials/how-to-install-and-use-redis&quot;&gt;redis installation&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>{&quot;name&quot;=&gt;nil, &quot;email&quot;=&gt;nil, &quot;twitter&quot;=&gt;nil}</name></author><summary type="html">Install Redis We use Ubuntu 16.04 as our main os, we will install redis now.</summary></entry><entry><title type="html">Urban</title><link href="http://docs.cattheme.com/themes/urban/" rel="alternate" type="text/html" title="Urban" /><published>2017-01-16T00:00:00+08:00</published><updated>2017-01-16T00:00:00+08:00</updated><id>http://docs.cattheme.com/themes/urban</id><content type="html" xml:base="http://docs.cattheme.com/themes/urban/">&lt;p&gt;Jekyll is a simple, blog-aware, static site generator. It takes a template directory containing raw text files in various formats, runs it through a converter (like Markdown) and our Liquid renderer, and spits out a complete, ready-to-publish static website suitable for serving with your favorite web server.&lt;/p&gt;
 
 &lt;p&gt;If you already have a full Ruby development environment with all headers and RubyGems installed, you can create a new Jekyll site by doing the following:&lt;/p&gt;
 
@@ -98,7 +313,7 @@ title: Blogging Like a Hacker
   &lt;li&gt;Place pages inside folders and subfolders named whatever you want.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Both methods work fine (and can be used in conjunction with each other), with the only real difference being the resulting URLs. By default, pages retain the same folder structure in &lt;code class=&quot;highlighter-rouge&quot;&gt;_site&lt;/code&gt; as they do in the source directory.&lt;/p&gt;</content><author><name>{&quot;name&quot;=&gt;nil, &quot;email&quot;=&gt;nil, &quot;twitter&quot;=&gt;nil}</name></author><summary type="html">Jekyll is a simple, blog-aware, static site generator. It takes a template directory containing raw text files in various formats, runs it through a converter (like Markdown) and our Liquid renderer, and spits out a complete, ready-to-publish static website suitable for serving with your favorite web server.</summary></entry><entry><title type="html">Subscription payments</title><link href="https://orange-ape.cloudvent.net//billing/subscription-payments/" rel="alternate" type="text/html" title="Subscription payments" /><published>2017-01-16T00:00:00+08:00</published><updated>2017-01-16T00:00:00+08:00</updated><id>https://orange-ape.cloudvent.net//billing/subscription-payments</id><content type="html" xml:base="https://orange-ape.cloudvent.net//billing/subscription-payments/">&lt;p&gt;Jekyll is a simple, blog-aware, static site generator. It takes a template directory containing raw text files in various formats, runs it through a converter (like Markdown) and our Liquid renderer, and spits out a complete, ready-to-publish static website suitable for serving with your favorite web server.&lt;/p&gt;
+&lt;p&gt;Both methods work fine (and can be used in conjunction with each other), with the only real difference being the resulting URLs. By default, pages retain the same folder structure in &lt;code class=&quot;highlighter-rouge&quot;&gt;_site&lt;/code&gt; as they do in the source directory.&lt;/p&gt;</content><author><name>{&quot;name&quot;=&gt;nil, &quot;email&quot;=&gt;nil, &quot;twitter&quot;=&gt;nil}</name></author><summary type="html">Jekyll is a simple, blog-aware, static site generator. It takes a template directory containing raw text files in various formats, runs it through a converter (like Markdown) and our Liquid renderer, and spits out a complete, ready-to-publish static website suitable for serving with your favorite web server.</summary></entry><entry><title type="html">S3</title><link href="http://docs.cattheme.com/deployment/s3/" rel="alternate" type="text/html" title="S3" /><published>2017-01-16T00:00:00+08:00</published><updated>2017-01-16T00:00:00+08:00</updated><id>http://docs.cattheme.com/deployment/s3</id><content type="html" xml:base="http://docs.cattheme.com/deployment/s3/">&lt;p&gt;Jekyll is a simple, blog-aware, static site generator. It takes a template directory containing raw text files in various formats, runs it through a converter (like Markdown) and our Liquid renderer, and spits out a complete, ready-to-publish static website suitable for serving with your favorite web server.&lt;/p&gt;
 
 &lt;p&gt;If you already have a full Ruby development environment with all headers and RubyGems installed, you can create a new Jekyll site by doing the following:&lt;/p&gt;
 
@@ -198,7 +413,7 @@ title: Blogging Like a Hacker
   &lt;li&gt;Place pages inside folders and subfolders named whatever you want.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Both methods work fine (and can be used in conjunction with each other), with the only real difference being the resulting URLs. By default, pages retain the same folder structure in &lt;code class=&quot;highlighter-rouge&quot;&gt;_site&lt;/code&gt; as they do in the source directory.&lt;/p&gt;</content><author><name>{&quot;name&quot;=&gt;nil, &quot;email&quot;=&gt;nil, &quot;twitter&quot;=&gt;nil}</name></author><summary type="html">Jekyll is a simple, blog-aware, static site generator. It takes a template directory containing raw text files in various formats, runs it through a converter (like Markdown) and our Liquid renderer, and spits out a complete, ready-to-publish static website suitable for serving with your favorite web server.</summary></entry><entry><title type="html">S3</title><link href="https://orange-ape.cloudvent.net//deployment/s3/" rel="alternate" type="text/html" title="S3" /><published>2017-01-16T00:00:00+08:00</published><updated>2017-01-16T00:00:00+08:00</updated><id>https://orange-ape.cloudvent.net//deployment/s3</id><content type="html" xml:base="https://orange-ape.cloudvent.net//deployment/s3/">&lt;p&gt;Jekyll is a simple, blog-aware, static site generator. It takes a template directory containing raw text files in various formats, runs it through a converter (like Markdown) and our Liquid renderer, and spits out a complete, ready-to-publish static website suitable for serving with your favorite web server.&lt;/p&gt;
+&lt;p&gt;Both methods work fine (and can be used in conjunction with each other), with the only real difference being the resulting URLs. By default, pages retain the same folder structure in &lt;code class=&quot;highlighter-rouge&quot;&gt;_site&lt;/code&gt; as they do in the source directory.&lt;/p&gt;</content><author><name>{&quot;name&quot;=&gt;nil, &quot;email&quot;=&gt;nil, &quot;twitter&quot;=&gt;nil}</name></author><summary type="html">Jekyll is a simple, blog-aware, static site generator. It takes a template directory containing raw text files in various formats, runs it through a converter (like Markdown) and our Liquid renderer, and spits out a complete, ready-to-publish static website suitable for serving with your favorite web server.</summary></entry><entry><title type="html">Malt</title><link href="http://docs.cattheme.com/themes/malt/" rel="alternate" type="text/html" title="Malt" /><published>2017-01-16T00:00:00+08:00</published><updated>2017-01-16T00:00:00+08:00</updated><id>http://docs.cattheme.com/themes/malt</id><content type="html" xml:base="http://docs.cattheme.com/themes/malt/">&lt;p&gt;Jekyll is a simple, blog-aware, static site generator. It takes a template directory containing raw text files in various formats, runs it through a converter (like Markdown) and our Liquid renderer, and spits out a complete, ready-to-publish static website suitable for serving with your favorite web server.&lt;/p&gt;
 
 &lt;p&gt;If you already have a full Ruby development environment with all headers and RubyGems installed, you can create a new Jekyll site by doing the following:&lt;/p&gt;
 
@@ -298,7 +513,7 @@ title: Blogging Like a Hacker
   &lt;li&gt;Place pages inside folders and subfolders named whatever you want.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Both methods work fine (and can be used in conjunction with each other), with the only real difference being the resulting URLs. By default, pages retain the same folder structure in &lt;code class=&quot;highlighter-rouge&quot;&gt;_site&lt;/code&gt; as they do in the source directory.&lt;/p&gt;</content><author><name>{&quot;name&quot;=&gt;nil, &quot;email&quot;=&gt;nil, &quot;twitter&quot;=&gt;nil}</name></author><summary type="html">Jekyll is a simple, blog-aware, static site generator. It takes a template directory containing raw text files in various formats, runs it through a converter (like Markdown) and our Liquid renderer, and spits out a complete, ready-to-publish static website suitable for serving with your favorite web server.</summary></entry><entry><title type="html">Overview</title><link href="https://orange-ape.cloudvent.net//account-settings/overview/" rel="alternate" type="text/html" title="Overview" /><published>2017-01-16T00:00:00+08:00</published><updated>2017-01-16T00:00:00+08:00</updated><id>https://orange-ape.cloudvent.net//account-settings/overview</id><content type="html" xml:base="https://orange-ape.cloudvent.net//account-settings/overview/">&lt;p&gt;Jekyll is a simple, blog-aware, static site generator. It takes a template directory containing raw text files in various formats, runs it through a converter (like Markdown) and our Liquid renderer, and spits out a complete, ready-to-publish static website suitable for serving with your favorite web server.&lt;/p&gt;
+&lt;p&gt;Both methods work fine (and can be used in conjunction with each other), with the only real difference being the resulting URLs. By default, pages retain the same folder structure in &lt;code class=&quot;highlighter-rouge&quot;&gt;_site&lt;/code&gt; as they do in the source directory.&lt;/p&gt;</content><author><name>{&quot;name&quot;=&gt;nil, &quot;email&quot;=&gt;nil, &quot;twitter&quot;=&gt;nil}</name></author><summary type="html">Jekyll is a simple, blog-aware, static site generator. It takes a template directory containing raw text files in various formats, runs it through a converter (like Markdown) and our Liquid renderer, and spits out a complete, ready-to-publish static website suitable for serving with your favorite web server.</summary></entry><entry><title type="html">Justice</title><link href="http://docs.cattheme.com/themes/justice/" rel="alternate" type="text/html" title="Justice" /><published>2017-01-16T00:00:00+08:00</published><updated>2017-01-16T00:00:00+08:00</updated><id>http://docs.cattheme.com/themes/justice</id><content type="html" xml:base="http://docs.cattheme.com/themes/justice/">&lt;p&gt;Jekyll is a simple, blog-aware, static site generator. It takes a template directory containing raw text files in various formats, runs it through a converter (like Markdown) and our Liquid renderer, and spits out a complete, ready-to-publish static website suitable for serving with your favorite web server.&lt;/p&gt;
 
 &lt;p&gt;If you already have a full Ruby development environment with all headers and RubyGems installed, you can create a new Jekyll site by doing the following:&lt;/p&gt;
 
@@ -398,7 +613,7 @@ title: Blogging Like a Hacker
   &lt;li&gt;Place pages inside folders and subfolders named whatever you want.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Both methods work fine (and can be used in conjunction with each other), with the only real difference being the resulting URLs. By default, pages retain the same folder structure in &lt;code class=&quot;highlighter-rouge&quot;&gt;_site&lt;/code&gt; as they do in the source directory.&lt;/p&gt;</content><author><name>{&quot;name&quot;=&gt;nil, &quot;email&quot;=&gt;nil, &quot;twitter&quot;=&gt;nil}</name></author><summary type="html">Jekyll is a simple, blog-aware, static site generator. It takes a template directory containing raw text files in various formats, runs it through a converter (like Markdown) and our Liquid renderer, and spits out a complete, ready-to-publish static website suitable for serving with your favorite web server.</summary></entry><entry><title type="html">Manual payments</title><link href="https://orange-ape.cloudvent.net//billing/manual-payments/" rel="alternate" type="text/html" title="Manual payments" /><published>2017-01-16T00:00:00+08:00</published><updated>2017-01-16T00:00:00+08:00</updated><id>https://orange-ape.cloudvent.net//billing/manual-payments</id><content type="html" xml:base="https://orange-ape.cloudvent.net//billing/manual-payments/">&lt;p&gt;Jekyll is a simple, blog-aware, static site generator. It takes a template directory containing raw text files in various formats, runs it through a converter (like Markdown) and our Liquid renderer, and spits out a complete, ready-to-publish static website suitable for serving with your favorite web server.&lt;/p&gt;
+&lt;p&gt;Both methods work fine (and can be used in conjunction with each other), with the only real difference being the resulting URLs. By default, pages retain the same folder structure in &lt;code class=&quot;highlighter-rouge&quot;&gt;_site&lt;/code&gt; as they do in the source directory.&lt;/p&gt;</content><author><name>{&quot;name&quot;=&gt;nil, &quot;email&quot;=&gt;nil, &quot;twitter&quot;=&gt;nil}</name></author><summary type="html">Jekyll is a simple, blog-aware, static site generator. It takes a template directory containing raw text files in various formats, runs it through a converter (like Markdown) and our Liquid renderer, and spits out a complete, ready-to-publish static website suitable for serving with your favorite web server.</summary></entry><entry><title type="html">Urban</title><link href="http://docs.cattheme.com/themes/hydra/" rel="alternate" type="text/html" title="Urban" /><published>2017-01-16T00:00:00+08:00</published><updated>2017-01-16T00:00:00+08:00</updated><id>http://docs.cattheme.com/themes/hydra</id><content type="html" xml:base="http://docs.cattheme.com/themes/hydra/">&lt;p&gt;Jekyll is a simple, blog-aware, static site generator. It takes a template directory containing raw text files in various formats, runs it through a converter (like Markdown) and our Liquid renderer, and spits out a complete, ready-to-publish static website suitable for serving with your favorite web server.&lt;/p&gt;
 
 &lt;p&gt;If you already have a full Ruby development environment with all headers and RubyGems installed, you can create a new Jekyll site by doing the following:&lt;/p&gt;
 
@@ -498,7 +713,7 @@ title: Blogging Like a Hacker
   &lt;li&gt;Place pages inside folders and subfolders named whatever you want.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Both methods work fine (and can be used in conjunction with each other), with the only real difference being the resulting URLs. By default, pages retain the same folder structure in &lt;code class=&quot;highlighter-rouge&quot;&gt;_site&lt;/code&gt; as they do in the source directory.&lt;/p&gt;</content><author><name>{&quot;name&quot;=&gt;nil, &quot;email&quot;=&gt;nil, &quot;twitter&quot;=&gt;nil}</name></author><summary type="html">Jekyll is a simple, blog-aware, static site generator. It takes a template directory containing raw text files in various formats, runs it through a converter (like Markdown) and our Liquid renderer, and spits out a complete, ready-to-publish static website suitable for serving with your favorite web server.</summary></entry><entry><title type="html">Malt</title><link href="https://orange-ape.cloudvent.net//themes/malt/" rel="alternate" type="text/html" title="Malt" /><published>2017-01-16T00:00:00+08:00</published><updated>2017-01-16T00:00:00+08:00</updated><id>https://orange-ape.cloudvent.net//themes/malt</id><content type="html" xml:base="https://orange-ape.cloudvent.net//themes/malt/">&lt;p&gt;Jekyll is a simple, blog-aware, static site generator. It takes a template directory containing raw text files in various formats, runs it through a converter (like Markdown) and our Liquid renderer, and spits out a complete, ready-to-publish static website suitable for serving with your favorite web server.&lt;/p&gt;
+&lt;p&gt;Both methods work fine (and can be used in conjunction with each other), with the only real difference being the resulting URLs. By default, pages retain the same folder structure in &lt;code class=&quot;highlighter-rouge&quot;&gt;_site&lt;/code&gt; as they do in the source directory.&lt;/p&gt;</content><author><name>{&quot;name&quot;=&gt;nil, &quot;email&quot;=&gt;nil, &quot;twitter&quot;=&gt;nil}</name></author><summary type="html">Jekyll is a simple, blog-aware, static site generator. It takes a template directory containing raw text files in various formats, runs it through a converter (like Markdown) and our Liquid renderer, and spits out a complete, ready-to-publish static website suitable for serving with your favorite web server.</summary></entry><entry><title type="html">Heroku</title><link href="http://docs.cattheme.com/deployment/heroku/" rel="alternate" type="text/html" title="Heroku" /><published>2017-01-16T00:00:00+08:00</published><updated>2017-01-16T00:00:00+08:00</updated><id>http://docs.cattheme.com/deployment/heroku</id><content type="html" xml:base="http://docs.cattheme.com/deployment/heroku/">&lt;p&gt;Jekyll is a simple, blog-aware, static site generator. It takes a template directory containing raw text files in various formats, runs it through a converter (like Markdown) and our Liquid renderer, and spits out a complete, ready-to-publish static website suitable for serving with your favorite web server.&lt;/p&gt;
 
 &lt;p&gt;If you already have a full Ruby development environment with all headers and RubyGems installed, you can create a new Jekyll site by doing the following:&lt;/p&gt;
 
@@ -598,7 +813,7 @@ title: Blogging Like a Hacker
   &lt;li&gt;Place pages inside folders and subfolders named whatever you want.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Both methods work fine (and can be used in conjunction with each other), with the only real difference being the resulting URLs. By default, pages retain the same folder structure in &lt;code class=&quot;highlighter-rouge&quot;&gt;_site&lt;/code&gt; as they do in the source directory.&lt;/p&gt;</content><author><name>{&quot;name&quot;=&gt;nil, &quot;email&quot;=&gt;nil, &quot;twitter&quot;=&gt;nil}</name></author><summary type="html">Jekyll is a simple, blog-aware, static site generator. It takes a template directory containing raw text files in various formats, runs it through a converter (like Markdown) and our Liquid renderer, and spits out a complete, ready-to-publish static website suitable for serving with your favorite web server.</summary></entry><entry><title type="html">Justice</title><link href="https://orange-ape.cloudvent.net//themes/justice/" rel="alternate" type="text/html" title="Justice" /><published>2017-01-16T00:00:00+08:00</published><updated>2017-01-16T00:00:00+08:00</updated><id>https://orange-ape.cloudvent.net//themes/justice</id><content type="html" xml:base="https://orange-ape.cloudvent.net//themes/justice/">&lt;p&gt;Jekyll is a simple, blog-aware, static site generator. It takes a template directory containing raw text files in various formats, runs it through a converter (like Markdown) and our Liquid renderer, and spits out a complete, ready-to-publish static website suitable for serving with your favorite web server.&lt;/p&gt;
+&lt;p&gt;Both methods work fine (and can be used in conjunction with each other), with the only real difference being the resulting URLs. By default, pages retain the same folder structure in &lt;code class=&quot;highlighter-rouge&quot;&gt;_site&lt;/code&gt; as they do in the source directory.&lt;/p&gt;</content><author><name>{&quot;name&quot;=&gt;nil, &quot;email&quot;=&gt;nil, &quot;twitter&quot;=&gt;nil}</name></author><summary type="html">Jekyll is a simple, blog-aware, static site generator. It takes a template directory containing raw text files in various formats, runs it through a converter (like Markdown) and our Liquid renderer, and spits out a complete, ready-to-publish static website suitable for serving with your favorite web server.</summary></entry><entry><title type="html">Google Cloud</title><link href="http://docs.cattheme.com/deployment/google-cloud/" rel="alternate" type="text/html" title="Google Cloud" /><published>2017-01-16T00:00:00+08:00</published><updated>2017-01-16T00:00:00+08:00</updated><id>http://docs.cattheme.com/deployment/google-cloud</id><content type="html" xml:base="http://docs.cattheme.com/deployment/google-cloud/">&lt;p&gt;Jekyll is a simple, blog-aware, static site generator. It takes a template directory containing raw text files in various formats, runs it through a converter (like Markdown) and our Liquid renderer, and spits out a complete, ready-to-publish static website suitable for serving with your favorite web server.&lt;/p&gt;
 
 &lt;p&gt;If you already have a full Ruby development environment with all headers and RubyGems installed, you can create a new Jekyll site by doing the following:&lt;/p&gt;
 
@@ -698,7 +913,7 @@ title: Blogging Like a Hacker
   &lt;li&gt;Place pages inside folders and subfolders named whatever you want.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Both methods work fine (and can be used in conjunction with each other), with the only real difference being the resulting URLs. By default, pages retain the same folder structure in &lt;code class=&quot;highlighter-rouge&quot;&gt;_site&lt;/code&gt; as they do in the source directory.&lt;/p&gt;</content><author><name>{&quot;name&quot;=&gt;nil, &quot;email&quot;=&gt;nil, &quot;twitter&quot;=&gt;nil}</name></author><summary type="html">Jekyll is a simple, blog-aware, static site generator. It takes a template directory containing raw text files in various formats, runs it through a converter (like Markdown) and our Liquid renderer, and spits out a complete, ready-to-publish static website suitable for serving with your favorite web server.</summary></entry><entry><title type="html">jekyll-sitemap</title><link href="https://orange-ape.cloudvent.net//plugins/jekyll-sitemap/" rel="alternate" type="text/html" title="jekyll-sitemap" /><published>2017-01-16T00:00:00+08:00</published><updated>2017-01-16T00:00:00+08:00</updated><id>https://orange-ape.cloudvent.net//plugins/jekyll-sitemap</id><content type="html" xml:base="https://orange-ape.cloudvent.net//plugins/jekyll-sitemap/">&lt;p&gt;Jekyll is a simple, blog-aware, static site generator. It takes a template directory containing raw text files in various formats, runs it through a converter (like Markdown) and our Liquid renderer, and spits out a complete, ready-to-publish static website suitable for serving with your favorite web server.&lt;/p&gt;
+&lt;p&gt;Both methods work fine (and can be used in conjunction with each other), with the only real difference being the resulting URLs. By default, pages retain the same folder structure in &lt;code class=&quot;highlighter-rouge&quot;&gt;_site&lt;/code&gt; as they do in the source directory.&lt;/p&gt;</content><author><name>{&quot;name&quot;=&gt;nil, &quot;email&quot;=&gt;nil, &quot;twitter&quot;=&gt;nil}</name></author><summary type="html">Jekyll is a simple, blog-aware, static site generator. It takes a template directory containing raw text files in various formats, runs it through a converter (like Markdown) and our Liquid renderer, and spits out a complete, ready-to-publish static website suitable for serving with your favorite web server.</summary></entry><entry><title type="html">FTP</title><link href="http://docs.cattheme.com/deployment/ftp/" rel="alternate" type="text/html" title="FTP" /><published>2017-01-16T00:00:00+08:00</published><updated>2017-01-16T00:00:00+08:00</updated><id>http://docs.cattheme.com/deployment/ftp</id><content type="html" xml:base="http://docs.cattheme.com/deployment/ftp/">&lt;p&gt;Jekyll is a simple, blog-aware, static site generator. It takes a template directory containing raw text files in various formats, runs it through a converter (like Markdown) and our Liquid renderer, and spits out a complete, ready-to-publish static website suitable for serving with your favorite web server.&lt;/p&gt;
 
 &lt;p&gt;If you already have a full Ruby development environment with all headers and RubyGems installed, you can create a new Jekyll site by doing the following:&lt;/p&gt;
 
@@ -798,107 +1013,7 @@ title: Blogging Like a Hacker
   &lt;li&gt;Place pages inside folders and subfolders named whatever you want.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Both methods work fine (and can be used in conjunction with each other), with the only real difference being the resulting URLs. By default, pages retain the same folder structure in &lt;code class=&quot;highlighter-rouge&quot;&gt;_site&lt;/code&gt; as they do in the source directory.&lt;/p&gt;</content><author><name>{&quot;name&quot;=&gt;nil, &quot;email&quot;=&gt;nil, &quot;twitter&quot;=&gt;nil}</name></author><summary type="html">Jekyll is a simple, blog-aware, static site generator. It takes a template directory containing raw text files in various formats, runs it through a converter (like Markdown) and our Liquid renderer, and spits out a complete, ready-to-publish static website suitable for serving with your favorite web server.</summary></entry><entry><title type="html">jekyll-search</title><link href="https://orange-ape.cloudvent.net//plugins/jekyll-search/" rel="alternate" type="text/html" title="jekyll-search" /><published>2017-01-16T00:00:00+08:00</published><updated>2017-01-16T00:00:00+08:00</updated><id>https://orange-ape.cloudvent.net//plugins/jekyll-search</id><content type="html" xml:base="https://orange-ape.cloudvent.net//plugins/jekyll-search/">&lt;p&gt;Jekyll is a simple, blog-aware, static site generator. It takes a template directory containing raw text files in various formats, runs it through a converter (like Markdown) and our Liquid renderer, and spits out a complete, ready-to-publish static website suitable for serving with your favorite web server.&lt;/p&gt;
-
-&lt;p&gt;If you already have a full Ruby development environment with all headers and RubyGems installed, you can create a new Jekyll site by doing the following:&lt;/p&gt;
-
-&lt;h2 id=&quot;how-to-install&quot;&gt;How to install&lt;/h2&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# Install Jekyll and Bundler gems through RubyGems&lt;/span&gt;
-~ &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;gem install jekyll bundler
-
-&lt;span class=&quot;c&quot;&gt;# Create a new Jekyll site at ./myblog&lt;/span&gt;
-~ &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;jekyll new myblog
-
-&lt;span class=&quot;c&quot;&gt;# Change into your new directory&lt;/span&gt;
-~ &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;myblog
-
-&lt;span class=&quot;c&quot;&gt;# Build the site on the preview server&lt;/span&gt;
-~/myblog &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;bundle &lt;span class=&quot;nb&quot;&gt;exec &lt;/span&gt;jekyll serve
-
-&lt;span class=&quot;c&quot;&gt;# Now browse to http://localhost:4000&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&quot;next-steps&quot;&gt;Next steps&lt;/h2&gt;
-
-&lt;p&gt;Building a Jekyll site with the default theme is just the first step. The real magic happens when you start creating blog posts, using the front matter to control templates and layouts, and taking advantage of all the awesome configuration options Jekyll makes available.&lt;/p&gt;
-
-&lt;h2 id=&quot;basic-usage&quot;&gt;Basic usage&lt;/h2&gt;
-
-&lt;p&gt;The Jekyll gem makes a &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll&lt;/code&gt; executable available to you in your Terminal window. You can use this command in a number of ways:&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;jekyll build
-&lt;span class=&quot;c&quot;&gt;# =&amp;gt; The current folder will be generated into ./_site&lt;/span&gt;
-
-&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;jekyll build --destination &amp;lt;destination&amp;gt;
-&lt;span class=&quot;c&quot;&gt;# =&amp;gt; The current folder will be generated into &amp;lt;destination&amp;gt;&lt;/span&gt;
-
-&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;jekyll build --source &amp;lt;&lt;span class=&quot;nb&quot;&gt;source&lt;/span&gt;&amp;gt; --destination &amp;lt;destination&amp;gt;
-&lt;span class=&quot;c&quot;&gt;# =&amp;gt; The &amp;lt;source&amp;gt; folder will be generated into &amp;lt;destination&amp;gt;&lt;/span&gt;
-
-&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;jekyll build --watch
-&lt;span class=&quot;c&quot;&gt;# =&amp;gt; The current folder will be generated into ./_site,&lt;/span&gt;
-&lt;span class=&quot;c&quot;&gt;#    watched for changes, and regenerated automatically.&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&quot;directory-structure&quot;&gt;Directory structure&lt;/h2&gt;
-
-&lt;p&gt;Jekyll is, at its core, a text transformation engine. The concept behind the system is this: you give it text written in your favorite markup language, be that Markdown, Textile, or just plain HTML, and it churns that through a layout or a series of layout files. Throughout that process you can tweak how you want the site URLs to look, what data gets displayed in the layout, and more. This is all done through editing text files; the static web site is the final product.&lt;/p&gt;
-
-&lt;p&gt;A basic Jekyll site usually looks something like this:&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;.
-├── _config.yml
-├── _data
-|   └── members.yml
-├── _drafts
-|   ├── begin-with-the-crazy-ideas.md
-|   └── on-simplicity-in-technology.md
-├── _includes
-|   ├── footer.html
-|   └── header.html
-├── _layouts
-|   ├── default.html
-|   └── post.html
-├── _posts
-|   ├── 2007-10-29-why-every-programmer-should-play-nethack.md
-|   └── 2009-04-26-barcamp-boston-4-roundup.md
-├── _sass
-|   ├── _base.scss
-|   └── _layout.scss
-├── _site
-├── .jekyll-metadata
-└── index.html &lt;span class=&quot;c&quot;&gt;# can also be an 'index.md' with valid YAML Frontmatter&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&quot;front-matter&quot;&gt;Front matter&lt;/h2&gt;
-
-&lt;p&gt;The front matter is where Jekyll starts to get really cool. Any file that contains a YAML front matter block will be processed by Jekyll as a special file. The front matter must be the first thing in the file and must take the form of valid YAML set between triple-dashed lines. Here is a basic example:&lt;/p&gt;
-
-&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;---
-layout: post
-title: Blogging Like a Hacker
----
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Between these triple-dashed lines, you can set predefined variables (see below for a reference) or even create custom ones of your own. These variables will then be available to you to access using Liquid tags both further down in the file and also in any layouts or includes that the page or post in question relies on.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://images.unsplash.com/photo-1481487196290-c152efe083f5?ixlib=rb-0.3.5&amp;amp;q=80&amp;amp;fm=jpg&amp;amp;crop=entropy&amp;amp;cs=tinysrgb&amp;amp;w=1920&amp;amp;h=1080&amp;amp;fit=crop&amp;amp;s=80308172730757a7db0434987fa985f3&quot; alt=&quot;Example image&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;where-additional-pages-live&quot;&gt;Where additional pages live&lt;/h2&gt;
-
-&lt;p&gt;Where you put HTML or Markdown files for pages depends on how you want the pages to work. There are two main ways of creating pages:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Place named HTML or Markdown files for each page in your site’s root folder.&lt;/li&gt;
-  &lt;li&gt;Place pages inside folders and subfolders named whatever you want.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Both methods work fine (and can be used in conjunction with each other), with the only real difference being the resulting URLs. By default, pages retain the same folder structure in &lt;code class=&quot;highlighter-rouge&quot;&gt;_site&lt;/code&gt; as they do in the source directory.&lt;/p&gt;</content><author><name>{&quot;name&quot;=&gt;nil, &quot;email&quot;=&gt;nil, &quot;twitter&quot;=&gt;nil}</name></author><summary type="html">Jekyll is a simple, blog-aware, static site generator. It takes a template directory containing raw text files in various formats, runs it through a converter (like Markdown) and our Liquid renderer, and spits out a complete, ready-to-publish static website suitable for serving with your favorite web server.</summary></entry><entry><title type="html">jekyll-paginate</title><link href="https://orange-ape.cloudvent.net//plugins/jekyll-paginate/" rel="alternate" type="text/html" title="jekyll-paginate" /><published>2017-01-16T00:00:00+08:00</published><updated>2017-01-16T00:00:00+08:00</updated><id>https://orange-ape.cloudvent.net//plugins/jekyll-paginate</id><content type="html" xml:base="https://orange-ape.cloudvent.net//plugins/jekyll-paginate/">&lt;p&gt;Jekyll is a simple, blog-aware, static site generator. It takes a template directory containing raw text files in various formats, runs it through a converter (like Markdown) and our Liquid renderer, and spits out a complete, ready-to-publish static website suitable for serving with your favorite web server.&lt;/p&gt;
+&lt;p&gt;Both methods work fine (and can be used in conjunction with each other), with the only real difference being the resulting URLs. By default, pages retain the same folder structure in &lt;code class=&quot;highlighter-rouge&quot;&gt;_site&lt;/code&gt; as they do in the source directory.&lt;/p&gt;</content><author><name>{&quot;name&quot;=&gt;nil, &quot;email&quot;=&gt;nil, &quot;twitter&quot;=&gt;nil}</name></author><summary type="html">Jekyll is a simple, blog-aware, static site generator. It takes a template directory containing raw text files in various formats, runs it through a converter (like Markdown) and our Liquid renderer, and spits out a complete, ready-to-publish static website suitable for serving with your favorite web server.</summary></entry><entry><title type="html">Frisco</title><link href="http://docs.cattheme.com/themes/frisco/" rel="alternate" type="text/html" title="Frisco" /><published>2017-01-16T00:00:00+08:00</published><updated>2017-01-16T00:00:00+08:00</updated><id>http://docs.cattheme.com/themes/frisco</id><content type="html" xml:base="http://docs.cattheme.com/themes/frisco/">&lt;p&gt;Jekyll is a simple, blog-aware, static site generator. It takes a template directory containing raw text files in various formats, runs it through a converter (like Markdown) and our Liquid renderer, and spits out a complete, ready-to-publish static website suitable for serving with your favorite web server.&lt;/p&gt;
 
 &lt;p&gt;If you already have a full Ruby development environment with all headers and RubyGems installed, you can create a new Jekyll site by doing the following:&lt;/p&gt;
 
