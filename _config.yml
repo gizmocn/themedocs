@@ -1,8 +1,8 @@
 # ----
 # Site
 
-title: Base
-url: "https://orange-ape.cloudvent.net/"
+title: Cattheme Docs
+url: "http://docs.cattheme.com"
 baseurl:
 google_analytics_key:
 disqus_shortname:
@@ -10,13 +10,13 @@ newsletter_action:
 
 # Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
 logo: /siteicon.png
-description: Knowledge base template for Jekyll.
+description: Cattheme.com Document.
 author:
   name:
   email:
   twitter: # twitter username without the @ symbol
 social:
-  name: Base Template
+  name: Cattheme Docs
   links:
     - https://github.com/CloudCannon/base-jekyll-template
 
