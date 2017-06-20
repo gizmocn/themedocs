@@ -14,25 +14,25 @@
 		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
 		<!-- Begin Jekyll SEO tag v2.1.0 -->
-<title>Urban - Cattheme Docs</title>
-<meta property="og:title" content="Urban" />
-<meta name="description" content="Jekyll template for digital agencies" />
-<meta property="og:description" content="Jekyll template for digital agencies" />
-<link rel="canonical" href="http://docs.cattheme.com/themes/urban/" />
-<meta property="og:url" content="http://docs.cattheme.com/themes/urban/" />
+<title>Rabel - Cattheme Docs</title>
+<meta property="og:title" content="Rabel" />
+<meta name="description" content="Rabel Magento2 Responsive Theme Guide" />
+<meta property="og:description" content="Rabel Magento2 Responsive Theme Guide" />
+<link rel="canonical" href="http://docs.cattheme.com/themes/rabel/" />
+<meta property="og:url" content="http://docs.cattheme.com/themes/rabel/" />
 <meta property="og:site_name" content="Cattheme Docs" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2017-01-16T00:00:00+08:00" />
+<meta property="article:published_time" content="2017-06-18T00:00:00+08:00" />
 <script type="application/ld+json">
 {"@context": "http://schema.org",
 "@type": "BlogPosting",
-"headline": "Urban",
-"datePublished": "2017-01-16T00:00:00+08:00",
-"description": "Jekyll template for digital agencies",
+"headline": "Rabel",
+"datePublished": "2017-06-18T00:00:00+08:00",
+"description": "Rabel Magento2 Responsive Theme Guide",
 "publisher": {"@type": "Organization",
 "logo": {"@type": "ImageObject",
 "url": "http://docs.cattheme.com/siteicon.png"}},
-"url": "http://docs.cattheme.com/themes/urban/"}</script>
+"url": "http://docs.cattheme.com/themes/rabel/"}</script>
 <!-- End Jekyll SEO tag -->
 
 		<link type="application/atom+xml" rel="alternate" href="http://docs.cattheme.com/feed.xml" title="Cattheme Docs" />
@@ -95,125 +95,25 @@
 			
 				<li><a href="#how-to-install">How to install</a></li>
 			
-				<li><a href="#next-steps">Next steps</a></li>
-			
-				<li><a href="#basic-usage">Basic usage</a></li>
-			
-				<li><a href="#directory-structure">Directory structure</a></li>
-			
-				<li><a href="#front-matter">Front matter</a></li>
-			
-				<li><a href="#where-additional-pages-live">Where additional pages live</a></li>
+				<li><a href="#theme-configuration">Theme Configuration</a></li>
 			
 		</ul>
 	</section>
 	<section class="tutorial-content">
-		<h1>Urban</h1>
+		<h1>Rabel</h1>
 
 		
 		
 		<div class="tutorial-main">
-			<p>Jekyll is a simple, blog-aware, static site generator. It takes a template directory containing raw text files in various formats, runs it through a converter (like Markdown) and our Liquid renderer, and spits out a complete, ready-to-publish static website suitable for serving with your favorite web server.</p>
-
-<p>If you already have a full Ruby development environment with all headers and RubyGems installed, you can create a new Jekyll site by doing the following:</p>
+			<p>Thanks for purchase Rabel Magento2 responsive theme, this guide will help you to install and use this great theme in your site, if you have further questions please contact us at gizmocn@gmail.com</p>
 
 <h2 id="how-to-install">How to install</h2>
 
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code><span class="c"># Install Jekyll and Bundler gems through RubyGems</span>
-~ <span class="nv">$ </span>gem install jekyll bundler
+<h2 id="theme-configuration">Theme Configuration</h2>
 
-<span class="c"># Create a new Jekyll site at ./myblog</span>
-~ <span class="nv">$ </span>jekyll new myblog
+<p>Most theme configuration can be found at <Magento Backend="">-&gt;CATTHEME-&gt;Rabel Theme Config</Magento></p>
 
-<span class="c"># Change into your new directory</span>
-~ <span class="nv">$ </span><span class="nb">cd </span>myblog
-
-<span class="c"># Build the site on the preview server</span>
-~/myblog <span class="nv">$ </span>bundle <span class="nb">exec </span>jekyll serve
-
-<span class="c"># Now browse to http://localhost:4000</span>
-</code></pre>
-</div>
-
-<h2 id="next-steps">Next steps</h2>
-
-<p>Building a Jekyll site with the default theme is just the first step. The real magic happens when you start creating blog posts, using the front matter to control templates and layouts, and taking advantage of all the awesome configuration options Jekyll makes available.</p>
-
-<h2 id="basic-usage">Basic usage</h2>
-
-<p>The Jekyll gem makes a <code class="highlighter-rouge">jekyll</code> executable available to you in your Terminal window. You can use this command in a number of ways:</p>
-
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>jekyll build
-<span class="c"># =&gt; The current folder will be generated into ./_site</span>
-
-<span class="gp">$ </span>jekyll build --destination &lt;destination&gt;
-<span class="c"># =&gt; The current folder will be generated into &lt;destination&gt;</span>
-
-<span class="gp">$ </span>jekyll build --source &lt;<span class="nb">source</span>&gt; --destination &lt;destination&gt;
-<span class="c"># =&gt; The &lt;source&gt; folder will be generated into &lt;destination&gt;</span>
-
-<span class="gp">$ </span>jekyll build --watch
-<span class="c"># =&gt; The current folder will be generated into ./_site,</span>
-<span class="c">#    watched for changes, and regenerated automatically.</span>
-</code></pre>
-</div>
-
-<h2 id="directory-structure">Directory structure</h2>
-
-<p>Jekyll is, at its core, a text transformation engine. The concept behind the system is this: you give it text written in your favorite markup language, be that Markdown, Textile, or just plain HTML, and it churns that through a layout or a series of layout files. Throughout that process you can tweak how you want the site URLs to look, what data gets displayed in the layout, and more. This is all done through editing text files; the static web site is the final product.</p>
-
-<p>A basic Jekyll site usually looks something like this:</p>
-
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>.
-├── _config.yml
-├── _data
-|   └── members.yml
-├── _drafts
-|   ├── begin-with-the-crazy-ideas.md
-|   └── on-simplicity-in-technology.md
-├── _includes
-|   ├── footer.html
-|   └── header.html
-├── _layouts
-|   ├── default.html
-|   └── post.html
-├── _posts
-|   ├── 2007-10-29-why-every-programmer-should-play-nethack.md
-|   └── 2009-04-26-barcamp-boston-4-roundup.md
-├── _sass
-|   ├── _base.scss
-|   └── _layout.scss
-├── _site
-├── .jekyll-metadata
-└── index.html <span class="c"># can also be an 'index.md' with valid YAML Frontmatter</span>
-</code></pre>
-</div>
-
-<h2 id="front-matter">Front matter</h2>
-
-<p>The front matter is where Jekyll starts to get really cool. Any file that contains a YAML front matter block will be processed by Jekyll as a special file. The front matter must be the first thing in the file and must take the form of valid YAML set between triple-dashed lines. Here is a basic example:</p>
-
-<div class="language-html highlighter-rouge"><pre class="highlight"><code>---
-layout: post
-title: Blogging Like a Hacker
----
-</code></pre>
-</div>
-
-<p>Between these triple-dashed lines, you can set predefined variables (see below for a reference) or even create custom ones of your own. These variables will then be available to you to access using Liquid tags both further down in the file and also in any layouts or includes that the page or post in question relies on.</p>
-
-<p><img src="https://images.unsplash.com/photo-1481487196290-c152efe083f5?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1920&amp;h=1080&amp;fit=crop&amp;s=80308172730757a7db0434987fa985f3" alt="Example image" /></p>
-
-<h2 id="where-additional-pages-live">Where additional pages live</h2>
-
-<p>Where you put HTML or Markdown files for pages depends on how you want the pages to work. There are two main ways of creating pages:</p>
-
-<ul>
-  <li>Place named HTML or Markdown files for each page in your site’s root folder.</li>
-  <li>Place pages inside folders and subfolders named whatever you want.</li>
-</ul>
-
-<p>Both methods work fine (and can be used in conjunction with each other), with the only real difference being the resulting URLs. By default, pages retain the same folder structure in <code class="highlighter-rouge">_site</code> as they do in the source directory.</p>
+<p><img src="../../images/rabel_theme_configuration.jpg" alt="" /></p>
 
 		</div>
 		<div class="tutorial-share">
@@ -242,23 +142,6 @@ title: Blogging Like a Hacker
 		<ul class="listing">
 	
 		<li >
-			<a href="/themes/rabel/">
-				<div class="icon">
-		<svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-			<path d="M6 2c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6H6zm7 7V3.5L18.5 9H13z"/>
-			<path d="M0 0h24v24H0z" fill="none"/>
-		</svg>
-</div>
-				<article>
-					<div>
-						<h3>Rabel</h3>
-						<p class="description">Rabel Magento2 Responsive Theme Guide</p>
-					</div>
-				</article>
-			</a>
-		</li>
-	
-		<li >
 			<a href="/tutorial/magento2-redis/">
 				<div class="icon">
 		<svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
@@ -270,6 +153,23 @@ title: Blogging Like a Hacker
 					<div>
 						<h3>Use Redis for Magento2 cache and session</h3>
 						<p class="description">Use Redis for Magento2 cache and session</p>
+					</div>
+				</article>
+			</a>
+		</li>
+	
+		<li >
+			<a href="/themes/urban/">
+				<div class="icon">
+		<svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+			<path d="M6 2c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6H6zm7 7V3.5L18.5 9H13z"/>
+			<path d="M0 0h24v24H0z" fill="none"/>
+		</svg>
+</div>
+				<article>
+					<div>
+						<h3>Urban</h3>
+						<p class="description">Jekyll template for digital agencies</p>
 					</div>
 				</article>
 			</a>
@@ -384,19 +284,19 @@ title: Blogging Like a Hacker
 		<h2>Share</h2>
 		<p>Share this tutorial with your community.</p>
 		<ul>
-			<li><a class="twitter" target="_blank" href="https://twitter.com/intent/tweet?url=http%3A%2F%2Fdocs.cattheme.com%2Fthemes%2Furban%2F">
+			<li><a class="twitter" target="_blank" href="https://twitter.com/intent/tweet?url=http%3A%2F%2Fdocs.cattheme.com%2Fthemes%2Frabel%2F">
 		<svg class="twitter" fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M22.46,6C21.69,6.35 20.86,6.58 20,6.69C20.88,6.16 21.56,5.32 21.88,4.31C21.05,4.81 20.13,5.16 19.16,5.36C18.37,4.5 17.26,4 16,4C13.65,4 11.73,5.92 11.73,8.29C11.73,8.63 11.77,8.96 11.84,9.27C8.28,9.09 5.11,7.38 3,4.79C2.63,5.42 2.42,6.16 2.42,6.94C2.42,8.43 3.17,9.75 4.33,10.5C3.62,10.5 2.96,10.3 2.38,10C2.38,10 2.38,10 2.38,10.03C2.38,12.11 3.86,13.85 5.82,14.24C5.46,14.34 5.08,14.39 4.69,14.39C4.42,14.39 4.15,14.36 3.89,14.31C4.43,16 6,17.26 7.89,17.29C6.43,18.45 4.58,19.13 2.56,19.13C2.22,19.13 1.88,19.11 1.54,19.07C3.44,20.29 5.7,21 8.12,21C16,21 20.33,14.46 20.33,8.79C20.33,8.6 20.33,8.42 20.32,8.23C21.16,7.63 21.88,6.87 22.46,6Z" /></svg>
 	
  Twitter</a></li>
-			<li><a class="facebook" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fdocs.cattheme.com%2Fthemes%2Furban%2F">
+			<li><a class="facebook" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fdocs.cattheme.com%2Fthemes%2Frabel%2F">
 		<svg class="facebook" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="15.8 15.8 25 25"><path d="M32.8 24.7h-3.2v-2.1c0-0.8 0.5-1 0.9-1s2.3 0 2.3 0v-3.5l-3.1 0c-3.5 0-4.3 2.6-4.3 4.3v2.3h-2v3.6h2c0 4.6 0 10.2 0 10.2h4.2c0 0 0-5.6 0-10.2h2.8L32.8 24.7z"/></svg>
 	
  Facebook</a></li>
-			<li><a class="google-plus" target="_blank" href="https://plus.google.com/share?url=http%3A%2F%2Fdocs.cattheme.com%2Fthemes%2Furban%2F">
+			<li><a class="google-plus" target="_blank" href="https://plus.google.com/share?url=http%3A%2F%2Fdocs.cattheme.com%2Fthemes%2Frabel%2F">
 		<svg class="google-plus" fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M23,11H21V9H19V11H17V13H19V15H21V13H23M8,11V13.4H12C11.8,14.4 10.8,16.4 8,16.4C5.6,16.4 3.7,14.4 3.7,12C3.7,9.6 5.6,7.6 8,7.6C9.4,7.6 10.3,8.2 10.8,8.7L12.7,6.9C11.5,5.7 9.9,5 8,5C4.1,5 1,8.1 1,12C1,15.9 4.1,19 8,19C12,19 14.7,16.2 14.7,12.2C14.7,11.7 14.7,11.4 14.6,11H8Z" /></svg>
 	
  Google+</a></li>
-			<li><a class="hacker-news" target="_blank" href="http://news.ycombinator.com/submitlink?u=http%3A%2F%2Fdocs.cattheme.com%2Fthemes%2Furban%2F&t=Urban">
+			<li><a class="hacker-news" target="_blank" href="http://news.ycombinator.com/submitlink?u=http%3A%2F%2Fdocs.cattheme.com%2Fthemes%2Frabel%2F&t=Rabel">
 		<svg class="hacker-news" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M18.8 3.3c-0.4 0.8-5.6 11.1-5.6 11.2 0 2 0 6.2 0 6.2 -0.1 0-2.2 0-2.3 0 0 0 0-5.9 0-6.2 0 0-5.5-10.9-5.6-11.1C5.3 3.3 5.3 3.3 5.3 3.3 5.3 3.3 5.3 3.3 5.3 3.3c0 0 0 0 0.1 0 0.9 0 1.7 0 2.6 0 0 0 0 0 0 0.1 0.1 0.1 4 8.3 4.1 8.3 0 0 4.2-8.3 4.3-8.4 0.8 0 1.6 0 2.4 0 0 0 0 0 0 0C18.8 3.3 18.8 3.3 18.8 3.3z"/></svg>
 	
  Hacker News</a></li>
