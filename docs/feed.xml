@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="http://jekyllrb.com" version="3.4.3">Jekyll</generator><link href="http://docs.cattheme.com/feed.xml" rel="self" type="application/atom+xml" /><link href="http://docs.cattheme.com/" rel="alternate" type="text/html" /><updated>2017-08-09T15:53:06+08:00</updated><id>http://docs.cattheme.com/</id><title type="html">Cattheme Docs</title><subtitle>Cattheme.com Document.</subtitle><author><name>{&quot;name&quot;=&gt;nil, &quot;email&quot;=&gt;nil, &quot;twitter&quot;=&gt;nil}</name></author><entry><title type="html">Rabel</title><link href="http://docs.cattheme.com/themes/rabel/" rel="alternate" type="text/html" title="Rabel" /><published>2017-06-18T00:00:00+08:00</published><updated>2017-06-18T00:00:00+08:00</updated><id>http://docs.cattheme.com/themes/rabel</id><content type="html" xml:base="http://docs.cattheme.com/themes/rabel/">&lt;p&gt;Thanks for purchase Rabel Magento2 responsive theme, this guide will help you to install and use this great theme in your site, if you have further questions please contact us at gizmocn@gmail.com&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="http://jekyllrb.com" version="3.4.3">Jekyll</generator><link href="http://docs.cattheme.com/feed.xml" rel="self" type="application/atom+xml" /><link href="http://docs.cattheme.com/" rel="alternate" type="text/html" /><updated>2017-08-20T09:30:22+08:00</updated><id>http://docs.cattheme.com/</id><title type="html">Cattheme Docs</title><subtitle>Cattheme.com Document.</subtitle><author><name>{&quot;name&quot;=&gt;nil, &quot;email&quot;=&gt;nil, &quot;twitter&quot;=&gt;nil}</name></author><entry><title type="html">Rabel</title><link href="http://docs.cattheme.com/themes/rabel/" rel="alternate" type="text/html" title="Rabel" /><published>2017-06-18T00:00:00+08:00</published><updated>2017-06-18T00:00:00+08:00</updated><id>http://docs.cattheme.com/themes/rabel</id><content type="html" xml:base="http://docs.cattheme.com/themes/rabel/">&lt;p&gt;Thanks for purchase Rabel Magento2 responsive theme, this guide will help you to install and use this great theme in your site, if you have further questions please contact us at gizmocn@gmail.com&lt;/p&gt;
 
-&lt;h2 id=&quot;i-how-to-install&quot;&gt;I. How to install&lt;/h2&gt;
+&lt;h2 id=&quot;1-how-to-install&quot;&gt;1. How to install&lt;/h2&gt;
 
-&lt;h2 id=&quot;ii-theme-configuration&quot;&gt;II. Theme Configuration&lt;/h2&gt;
+&lt;h2 id=&quot;2-theme-configuration&quot;&gt;2. Theme Configuration&lt;/h2&gt;
 
 &lt;p&gt;Most theme configuration can be found at &lt;Magento Backend=&quot;&quot;&gt;-&amp;gt;CATTHEME-&amp;gt;Rabel Theme Config&lt;/Magento&gt;&lt;/p&gt;
 
@@ -12,37 +12,364 @@
 
 &lt;p&gt;&lt;img src=&quot;../../images/configurations_listing.jpg&quot; alt=&quot;Configuration Listing&quot; /&gt;&lt;/p&gt;
 
+&lt;p&gt;There are many options in these sections, you can input color value, select header type or input header height etc to the options, before we start to discuss all options, please remember,
+after you complete options selection, don’t forget to click “Save Config” button to store your selections to database.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../../images/save_config.jpg&quot; alt=&quot;Save Config&quot; /&gt;&lt;/p&gt;
+
 &lt;p&gt;Now we will discuss details of all there configurations.&lt;/p&gt;
 
-&lt;h3 id=&quot;1-theme-font-customization&quot;&gt;1. Theme Font Customization&lt;/h3&gt;
+&lt;h2 id=&quot;3-font&quot;&gt;3. Font&lt;/h2&gt;
 
-&lt;p&gt;In this sections, we divide all font configurations to 6 groups, they are body font, megamenu font, megamenu sub level font, product name font, button font and sales &amp;amp; new icon font.&lt;/p&gt;
+&lt;p&gt;Font options will show when you select Custom Option to “Yes”
+In this sections, we divide all font configurations to 6 groups, they are body font, Element Font 1 to Element Font 5&lt;/p&gt;
+
+&lt;h3 id=&quot;31-body-font&quot;&gt;3.1 Body Font&lt;/h3&gt;
 
 &lt;p&gt;&lt;img src=&quot;../../images/theme_font_customization.jpg&quot; alt=&quot;Theme Font Customization&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Body font is global setting for entire website, Others meaning see following picture.&lt;/p&gt;
+&lt;p&gt;Body font is global setting for entire website.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;../../images/font-area.jpg&quot; alt=&quot;Font Customization Area&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Body Font Size: select body font size.&lt;/p&gt;
 
-&lt;p&gt;Every grounp has same options, we use Megamenu Font as example, other’s options are same as this one.&lt;/p&gt;
+&lt;p&gt;Body Font Weight: input body font weight.&lt;/p&gt;
 
-&lt;p&gt;Megamenu Size: select megamenu font size;&lt;/p&gt;
+&lt;p&gt;Body Font Style: select body font style.&lt;/p&gt;
 
-&lt;p&gt;Megamenu Font Weight: input megamenu font weight;&lt;/p&gt;
+&lt;p&gt;Body Font Family: you can select system general fonts, or google font, when you select google font option, a new option “Body Font Family - Google Fonts” will appear.&lt;/p&gt;
 
-&lt;p&gt;Megamenu Font Style: select megamenu font style;&lt;/p&gt;
-
-&lt;p&gt;Megamenu Font Family: you can select system general fonts, or google font, when you select google font option, a new option “Megamenu Font Family - Google Fonts” will appear;&lt;/p&gt;
-
-&lt;p&gt;Megamenu Font Family - Google Fonts: you can select google font, after you select a google font, the font preview will be showed.&lt;/p&gt;
+&lt;p&gt;Body Font Family - Google Fonts: you can select google font, after you select a google font, the font preview will be showed.&lt;/p&gt;
 
 &lt;p&gt;See below picture for a example:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;../../images/megamenu_font.jpg&quot; alt=&quot;Use google font for Megamenu&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;../../images/body_font_custom.jpg&quot; alt=&quot;Body Font Customization&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;After you select options and then click Save Config button, then go to frontend and you can see the Megamenu font has been changed according your selection。&lt;/p&gt;
+&lt;p&gt;Select “Eagle Lake” google font for body and then click “Save Config” button in backend top right corner, now refresh your store frontend and you can find the site font was changed according your selecation.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;../../images/font_change_effect.jpg&quot; alt=&quot;Megamenu font customization effect&quot; /&gt;&lt;/p&gt;</content><author><name>{&quot;name&quot;=&gt;nil, &quot;email&quot;=&gt;nil, &quot;twitter&quot;=&gt;nil}</name></author><summary type="html">Thanks for purchase Rabel Magento2 responsive theme, this guide will help you to install and use this great theme in your site, if you have further questions please contact us at gizmocn@gmail.com</summary></entry><entry><title type="html">Use Redis for Magento2 cache and session</title><link href="http://docs.cattheme.com/tutorial/magento2-redis/" rel="alternate" type="text/html" title="Use Redis for Magento2 cache and session" /><published>2017-06-16T00:00:00+08:00</published><updated>2017-06-16T00:00:00+08:00</updated><id>http://docs.cattheme.com/tutorial/magento2-redis</id><content type="html" xml:base="http://docs.cattheme.com/tutorial/magento2-redis/">&lt;h2 id=&quot;install-redis&quot;&gt;Install Redis&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;../../images/body_font_effect.jpg&quot; alt=&quot;Body Font Effect&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;32-element-font-1---element-font-5&quot;&gt;3.2 Element Font 1 - Element Font 5&lt;/h3&gt;
+
+&lt;p&gt;With Element Font, we can customize font for specific html element, For example, we want change font family for product name of category and product page, 
+First, we need to find css class or ID of product name by using  browser development tools(Firefox or Chrome).&lt;/p&gt;
+
+&lt;p&gt;In Firefox, we find class for product name of 
+category page is ‘.prodduct-item-link’ (don’t forget add “.” for css class and “#” for id).&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../../images/product_name_css_element.jpg&quot; alt=&quot;Product Name class for category page&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;And class for product name of product page is ‘.product-content-wrapper .page-title’.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../../images/product_name_css_class.jpg&quot; alt=&quot;Product Name class for product page&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;So we have Font Element 1 options like below picture:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../../images/element_font.jpg&quot; alt=&quot;Element Font Setting&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;we only change font-family and leave element font size, weight and style to theirs default value, 
+So in website frontend, product name style will inherit font size, weight and style setting from theme and only font family is changed to
+ “petit Formal Script”.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../../images/product_name_font_in_category.jpg&quot; alt=&quot;Product Name in Category Page&quot; /&gt;
+&lt;img src=&quot;../../images/product_name_font.jpg&quot; alt=&quot;Product Name in Product Page&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;We have 5 Element Font options group, so you can different html element to different font family, size weight and style.&lt;/p&gt;
+
+&lt;h2 id=&quot;4-color&quot;&gt;4. Color&lt;/h2&gt;
+
+&lt;p&gt;In this section, we have “predefined Color Scheme” options, you can select different color scheme, if you are not satisfied with default or predefined 
+color, you can select “custom” options to “yes”, and input your color for different area of the website.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../../images/color_setting.jpg&quot; alt=&quot;Color Setting&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;After set “custom” option to “yes”, all color input options will be appear, color options are divided into groups (General, Header, Megamenu 
+Category Page, Newsletter Popup, Before Footer, Footer).&lt;/p&gt;
+
+&lt;p&gt;In order to color for a option, just click text input field, a color picker will be
+showed, now select the color from picker, of course, if you already have hex color code, just input the code directly to the text input field.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../../images/color_picker.jpg&quot; alt=&quot;Color Picker&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;After you complete all you color options, don’t forget to click “Save Config” button to save your choice.&lt;/p&gt;
+
+&lt;h2 id=&quot;5-general&quot;&gt;5. General&lt;/h2&gt;
+
+&lt;p&gt;This sections, we can select different site layout (boxed or full width) and site’s background image or pattern.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../../images/general_section.jpg&quot; alt=&quot;General Section&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Please see below picture for difference between full width, boxed layout 1 and boxed layout2.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../../images/layout.jpg&quot; alt=&quot;Site Layout&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;6-header-type&quot;&gt;6. Header Type&lt;/h2&gt;
+
+&lt;p&gt;In this sections, you can select different header and every header has different options like padding and height, some header type has options 
+to add static block to header.&lt;/p&gt;
+
+&lt;p&gt;Below pictures show different header:&lt;/p&gt;
+
+&lt;p&gt;Header Type 1&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../../images/header1.jpg&quot; alt=&quot;Header Type 1&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Header Type 2&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../../images/header2.jpg&quot; alt=&quot;Header Type 2&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Header Type 3&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../../images/header3.jpg&quot; alt=&quot;Header Type 3&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Header Type 4&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../../images/header4.jpg&quot; alt=&quot;Header Type 4&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Header Type 5 is almost same as header type 2, just in homepage, the header will overlap with slider show&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../../images/header5.jpg&quot; alt=&quot;Header Type 5&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Header Type 6 is almost same as header type 3, just in homepage, the header will overlap with slider show&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../../images/header6.jpg&quot; alt=&quot;Header Type 6&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Header Type 7 is almost same as header type 2, the only difference is the header is full width.&lt;/p&gt;
+
+&lt;h2 id=&quot;7-megamenu-configuration&quot;&gt;7. Megamenu Configuration&lt;/h2&gt;
+
+&lt;p&gt;This section options will coordinate with Categories Mega Menu options(Backend -&amp;gt; Products -&amp;gt; Categories -&amp;gt; Mega Menu) to configure Mega menu.&lt;/p&gt;
+
+&lt;p&gt;Megamenu Configuration Section(Backend -&amp;gt; Cattheme -&amp;gt; Rabel Theme Config -&amp;gt; Megamenu Configuration) is for general Megamenu setting:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../../images/megamenu_section.jpg&quot; alt=&quot;Megamenu Configuration&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Magemenu Options in Categories (Backend -&amp;gt; Products -&amp;gt; Categories -&amp;gt; Mega Menu) is for dedicated category:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../../images/megamenu.jpg&quot; alt=&quot;Megamenu for dedicated category&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Let’s discuss Megamenu Configuration Secion First.&lt;/p&gt;
+
+&lt;h4 id=&quot;71-megamenu-configuration-section&quot;&gt;7.1 Megamenu Configuration Section&lt;/h4&gt;
+
+&lt;h5 id=&quot;711-general-group&quot;&gt;7.1.1 General Group&lt;/h5&gt;
+
+&lt;p&gt;1) General - Enable Megamenu: Enable or disable the megamenu.&lt;/p&gt;
+
+&lt;p&gt;2) General - Enable Home Link: Enable or disable Home Link.&lt;/p&gt;
+
+&lt;p&gt;3) General - Enable Sticky Menu: Enable or disable sticky menu.&lt;/p&gt;
+
+&lt;p&gt;4) General - Sticky Menu Logo: You can add a logo for sticky menu, it is only work for some of header type.&lt;/p&gt;
+
+&lt;p&gt;5) General - Enable full width dropdown: Enable or disable full width dropdown. Below pictures show the difference.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../../images/full_width_dropdown.jpg&quot; alt=&quot;Enable Full Width Dropdown&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../../images/disable_full_width_dropdown.jpg&quot; alt=&quot;Disable Full Width Dropdown&quot; /&gt;&lt;/p&gt;
+
+&lt;h5 id=&quot;712-thumbnail-image-setting&quot;&gt;7.1.2 Thumbnail Image Setting.&lt;/h5&gt;
+
+&lt;p&gt;Categories Level definition is shown as follow:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../../images/categories_level.jpg&quot; alt=&quot;Categories Level&quot; /&gt;
+The specific category thumbnail is upload at (Backend -&amp;gt; Products -&amp;gt; Categories -&amp;gt; Mega Menu -&amp;gt; Item Thumbnail). Here we just set if show 
+categories thumbnail for level1 and level2.&lt;/p&gt;
+
+&lt;p&gt;1) Thumbnail Image Setting - If show level 1 categroy thumbnail image: show or not level 1 category thumbnail.&lt;/p&gt;
+
+&lt;p&gt;2) Thumbnail Image Setting - If show level 2 categroy thumbnail image: show or not level 2 category thumbnail.&lt;/p&gt;
+
+&lt;p&gt;3) Thumbnail Image Setting - Select level 2 category thumbnail image position: select level2 category thumbnail image position.&lt;/p&gt;
+
+&lt;p&gt;See below pictures for examples to show  level1 category thumbnial:&lt;/p&gt;
+
+&lt;p&gt;Eample 1
+&lt;img src=&quot;../../images/category_thumbnail.jpg&quot; alt=&quot;Categories Thumbnail Example&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Example 2
+&lt;img src=&quot;../../images/another_category_thumbnail.jpg&quot; alt=&quot;Another Categories Thumbnail Example&quot; /&gt;&lt;/p&gt;
+
+&lt;h5 id=&quot;713-custom-menu-setting&quot;&gt;7.1.3 Custom Menu Setting&lt;/h5&gt;
+
+&lt;p&gt;If you want to add custom menu please set “Enable Custom Link” to Yes, Once you set this option to “Yes”, more options will be appeared.&lt;/p&gt;
+
+&lt;p&gt;1) Custom Menu Setting - Enable Custom Link: Enable or disble custom link or dropdown feature.&lt;/p&gt;
+
+&lt;p&gt;2) Custom Menu Setting - Select Custom Link: Select custom links to show in main navigation, this is mulit-select box, if you want to select multi items,
+hold “ctrl” in keyboard and click mouse left button.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Before something showed in this multi-select box, you need  add custom link or custom dropdown in Backend -&amp;gt; Content -&amp;gt; Blocks, add blocks with 
+identifier begin with ctmenu_ or ctmenu_block_ .&lt;/li&gt;
+  &lt;li&gt;To add custom menu with link, add static block with identifier begin with ctmenu_ .
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; Block Title =&amp;gt; as menu title.
+ Menu identifier =&amp;gt; as menu url link last part.
+ Block =&amp;gt; ignore. 
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;To add custom menu without link but with dropdown, add static block with idetifier begin with ctmenu_block_.
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; Block Title =&amp;gt; as menu title.
+ Menu identifier =&amp;gt; ignore
+ Block =&amp;gt; as custom menu dropdown
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;See below picture for a example, we selected two items for “Select Custom Link” option:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../../images/custom_menu.jpg&quot; alt=&quot;Custom Link Dropdown Setting&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;After clicked “Save Config” button in top right corner, in you browser to check your website, both “Home Design” and About Us has shown in main
+navigation and as both menu itmes block identifier is begin with ctmenu_block_ , so both custom menu items will show content as dropdown.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../../images/custom_link_dropdown.jpg&quot; alt=&quot;Custom Link Dropdown Effect&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;3) Custom Menu Setting - Change Custom Menu Order： Setting mutl custom item order.&lt;/p&gt;
+
+&lt;p&gt;Let’s see a example, if you don’t set menu order, the custom menu order is from top to bottom.&lt;/p&gt;
+
+&lt;p&gt;Backend Setting
+&lt;img src=&quot;../../images/custom_menu_default.jpg&quot; alt=&quot;Custom Menu Default Order&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Frontend Effect:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../../images/frontend_default.jpg&quot; alt=&quot;Custom Menu Default Order Frontend&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Now We set “Change Custom Menu Order” to “2,1,3”, and you can see the different:&lt;/p&gt;
+
+&lt;p&gt;Backend Setting
+&lt;img src=&quot;../../images/custom_menu_order.jpg&quot; alt=&quot;Custom Menu Change Order&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Frontend Effect:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../../images/custom_menu_order_effect.jpg&quot; alt=&quot;Custom Menu Change Order Frontend&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;8-product-label&quot;&gt;8. Product Label&lt;/h2&gt;
+
+&lt;p&gt;This section set “New” and “Sale” label for proruct item in category and product page.&lt;/p&gt;
+
+&lt;p&gt;1) Product Label - Show New Product Label: Enable or disable “New” label.&lt;/p&gt;
+
+&lt;p&gt;If you set this options to “yes”, then products with “Set Product As New From”, “Set Product As New To(This date will be in the future)”  options setting in backend product edit page will has “New” label in frontend.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../../images/set_product_new.jpg&quot; alt=&quot;New Label&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;2) Product Label - New Label Text: Set New label text, default is “New”.&lt;/p&gt;
+
+&lt;p&gt;3) Product Label - Show Sales Product Label: Enable or disable “Sale” Label.&lt;/p&gt;
+
+&lt;p&gt;In backend product edit page, click “Advanced Pricing” link for Price option, will open a Advanced pricing popup.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../../images/advanced_pricing.jpg&quot; alt=&quot;Advanced Pricing&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;If you set ‘Product Label - Show Sales Product Label’ to ‘Yes’, and in the same time, you set ‘Special Price’, ‘Special Price From’ and 
+‘Special Price To(the future date)’ options in Advanced Pricing Popup, the “Sale” label will be appeared for this prodcut in frontend.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../../images/set_sale_label.jpg&quot; alt=&quot;Sale Label&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;4) Product Label - Sale Label Text: Set Sale label text, default is “Sale”.&lt;/p&gt;
+
+&lt;p&gt;5) Product Label - Replace sales text with discount rate: If set to yes, Sales label will replace by discount percent rate.&lt;/p&gt;
+
+&lt;p&gt;Product Label example in category page:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../../images/product_label_example.jpg&quot; alt=&quot;Product labe in category page&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Product Label example in product page:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../../images/product_label_for_product_details.jpg&quot; alt=&quot;Product labe in product page&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;9-category-page&quot;&gt;9. Category Page&lt;/h2&gt;
+
+&lt;h3 id=&quot;91-general&quot;&gt;9.1 General&lt;/h3&gt;
+
+&lt;p&gt;This section is options for category page.&lt;/p&gt;
+
+&lt;p&gt;1) General - If show hero in category page: Enable or disable hero title for category page, if you select “Yes”, more options will be appeared and full width hero title will be show for categories.&lt;/p&gt;
+
+&lt;p&gt;2) General - Category Hero Default Image:  Upload default picture for all categories, of course,  you can upload unique picture for specific category in backend cateogry manage page.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../../images/hero_image.jpg&quot; alt=&quot;Upload Uniqie Image For a Category&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;3) General - Category Hero Title Height: Input height of Hero title.&lt;/p&gt;
+
+&lt;p&gt;4) General - Enable Parallax For Hero Title: Enable or disalbe parallax effect for hero title.&lt;/p&gt;
+
+&lt;p&gt;See below for the different of hero title was enabled or disabled:&lt;/p&gt;
+
+&lt;p&gt;Enable Hero Title:
+&lt;img src=&quot;../../images/enable_hero_title.jpg&quot; alt=&quot;Enable Hero Title&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Disable Hero Title
+&lt;img src=&quot;../../images/disable_hero_title.jpg&quot; alt=&quot;Disable Hero Title&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;92-category-grid-setting&quot;&gt;9.2 Category Grid Setting&lt;/h3&gt;
+
+&lt;p&gt;1) Category Grid Setting - Select Category Style: Select different category style.&lt;/p&gt;
+
+&lt;p&gt;See pictures below for screen capture for all category style:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../../images/category_style1.jpg&quot; alt=&quot;Category Style 1&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../../images/category_style2.jpg&quot; alt=&quot;Category Style 2&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../../images/category_style3.jpg&quot; alt=&quot;Category Style 3&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../../images/category_style4.jpg&quot; alt=&quot;Category Style 4&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../../images/category_style5.jpg&quot; alt=&quot;Category Style 5&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../../images/category_style6.jpg&quot; alt=&quot;Category Style 6&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;2) Category Grid Setting - Select Mobile Category Style: Select different category style for mobile devices.&lt;/p&gt;
+
+&lt;p&gt;See pictures below for screen capture for all mobile category style:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../../images/mobile_category_style1.jpg&quot; alt=&quot;Mobile Category Style 1&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../../images/mobile_category_style2.jpg&quot; alt=&quot;Mobile Category Style 2&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;3) Category Grid Setting - Move Add to cart and add to buttons to image area: If move add to cart and add to buttons to image area.&lt;/p&gt;
+
+&lt;p&gt;See pictures below for details.&lt;/p&gt;
+
+&lt;p&gt;Move Buttons:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../../images/move_buttons.jpg&quot; alt=&quot;Move Buttons&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Not Move Buttons:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../../images/no_move_buttons.jpg&quot; alt=&quot;Not Move Button&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;4) Category Grid Setting - Columns Per Row: Setting product columns in desktop PC, the columns for tablet and mobile will adjust automatically.&lt;/p&gt;
+
+&lt;p&gt;5) Category Grid Setting - Show Alternative Image When Hover: If show alternative image when hover if the product has 2 or more pictures.&lt;/p&gt;
+
+&lt;p&gt;6) Category Grid Setting - Show Review: if show review.&lt;/p&gt;
+
+&lt;p&gt;7) Category Grid Setting - Show Wishlist and Compare buttons: If show wishlist and compare buttons.&lt;/p&gt;
+
+&lt;p&gt;8) Category Grid Setting - Keep Image Aspect Ratio: if keep image aspect ratio. if you set this option to “no”, Image Height option will be appeared.&lt;/p&gt;
+
+&lt;p&gt;9) Category Grid Setting - Image Width: Input product picture width, default is 300.&lt;/p&gt;
+
+&lt;p&gt;9) Category Grid Setting - Image Height: Input product picture height, default is 300. this option is only appeared when ‘Keep Image Aspect Ratio’ is ‘no’&lt;/p&gt;
+
+&lt;h2 id=&quot;10-product-view-page&quot;&gt;10. Product View Page&lt;/h2&gt;
+
+&lt;h2 id=&quot;11-newsletter-popup&quot;&gt;11. Newsletter Popup&lt;/h2&gt;
+
+&lt;h2 id=&quot;12-before-footer&quot;&gt;12. Before Footer&lt;/h2&gt;
+
+&lt;h2 id=&quot;13-footer&quot;&gt;13. Footer&lt;/h2&gt;
+
+&lt;h2 id=&quot;14-recent-blog-post-widget-setting&quot;&gt;14. Recent Blog Post Widget Setting&lt;/h2&gt;
+
+&lt;h2 id=&quot;15-custom-css&quot;&gt;15. Custom Css&lt;/h2&gt;
+
+&lt;h2 id=&quot;16-module-installed&quot;&gt;16. Module Installed&lt;/h2&gt;</content><author><name>{&quot;name&quot;=&gt;nil, &quot;email&quot;=&gt;nil, &quot;twitter&quot;=&gt;nil}</name></author><summary type="html">Thanks for purchase Rabel Magento2 responsive theme, this guide will help you to install and use this great theme in your site, if you have further questions please contact us at gizmocn@gmail.com</summary></entry><entry><title type="html">Use Redis for Magento2 cache and session</title><link href="http://docs.cattheme.com/tutorial/magento2-redis/" rel="alternate" type="text/html" title="Use Redis for Magento2 cache and session" /><published>2017-06-16T00:00:00+08:00</published><updated>2017-06-16T00:00:00+08:00</updated><id>http://docs.cattheme.com/tutorial/magento2-redis</id><content type="html" xml:base="http://docs.cattheme.com/tutorial/magento2-redis/">&lt;h2 id=&quot;install-redis&quot;&gt;Install Redis&lt;/h2&gt;
 &lt;p&gt;We use Ubuntu 16.04 as our main os, we will install redis now.&lt;/p&gt;
 
 &lt;p&gt;Prerequisites:&lt;/p&gt;
@@ -257,604 +584,4 @@ array(
   &lt;li&gt;Magento DevDocs &lt;a href=&quot;http://devdocs.magento.com/guides/v2.0/config-guide/redis/config-redis.html&quot;&gt;DevDocs&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;Redis Official Site &lt;a href=&quot;https://redis.io/topics/quickstart&quot;&gt;redis.io&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;DigitalOcean &lt;a href=&quot;https://www.digitalocean.com/community/tutorials/how-to-install-and-use-redis&quot;&gt;redis installation&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>{&quot;name&quot;=&gt;nil, &quot;email&quot;=&gt;nil, &quot;twitter&quot;=&gt;nil}</name></author><summary type="html">Install Redis We use Ubuntu 16.04 as our main os, we will install redis now.</summary></entry><entry><title type="html">Urban</title><link href="http://docs.cattheme.com/themes/urban/" rel="alternate" type="text/html" title="Urban" /><published>2017-01-16T00:00:00+08:00</published><updated>2017-01-16T00:00:00+08:00</updated><id>http://docs.cattheme.com/themes/urban</id><content type="html" xml:base="http://docs.cattheme.com/themes/urban/">&lt;p&gt;Jekyll is a simple, blog-aware, static site generator. It takes a template directory containing raw text files in various formats, runs it through a converter (like Markdown) and our Liquid renderer, and spits out a complete, ready-to-publish static website suitable for serving with your favorite web server.&lt;/p&gt;
-
-&lt;p&gt;If you already have a full Ruby development environment with all headers and RubyGems installed, you can create a new Jekyll site by doing the following:&lt;/p&gt;
-
-&lt;h2 id=&quot;how-to-install&quot;&gt;How to install&lt;/h2&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# Install Jekyll and Bundler gems through RubyGems&lt;/span&gt;
-~ &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;gem install jekyll bundler
-
-&lt;span class=&quot;c&quot;&gt;# Create a new Jekyll site at ./myblog&lt;/span&gt;
-~ &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;jekyll new myblog
-
-&lt;span class=&quot;c&quot;&gt;# Change into your new directory&lt;/span&gt;
-~ &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;myblog
-
-&lt;span class=&quot;c&quot;&gt;# Build the site on the preview server&lt;/span&gt;
-~/myblog &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;bundle &lt;span class=&quot;nb&quot;&gt;exec &lt;/span&gt;jekyll serve
-
-&lt;span class=&quot;c&quot;&gt;# Now browse to http://localhost:4000&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&quot;next-steps&quot;&gt;Next steps&lt;/h2&gt;
-
-&lt;p&gt;Building a Jekyll site with the default theme is just the first step. The real magic happens when you start creating blog posts, using the front matter to control templates and layouts, and taking advantage of all the awesome configuration options Jekyll makes available.&lt;/p&gt;
-
-&lt;h2 id=&quot;basic-usage&quot;&gt;Basic usage&lt;/h2&gt;
-
-&lt;p&gt;The Jekyll gem makes a &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll&lt;/code&gt; executable available to you in your Terminal window. You can use this command in a number of ways:&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;jekyll build
-&lt;span class=&quot;c&quot;&gt;# =&amp;gt; The current folder will be generated into ./_site&lt;/span&gt;
-
-&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;jekyll build --destination &amp;lt;destination&amp;gt;
-&lt;span class=&quot;c&quot;&gt;# =&amp;gt; The current folder will be generated into &amp;lt;destination&amp;gt;&lt;/span&gt;
-
-&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;jekyll build --source &amp;lt;&lt;span class=&quot;nb&quot;&gt;source&lt;/span&gt;&amp;gt; --destination &amp;lt;destination&amp;gt;
-&lt;span class=&quot;c&quot;&gt;# =&amp;gt; The &amp;lt;source&amp;gt; folder will be generated into &amp;lt;destination&amp;gt;&lt;/span&gt;
-
-&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;jekyll build --watch
-&lt;span class=&quot;c&quot;&gt;# =&amp;gt; The current folder will be generated into ./_site,&lt;/span&gt;
-&lt;span class=&quot;c&quot;&gt;#    watched for changes, and regenerated automatically.&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&quot;directory-structure&quot;&gt;Directory structure&lt;/h2&gt;
-
-&lt;p&gt;Jekyll is, at its core, a text transformation engine. The concept behind the system is this: you give it text written in your favorite markup language, be that Markdown, Textile, or just plain HTML, and it churns that through a layout or a series of layout files. Throughout that process you can tweak how you want the site URLs to look, what data gets displayed in the layout, and more. This is all done through editing text files; the static web site is the final product.&lt;/p&gt;
-
-&lt;p&gt;A basic Jekyll site usually looks something like this:&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;.
-├── _config.yml
-├── _data
-|   └── members.yml
-├── _drafts
-|   ├── begin-with-the-crazy-ideas.md
-|   └── on-simplicity-in-technology.md
-├── _includes
-|   ├── footer.html
-|   └── header.html
-├── _layouts
-|   ├── default.html
-|   └── post.html
-├── _posts
-|   ├── 2007-10-29-why-every-programmer-should-play-nethack.md
-|   └── 2009-04-26-barcamp-boston-4-roundup.md
-├── _sass
-|   ├── _base.scss
-|   └── _layout.scss
-├── _site
-├── .jekyll-metadata
-└── index.html &lt;span class=&quot;c&quot;&gt;# can also be an 'index.md' with valid YAML Frontmatter&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&quot;front-matter&quot;&gt;Front matter&lt;/h2&gt;
-
-&lt;p&gt;The front matter is where Jekyll starts to get really cool. Any file that contains a YAML front matter block will be processed by Jekyll as a special file. The front matter must be the first thing in the file and must take the form of valid YAML set between triple-dashed lines. Here is a basic example:&lt;/p&gt;
-
-&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;---
-layout: post
-title: Blogging Like a Hacker
----
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Between these triple-dashed lines, you can set predefined variables (see below for a reference) or even create custom ones of your own. These variables will then be available to you to access using Liquid tags both further down in the file and also in any layouts or includes that the page or post in question relies on.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://images.unsplash.com/photo-1481487196290-c152efe083f5?ixlib=rb-0.3.5&amp;amp;q=80&amp;amp;fm=jpg&amp;amp;crop=entropy&amp;amp;cs=tinysrgb&amp;amp;w=1920&amp;amp;h=1080&amp;amp;fit=crop&amp;amp;s=80308172730757a7db0434987fa985f3&quot; alt=&quot;Example image&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;where-additional-pages-live&quot;&gt;Where additional pages live&lt;/h2&gt;
-
-&lt;p&gt;Where you put HTML or Markdown files for pages depends on how you want the pages to work. There are two main ways of creating pages:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Place named HTML or Markdown files for each page in your site’s root folder.&lt;/li&gt;
-  &lt;li&gt;Place pages inside folders and subfolders named whatever you want.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Both methods work fine (and can be used in conjunction with each other), with the only real difference being the resulting URLs. By default, pages retain the same folder structure in &lt;code class=&quot;highlighter-rouge&quot;&gt;_site&lt;/code&gt; as they do in the source directory.&lt;/p&gt;</content><author><name>{&quot;name&quot;=&gt;nil, &quot;email&quot;=&gt;nil, &quot;twitter&quot;=&gt;nil}</name></author><summary type="html">Jekyll is a simple, blog-aware, static site generator. It takes a template directory containing raw text files in various formats, runs it through a converter (like Markdown) and our Liquid renderer, and spits out a complete, ready-to-publish static website suitable for serving with your favorite web server.</summary></entry><entry><title type="html">Malt</title><link href="http://docs.cattheme.com/themes/malt/" rel="alternate" type="text/html" title="Malt" /><published>2017-01-16T00:00:00+08:00</published><updated>2017-01-16T00:00:00+08:00</updated><id>http://docs.cattheme.com/themes/malt</id><content type="html" xml:base="http://docs.cattheme.com/themes/malt/">&lt;p&gt;Jekyll is a simple, blog-aware, static site generator. It takes a template directory containing raw text files in various formats, runs it through a converter (like Markdown) and our Liquid renderer, and spits out a complete, ready-to-publish static website suitable for serving with your favorite web server.&lt;/p&gt;
-
-&lt;p&gt;If you already have a full Ruby development environment with all headers and RubyGems installed, you can create a new Jekyll site by doing the following:&lt;/p&gt;
-
-&lt;h2 id=&quot;how-to-install&quot;&gt;How to install&lt;/h2&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# Install Jekyll and Bundler gems through RubyGems&lt;/span&gt;
-~ &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;gem install jekyll bundler
-
-&lt;span class=&quot;c&quot;&gt;# Create a new Jekyll site at ./myblog&lt;/span&gt;
-~ &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;jekyll new myblog
-
-&lt;span class=&quot;c&quot;&gt;# Change into your new directory&lt;/span&gt;
-~ &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;myblog
-
-&lt;span class=&quot;c&quot;&gt;# Build the site on the preview server&lt;/span&gt;
-~/myblog &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;bundle &lt;span class=&quot;nb&quot;&gt;exec &lt;/span&gt;jekyll serve
-
-&lt;span class=&quot;c&quot;&gt;# Now browse to http://localhost:4000&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&quot;next-steps&quot;&gt;Next steps&lt;/h2&gt;
-
-&lt;p&gt;Building a Jekyll site with the default theme is just the first step. The real magic happens when you start creating blog posts, using the front matter to control templates and layouts, and taking advantage of all the awesome configuration options Jekyll makes available.&lt;/p&gt;
-
-&lt;h2 id=&quot;basic-usage&quot;&gt;Basic usage&lt;/h2&gt;
-
-&lt;p&gt;The Jekyll gem makes a &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll&lt;/code&gt; executable available to you in your Terminal window. You can use this command in a number of ways:&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;jekyll build
-&lt;span class=&quot;c&quot;&gt;# =&amp;gt; The current folder will be generated into ./_site&lt;/span&gt;
-
-&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;jekyll build --destination &amp;lt;destination&amp;gt;
-&lt;span class=&quot;c&quot;&gt;# =&amp;gt; The current folder will be generated into &amp;lt;destination&amp;gt;&lt;/span&gt;
-
-&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;jekyll build --source &amp;lt;&lt;span class=&quot;nb&quot;&gt;source&lt;/span&gt;&amp;gt; --destination &amp;lt;destination&amp;gt;
-&lt;span class=&quot;c&quot;&gt;# =&amp;gt; The &amp;lt;source&amp;gt; folder will be generated into &amp;lt;destination&amp;gt;&lt;/span&gt;
-
-&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;jekyll build --watch
-&lt;span class=&quot;c&quot;&gt;# =&amp;gt; The current folder will be generated into ./_site,&lt;/span&gt;
-&lt;span class=&quot;c&quot;&gt;#    watched for changes, and regenerated automatically.&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&quot;directory-structure&quot;&gt;Directory structure&lt;/h2&gt;
-
-&lt;p&gt;Jekyll is, at its core, a text transformation engine. The concept behind the system is this: you give it text written in your favorite markup language, be that Markdown, Textile, or just plain HTML, and it churns that through a layout or a series of layout files. Throughout that process you can tweak how you want the site URLs to look, what data gets displayed in the layout, and more. This is all done through editing text files; the static web site is the final product.&lt;/p&gt;
-
-&lt;p&gt;A basic Jekyll site usually looks something like this:&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;.
-├── _config.yml
-├── _data
-|   └── members.yml
-├── _drafts
-|   ├── begin-with-the-crazy-ideas.md
-|   └── on-simplicity-in-technology.md
-├── _includes
-|   ├── footer.html
-|   └── header.html
-├── _layouts
-|   ├── default.html
-|   └── post.html
-├── _posts
-|   ├── 2007-10-29-why-every-programmer-should-play-nethack.md
-|   └── 2009-04-26-barcamp-boston-4-roundup.md
-├── _sass
-|   ├── _base.scss
-|   └── _layout.scss
-├── _site
-├── .jekyll-metadata
-└── index.html &lt;span class=&quot;c&quot;&gt;# can also be an 'index.md' with valid YAML Frontmatter&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&quot;front-matter&quot;&gt;Front matter&lt;/h2&gt;
-
-&lt;p&gt;The front matter is where Jekyll starts to get really cool. Any file that contains a YAML front matter block will be processed by Jekyll as a special file. The front matter must be the first thing in the file and must take the form of valid YAML set between triple-dashed lines. Here is a basic example:&lt;/p&gt;
-
-&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;---
-layout: post
-title: Blogging Like a Hacker
----
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Between these triple-dashed lines, you can set predefined variables (see below for a reference) or even create custom ones of your own. These variables will then be available to you to access using Liquid tags both further down in the file and also in any layouts or includes that the page or post in question relies on.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://images.unsplash.com/photo-1481487196290-c152efe083f5?ixlib=rb-0.3.5&amp;amp;q=80&amp;amp;fm=jpg&amp;amp;crop=entropy&amp;amp;cs=tinysrgb&amp;amp;w=1920&amp;amp;h=1080&amp;amp;fit=crop&amp;amp;s=80308172730757a7db0434987fa985f3&quot; alt=&quot;Example image&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;where-additional-pages-live&quot;&gt;Where additional pages live&lt;/h2&gt;
-
-&lt;p&gt;Where you put HTML or Markdown files for pages depends on how you want the pages to work. There are two main ways of creating pages:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Place named HTML or Markdown files for each page in your site’s root folder.&lt;/li&gt;
-  &lt;li&gt;Place pages inside folders and subfolders named whatever you want.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Both methods work fine (and can be used in conjunction with each other), with the only real difference being the resulting URLs. By default, pages retain the same folder structure in &lt;code class=&quot;highlighter-rouge&quot;&gt;_site&lt;/code&gt; as they do in the source directory.&lt;/p&gt;</content><author><name>{&quot;name&quot;=&gt;nil, &quot;email&quot;=&gt;nil, &quot;twitter&quot;=&gt;nil}</name></author><summary type="html">Jekyll is a simple, blog-aware, static site generator. It takes a template directory containing raw text files in various formats, runs it through a converter (like Markdown) and our Liquid renderer, and spits out a complete, ready-to-publish static website suitable for serving with your favorite web server.</summary></entry><entry><title type="html">Justice</title><link href="http://docs.cattheme.com/themes/justice/" rel="alternate" type="text/html" title="Justice" /><published>2017-01-16T00:00:00+08:00</published><updated>2017-01-16T00:00:00+08:00</updated><id>http://docs.cattheme.com/themes/justice</id><content type="html" xml:base="http://docs.cattheme.com/themes/justice/">&lt;p&gt;Jekyll is a simple, blog-aware, static site generator. It takes a template directory containing raw text files in various formats, runs it through a converter (like Markdown) and our Liquid renderer, and spits out a complete, ready-to-publish static website suitable for serving with your favorite web server.&lt;/p&gt;
-
-&lt;p&gt;If you already have a full Ruby development environment with all headers and RubyGems installed, you can create a new Jekyll site by doing the following:&lt;/p&gt;
-
-&lt;h2 id=&quot;how-to-install&quot;&gt;How to install&lt;/h2&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# Install Jekyll and Bundler gems through RubyGems&lt;/span&gt;
-~ &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;gem install jekyll bundler
-
-&lt;span class=&quot;c&quot;&gt;# Create a new Jekyll site at ./myblog&lt;/span&gt;
-~ &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;jekyll new myblog
-
-&lt;span class=&quot;c&quot;&gt;# Change into your new directory&lt;/span&gt;
-~ &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;myblog
-
-&lt;span class=&quot;c&quot;&gt;# Build the site on the preview server&lt;/span&gt;
-~/myblog &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;bundle &lt;span class=&quot;nb&quot;&gt;exec &lt;/span&gt;jekyll serve
-
-&lt;span class=&quot;c&quot;&gt;# Now browse to http://localhost:4000&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&quot;next-steps&quot;&gt;Next steps&lt;/h2&gt;
-
-&lt;p&gt;Building a Jekyll site with the default theme is just the first step. The real magic happens when you start creating blog posts, using the front matter to control templates and layouts, and taking advantage of all the awesome configuration options Jekyll makes available.&lt;/p&gt;
-
-&lt;h2 id=&quot;basic-usage&quot;&gt;Basic usage&lt;/h2&gt;
-
-&lt;p&gt;The Jekyll gem makes a &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll&lt;/code&gt; executable available to you in your Terminal window. You can use this command in a number of ways:&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;jekyll build
-&lt;span class=&quot;c&quot;&gt;# =&amp;gt; The current folder will be generated into ./_site&lt;/span&gt;
-
-&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;jekyll build --destination &amp;lt;destination&amp;gt;
-&lt;span class=&quot;c&quot;&gt;# =&amp;gt; The current folder will be generated into &amp;lt;destination&amp;gt;&lt;/span&gt;
-
-&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;jekyll build --source &amp;lt;&lt;span class=&quot;nb&quot;&gt;source&lt;/span&gt;&amp;gt; --destination &amp;lt;destination&amp;gt;
-&lt;span class=&quot;c&quot;&gt;# =&amp;gt; The &amp;lt;source&amp;gt; folder will be generated into &amp;lt;destination&amp;gt;&lt;/span&gt;
-
-&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;jekyll build --watch
-&lt;span class=&quot;c&quot;&gt;# =&amp;gt; The current folder will be generated into ./_site,&lt;/span&gt;
-&lt;span class=&quot;c&quot;&gt;#    watched for changes, and regenerated automatically.&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&quot;directory-structure&quot;&gt;Directory structure&lt;/h2&gt;
-
-&lt;p&gt;Jekyll is, at its core, a text transformation engine. The concept behind the system is this: you give it text written in your favorite markup language, be that Markdown, Textile, or just plain HTML, and it churns that through a layout or a series of layout files. Throughout that process you can tweak how you want the site URLs to look, what data gets displayed in the layout, and more. This is all done through editing text files; the static web site is the final product.&lt;/p&gt;
-
-&lt;p&gt;A basic Jekyll site usually looks something like this:&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;.
-├── _config.yml
-├── _data
-|   └── members.yml
-├── _drafts
-|   ├── begin-with-the-crazy-ideas.md
-|   └── on-simplicity-in-technology.md
-├── _includes
-|   ├── footer.html
-|   └── header.html
-├── _layouts
-|   ├── default.html
-|   └── post.html
-├── _posts
-|   ├── 2007-10-29-why-every-programmer-should-play-nethack.md
-|   └── 2009-04-26-barcamp-boston-4-roundup.md
-├── _sass
-|   ├── _base.scss
-|   └── _layout.scss
-├── _site
-├── .jekyll-metadata
-└── index.html &lt;span class=&quot;c&quot;&gt;# can also be an 'index.md' with valid YAML Frontmatter&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&quot;front-matter&quot;&gt;Front matter&lt;/h2&gt;
-
-&lt;p&gt;The front matter is where Jekyll starts to get really cool. Any file that contains a YAML front matter block will be processed by Jekyll as a special file. The front matter must be the first thing in the file and must take the form of valid YAML set between triple-dashed lines. Here is a basic example:&lt;/p&gt;
-
-&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;---
-layout: post
-title: Blogging Like a Hacker
----
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Between these triple-dashed lines, you can set predefined variables (see below for a reference) or even create custom ones of your own. These variables will then be available to you to access using Liquid tags both further down in the file and also in any layouts or includes that the page or post in question relies on.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://images.unsplash.com/photo-1481487196290-c152efe083f5?ixlib=rb-0.3.5&amp;amp;q=80&amp;amp;fm=jpg&amp;amp;crop=entropy&amp;amp;cs=tinysrgb&amp;amp;w=1920&amp;amp;h=1080&amp;amp;fit=crop&amp;amp;s=80308172730757a7db0434987fa985f3&quot; alt=&quot;Example image&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;where-additional-pages-live&quot;&gt;Where additional pages live&lt;/h2&gt;
-
-&lt;p&gt;Where you put HTML or Markdown files for pages depends on how you want the pages to work. There are two main ways of creating pages:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Place named HTML or Markdown files for each page in your site’s root folder.&lt;/li&gt;
-  &lt;li&gt;Place pages inside folders and subfolders named whatever you want.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Both methods work fine (and can be used in conjunction with each other), with the only real difference being the resulting URLs. By default, pages retain the same folder structure in &lt;code class=&quot;highlighter-rouge&quot;&gt;_site&lt;/code&gt; as they do in the source directory.&lt;/p&gt;</content><author><name>{&quot;name&quot;=&gt;nil, &quot;email&quot;=&gt;nil, &quot;twitter&quot;=&gt;nil}</name></author><summary type="html">Jekyll is a simple, blog-aware, static site generator. It takes a template directory containing raw text files in various formats, runs it through a converter (like Markdown) and our Liquid renderer, and spits out a complete, ready-to-publish static website suitable for serving with your favorite web server.</summary></entry><entry><title type="html">Frisco</title><link href="http://docs.cattheme.com/themes/frisco/" rel="alternate" type="text/html" title="Frisco" /><published>2017-01-16T00:00:00+08:00</published><updated>2017-01-16T00:00:00+08:00</updated><id>http://docs.cattheme.com/themes/frisco</id><content type="html" xml:base="http://docs.cattheme.com/themes/frisco/">&lt;p&gt;Jekyll is a simple, blog-aware, static site generator. It takes a template directory containing raw text files in various formats, runs it through a converter (like Markdown) and our Liquid renderer, and spits out a complete, ready-to-publish static website suitable for serving with your favorite web server.&lt;/p&gt;
-
-&lt;p&gt;If you already have a full Ruby development environment with all headers and RubyGems installed, you can create a new Jekyll site by doing the following:&lt;/p&gt;
-
-&lt;h2 id=&quot;how-to-install&quot;&gt;How to install&lt;/h2&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# Install Jekyll and Bundler gems through RubyGems&lt;/span&gt;
-~ &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;gem install jekyll bundler
-
-&lt;span class=&quot;c&quot;&gt;# Create a new Jekyll site at ./myblog&lt;/span&gt;
-~ &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;jekyll new myblog
-
-&lt;span class=&quot;c&quot;&gt;# Change into your new directory&lt;/span&gt;
-~ &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;myblog
-
-&lt;span class=&quot;c&quot;&gt;# Build the site on the preview server&lt;/span&gt;
-~/myblog &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;bundle &lt;span class=&quot;nb&quot;&gt;exec &lt;/span&gt;jekyll serve
-
-&lt;span class=&quot;c&quot;&gt;# Now browse to http://localhost:4000&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&quot;next-steps&quot;&gt;Next steps&lt;/h2&gt;
-
-&lt;p&gt;Building a Jekyll site with the default theme is just the first step. The real magic happens when you start creating blog posts, using the front matter to control templates and layouts, and taking advantage of all the awesome configuration options Jekyll makes available.&lt;/p&gt;
-
-&lt;h2 id=&quot;basic-usage&quot;&gt;Basic usage&lt;/h2&gt;
-
-&lt;p&gt;The Jekyll gem makes a &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll&lt;/code&gt; executable available to you in your Terminal window. You can use this command in a number of ways:&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;jekyll build
-&lt;span class=&quot;c&quot;&gt;# =&amp;gt; The current folder will be generated into ./_site&lt;/span&gt;
-
-&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;jekyll build --destination &amp;lt;destination&amp;gt;
-&lt;span class=&quot;c&quot;&gt;# =&amp;gt; The current folder will be generated into &amp;lt;destination&amp;gt;&lt;/span&gt;
-
-&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;jekyll build --source &amp;lt;&lt;span class=&quot;nb&quot;&gt;source&lt;/span&gt;&amp;gt; --destination &amp;lt;destination&amp;gt;
-&lt;span class=&quot;c&quot;&gt;# =&amp;gt; The &amp;lt;source&amp;gt; folder will be generated into &amp;lt;destination&amp;gt;&lt;/span&gt;
-
-&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;jekyll build --watch
-&lt;span class=&quot;c&quot;&gt;# =&amp;gt; The current folder will be generated into ./_site,&lt;/span&gt;
-&lt;span class=&quot;c&quot;&gt;#    watched for changes, and regenerated automatically.&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&quot;directory-structure&quot;&gt;Directory structure&lt;/h2&gt;
-
-&lt;p&gt;Jekyll is, at its core, a text transformation engine. The concept behind the system is this: you give it text written in your favorite markup language, be that Markdown, Textile, or just plain HTML, and it churns that through a layout or a series of layout files. Throughout that process you can tweak how you want the site URLs to look, what data gets displayed in the layout, and more. This is all done through editing text files; the static web site is the final product.&lt;/p&gt;
-
-&lt;p&gt;A basic Jekyll site usually looks something like this:&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;.
-├── _config.yml
-├── _data
-|   └── members.yml
-├── _drafts
-|   ├── begin-with-the-crazy-ideas.md
-|   └── on-simplicity-in-technology.md
-├── _includes
-|   ├── footer.html
-|   └── header.html
-├── _layouts
-|   ├── default.html
-|   └── post.html
-├── _posts
-|   ├── 2007-10-29-why-every-programmer-should-play-nethack.md
-|   └── 2009-04-26-barcamp-boston-4-roundup.md
-├── _sass
-|   ├── _base.scss
-|   └── _layout.scss
-├── _site
-├── .jekyll-metadata
-└── index.html &lt;span class=&quot;c&quot;&gt;# can also be an 'index.md' with valid YAML Frontmatter&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&quot;front-matter&quot;&gt;Front matter&lt;/h2&gt;
-
-&lt;p&gt;The front matter is where Jekyll starts to get really cool. Any file that contains a YAML front matter block will be processed by Jekyll as a special file. The front matter must be the first thing in the file and must take the form of valid YAML set between triple-dashed lines. Here is a basic example:&lt;/p&gt;
-
-&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;---
-layout: post
-title: Blogging Like a Hacker
----
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Between these triple-dashed lines, you can set predefined variables (see below for a reference) or even create custom ones of your own. These variables will then be available to you to access using Liquid tags both further down in the file and also in any layouts or includes that the page or post in question relies on.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://images.unsplash.com/photo-1481487196290-c152efe083f5?ixlib=rb-0.3.5&amp;amp;q=80&amp;amp;fm=jpg&amp;amp;crop=entropy&amp;amp;cs=tinysrgb&amp;amp;w=1920&amp;amp;h=1080&amp;amp;fit=crop&amp;amp;s=80308172730757a7db0434987fa985f3&quot; alt=&quot;Example image&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;where-additional-pages-live&quot;&gt;Where additional pages live&lt;/h2&gt;
-
-&lt;p&gt;Where you put HTML or Markdown files for pages depends on how you want the pages to work. There are two main ways of creating pages:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Place named HTML or Markdown files for each page in your site’s root folder.&lt;/li&gt;
-  &lt;li&gt;Place pages inside folders and subfolders named whatever you want.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Both methods work fine (and can be used in conjunction with each other), with the only real difference being the resulting URLs. By default, pages retain the same folder structure in &lt;code class=&quot;highlighter-rouge&quot;&gt;_site&lt;/code&gt; as they do in the source directory.&lt;/p&gt;</content><author><name>{&quot;name&quot;=&gt;nil, &quot;email&quot;=&gt;nil, &quot;twitter&quot;=&gt;nil}</name></author><summary type="html">Jekyll is a simple, blog-aware, static site generator. It takes a template directory containing raw text files in various formats, runs it through a converter (like Markdown) and our Liquid renderer, and spits out a complete, ready-to-publish static website suitable for serving with your favorite web server.</summary></entry><entry><title type="html">Edition</title><link href="http://docs.cattheme.com/themes/edition/" rel="alternate" type="text/html" title="Edition" /><published>2017-01-16T00:00:00+08:00</published><updated>2017-01-16T00:00:00+08:00</updated><id>http://docs.cattheme.com/themes/edition</id><content type="html" xml:base="http://docs.cattheme.com/themes/edition/">&lt;p&gt;Jekyll is a simple, blog-aware, static site generator. It takes a template directory containing raw text files in various formats, runs it through a converter (like Markdown) and our Liquid renderer, and spits out a complete, ready-to-publish static website suitable for serving with your favorite web server.&lt;/p&gt;
-
-&lt;p&gt;If you already have a full Ruby development environment with all headers and RubyGems installed, you can create a new Jekyll site by doing the following:&lt;/p&gt;
-
-&lt;h2 id=&quot;how-to-install&quot;&gt;How to install&lt;/h2&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# Install Jekyll and Bundler gems through RubyGems&lt;/span&gt;
-~ &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;gem install jekyll bundler
-
-&lt;span class=&quot;c&quot;&gt;# Create a new Jekyll site at ./myblog&lt;/span&gt;
-~ &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;jekyll new myblog
-
-&lt;span class=&quot;c&quot;&gt;# Change into your new directory&lt;/span&gt;
-~ &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;myblog
-
-&lt;span class=&quot;c&quot;&gt;# Build the site on the preview server&lt;/span&gt;
-~/myblog &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;bundle &lt;span class=&quot;nb&quot;&gt;exec &lt;/span&gt;jekyll serve
-
-&lt;span class=&quot;c&quot;&gt;# Now browse to http://localhost:4000&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&quot;next-steps&quot;&gt;Next steps&lt;/h2&gt;
-
-&lt;p&gt;Building a Jekyll site with the default theme is just the first step. The real magic happens when you start creating blog posts, using the front matter to control templates and layouts, and taking advantage of all the awesome configuration options Jekyll makes available.&lt;/p&gt;
-
-&lt;h2 id=&quot;basic-usage&quot;&gt;Basic usage&lt;/h2&gt;
-
-&lt;p&gt;The Jekyll gem makes a &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll&lt;/code&gt; executable available to you in your Terminal window. You can use this command in a number of ways:&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;jekyll build
-&lt;span class=&quot;c&quot;&gt;# =&amp;gt; The current folder will be generated into ./_site&lt;/span&gt;
-
-&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;jekyll build --destination &amp;lt;destination&amp;gt;
-&lt;span class=&quot;c&quot;&gt;# =&amp;gt; The current folder will be generated into &amp;lt;destination&amp;gt;&lt;/span&gt;
-
-&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;jekyll build --source &amp;lt;&lt;span class=&quot;nb&quot;&gt;source&lt;/span&gt;&amp;gt; --destination &amp;lt;destination&amp;gt;
-&lt;span class=&quot;c&quot;&gt;# =&amp;gt; The &amp;lt;source&amp;gt; folder will be generated into &amp;lt;destination&amp;gt;&lt;/span&gt;
-
-&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;jekyll build --watch
-&lt;span class=&quot;c&quot;&gt;# =&amp;gt; The current folder will be generated into ./_site,&lt;/span&gt;
-&lt;span class=&quot;c&quot;&gt;#    watched for changes, and regenerated automatically.&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&quot;directory-structure&quot;&gt;Directory structure&lt;/h2&gt;
-
-&lt;p&gt;Jekyll is, at its core, a text transformation engine. The concept behind the system is this: you give it text written in your favorite markup language, be that Markdown, Textile, or just plain HTML, and it churns that through a layout or a series of layout files. Throughout that process you can tweak how you want the site URLs to look, what data gets displayed in the layout, and more. This is all done through editing text files; the static web site is the final product.&lt;/p&gt;
-
-&lt;p&gt;A basic Jekyll site usually looks something like this:&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;.
-├── _config.yml
-├── _data
-|   └── members.yml
-├── _drafts
-|   ├── begin-with-the-crazy-ideas.md
-|   └── on-simplicity-in-technology.md
-├── _includes
-|   ├── footer.html
-|   └── header.html
-├── _layouts
-|   ├── default.html
-|   └── post.html
-├── _posts
-|   ├── 2007-10-29-why-every-programmer-should-play-nethack.md
-|   └── 2009-04-26-barcamp-boston-4-roundup.md
-├── _sass
-|   ├── _base.scss
-|   └── _layout.scss
-├── _site
-├── .jekyll-metadata
-└── index.html &lt;span class=&quot;c&quot;&gt;# can also be an 'index.md' with valid YAML Frontmatter&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&quot;front-matter&quot;&gt;Front matter&lt;/h2&gt;
-
-&lt;p&gt;The front matter is where Jekyll starts to get really cool. Any file that contains a YAML front matter block will be processed by Jekyll as a special file. The front matter must be the first thing in the file and must take the form of valid YAML set between triple-dashed lines. Here is a basic example:&lt;/p&gt;
-
-&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;---
-layout: post
-title: Blogging Like a Hacker
----
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Between these triple-dashed lines, you can set predefined variables (see below for a reference) or even create custom ones of your own. These variables will then be available to you to access using Liquid tags both further down in the file and also in any layouts or includes that the page or post in question relies on.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://images.unsplash.com/photo-1481487196290-c152efe083f5?ixlib=rb-0.3.5&amp;amp;q=80&amp;amp;fm=jpg&amp;amp;crop=entropy&amp;amp;cs=tinysrgb&amp;amp;w=1920&amp;amp;h=1080&amp;amp;fit=crop&amp;amp;s=80308172730757a7db0434987fa985f3&quot; alt=&quot;Example image&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;where-additional-pages-live&quot;&gt;Where additional pages live&lt;/h2&gt;
-
-&lt;p&gt;Where you put HTML or Markdown files for pages depends on how you want the pages to work. There are two main ways of creating pages:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Place named HTML or Markdown files for each page in your site’s root folder.&lt;/li&gt;
-  &lt;li&gt;Place pages inside folders and subfolders named whatever you want.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Both methods work fine (and can be used in conjunction with each other), with the only real difference being the resulting URLs. By default, pages retain the same folder structure in &lt;code class=&quot;highlighter-rouge&quot;&gt;_site&lt;/code&gt; as they do in the source directory.&lt;/p&gt;</content><author><name>{&quot;name&quot;=&gt;nil, &quot;email&quot;=&gt;nil, &quot;twitter&quot;=&gt;nil}</name></author><summary type="html">Jekyll is a simple, blog-aware, static site generator. It takes a template directory containing raw text files in various formats, runs it through a converter (like Markdown) and our Liquid renderer, and spits out a complete, ready-to-publish static website suitable for serving with your favorite web server.</summary></entry><entry><title type="html">Cause</title><link href="http://docs.cattheme.com/themes/cause/" rel="alternate" type="text/html" title="Cause" /><published>2017-01-16T00:00:00+08:00</published><updated>2017-01-16T00:00:00+08:00</updated><id>http://docs.cattheme.com/themes/cause</id><content type="html" xml:base="http://docs.cattheme.com/themes/cause/">&lt;p&gt;Jekyll is a simple, blog-aware, static site generator. It takes a template directory containing raw text files in various formats, runs it through a converter (like Markdown) and our Liquid renderer, and spits out a complete, ready-to-publish static website suitable for serving with your favorite web server.&lt;/p&gt;
-
-&lt;p&gt;If you already have a full Ruby development environment with all headers and RubyGems installed, you can create a new Jekyll site by doing the following:&lt;/p&gt;
-
-&lt;h2 id=&quot;how-to-install&quot;&gt;How to install&lt;/h2&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# Install Jekyll and Bundler gems through RubyGems&lt;/span&gt;
-~ &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;gem install jekyll bundler
-
-&lt;span class=&quot;c&quot;&gt;# Create a new Jekyll site at ./myblog&lt;/span&gt;
-~ &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;jekyll new myblog
-
-&lt;span class=&quot;c&quot;&gt;# Change into your new directory&lt;/span&gt;
-~ &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;myblog
-
-&lt;span class=&quot;c&quot;&gt;# Build the site on the preview server&lt;/span&gt;
-~/myblog &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;bundle &lt;span class=&quot;nb&quot;&gt;exec &lt;/span&gt;jekyll serve
-
-&lt;span class=&quot;c&quot;&gt;# Now browse to http://localhost:4000&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&quot;next-steps&quot;&gt;Next steps&lt;/h2&gt;
-
-&lt;p&gt;Building a Jekyll site with the default theme is just the first step. The real magic happens when you start creating blog posts, using the front matter to control templates and layouts, and taking advantage of all the awesome configuration options Jekyll makes available.&lt;/p&gt;
-
-&lt;h2 id=&quot;basic-usage&quot;&gt;Basic usage&lt;/h2&gt;
-
-&lt;p&gt;The Jekyll gem makes a &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll&lt;/code&gt; executable available to you in your Terminal window. You can use this command in a number of ways:&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;jekyll build
-&lt;span class=&quot;c&quot;&gt;# =&amp;gt; The current folder will be generated into ./_site&lt;/span&gt;
-
-&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;jekyll build --destination &amp;lt;destination&amp;gt;
-&lt;span class=&quot;c&quot;&gt;# =&amp;gt; The current folder will be generated into &amp;lt;destination&amp;gt;&lt;/span&gt;
-
-&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;jekyll build --source &amp;lt;&lt;span class=&quot;nb&quot;&gt;source&lt;/span&gt;&amp;gt; --destination &amp;lt;destination&amp;gt;
-&lt;span class=&quot;c&quot;&gt;# =&amp;gt; The &amp;lt;source&amp;gt; folder will be generated into &amp;lt;destination&amp;gt;&lt;/span&gt;
-
-&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;jekyll build --watch
-&lt;span class=&quot;c&quot;&gt;# =&amp;gt; The current folder will be generated into ./_site,&lt;/span&gt;
-&lt;span class=&quot;c&quot;&gt;#    watched for changes, and regenerated automatically.&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&quot;directory-structure&quot;&gt;Directory structure&lt;/h2&gt;
-
-&lt;p&gt;Jekyll is, at its core, a text transformation engine. The concept behind the system is this: you give it text written in your favorite markup language, be that Markdown, Textile, or just plain HTML, and it churns that through a layout or a series of layout files. Throughout that process you can tweak how you want the site URLs to look, what data gets displayed in the layout, and more. This is all done through editing text files; the static web site is the final product.&lt;/p&gt;
-
-&lt;p&gt;A basic Jekyll site usually looks something like this:&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;.
-├── _config.yml
-├── _data
-|   └── members.yml
-├── _drafts
-|   ├── begin-with-the-crazy-ideas.md
-|   └── on-simplicity-in-technology.md
-├── _includes
-|   ├── footer.html
-|   └── header.html
-├── _layouts
-|   ├── default.html
-|   └── post.html
-├── _posts
-|   ├── 2007-10-29-why-every-programmer-should-play-nethack.md
-|   └── 2009-04-26-barcamp-boston-4-roundup.md
-├── _sass
-|   ├── _base.scss
-|   └── _layout.scss
-├── _site
-├── .jekyll-metadata
-└── index.html &lt;span class=&quot;c&quot;&gt;# can also be an 'index.md' with valid YAML Frontmatter&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&quot;front-matter&quot;&gt;Front matter&lt;/h2&gt;
-
-&lt;p&gt;The front matter is where Jekyll starts to get really cool. Any file that contains a YAML front matter block will be processed by Jekyll as a special file. The front matter must be the first thing in the file and must take the form of valid YAML set between triple-dashed lines. Here is a basic example:&lt;/p&gt;
-
-&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;---
-layout: post
-title: Blogging Like a Hacker
----
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Between these triple-dashed lines, you can set predefined variables (see below for a reference) or even create custom ones of your own. These variables will then be available to you to access using Liquid tags both further down in the file and also in any layouts or includes that the page or post in question relies on.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://images.unsplash.com/photo-1481487196290-c152efe083f5?ixlib=rb-0.3.5&amp;amp;q=80&amp;amp;fm=jpg&amp;amp;crop=entropy&amp;amp;cs=tinysrgb&amp;amp;w=1920&amp;amp;h=1080&amp;amp;fit=crop&amp;amp;s=80308172730757a7db0434987fa985f3&quot; alt=&quot;Example image&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;where-additional-pages-live&quot;&gt;Where additional pages live&lt;/h2&gt;
-
-&lt;p&gt;Where you put HTML or Markdown files for pages depends on how you want the pages to work. There are two main ways of creating pages:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Place named HTML or Markdown files for each page in your site’s root folder.&lt;/li&gt;
-  &lt;li&gt;Place pages inside folders and subfolders named whatever you want.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Both methods work fine (and can be used in conjunction with each other), with the only real difference being the resulting URLs. By default, pages retain the same folder structure in &lt;code class=&quot;highlighter-rouge&quot;&gt;_site&lt;/code&gt; as they do in the source directory.&lt;/p&gt;</content><author><name>{&quot;name&quot;=&gt;nil, &quot;email&quot;=&gt;nil, &quot;twitter&quot;=&gt;nil}</name></author><summary type="html">Jekyll is a simple, blog-aware, static site generator. It takes a template directory containing raw text files in various formats, runs it through a converter (like Markdown) and our Liquid renderer, and spits out a complete, ready-to-publish static website suitable for serving with your favorite web server.</summary></entry></feed>
+&lt;/ul&gt;</content><author><name>{&quot;name&quot;=&gt;nil, &quot;email&quot;=&gt;nil, &quot;twitter&quot;=&gt;nil}</name></author><summary type="html">Install Redis We use Ubuntu 16.04 as our main os, we will install redis now.</summary></entry></feed>

@@ -1,30 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>http://docs.cattheme.com/themes/cause/</loc>
-<lastmod>2017-01-16T00:00:00+08:00</lastmod>
-</url>
-<url>
-<loc>http://docs.cattheme.com/themes/edition/</loc>
-<lastmod>2017-01-16T00:00:00+08:00</lastmod>
-</url>
-<url>
-<loc>http://docs.cattheme.com/themes/frisco/</loc>
-<lastmod>2017-01-16T00:00:00+08:00</lastmod>
-</url>
-<url>
-<loc>http://docs.cattheme.com/themes/justice/</loc>
-<lastmod>2017-01-16T00:00:00+08:00</lastmod>
-</url>
-<url>
-<loc>http://docs.cattheme.com/themes/malt/</loc>
-<lastmod>2017-01-16T00:00:00+08:00</lastmod>
-</url>
-<url>
-<loc>http://docs.cattheme.com/themes/urban/</loc>
-<lastmod>2017-01-16T00:00:00+08:00</lastmod>
-</url>
-<url>
 <loc>http://docs.cattheme.com/tutorial/magento2-redis/</loc>
 <lastmod>2017-06-16T00:00:00+08:00</lastmod>
 </url>
@@ -42,9 +18,9 @@
 <loc>http://docs.cattheme.com/videos/</loc>
 </url>
 <url>
-<loc>http://docs.cattheme.com/category/themes/</loc>
+<loc>http://docs.cattheme.com/category/tutorial/</loc>
 </url>
 <url>
-<loc>http://docs.cattheme.com/category/tutorial/</loc>
+<loc>http://docs.cattheme.com/category/themes/</loc>
 </url>
 </urlset>

@@ -93,9 +93,37 @@
 		<ul>
 			
 			
-				<li><a href="#i-how-to-install">I. How to install</a></li>
+				<li><a href="#1-how-to-install">1. How to install</a></li>
 			
-				<li><a href="#ii-theme-configuration">II. Theme Configuration</a></li>
+				<li><a href="#2-theme-configuration">2. Theme Configuration</a></li>
+			
+				<li><a href="#3-font">3. Font</a></li>
+			
+				<li><a href="#4-color">4. Color</a></li>
+			
+				<li><a href="#5-general">5. General</a></li>
+			
+				<li><a href="#6-header-type">6. Header Type</a></li>
+			
+				<li><a href="#7-megamenu-configuration">7. Megamenu Configuration</a></li>
+			
+				<li><a href="#8-product-label">8. Product Label</a></li>
+			
+				<li><a href="#9-category-page">9. Category Page</a></li>
+			
+				<li><a href="#10-product-view-page">10. Product View Page</a></li>
+			
+				<li><a href="#11-newsletter-popup">11. Newsletter Popup</a></li>
+			
+				<li><a href="#12-before-footer">12. Before Footer</a></li>
+			
+				<li><a href="#13-footer">13. Footer</a></li>
+			
+				<li><a href="#14-recent-blog-post-widget-setting">14. Recent Blog Post Widget Setting</a></li>
+			
+				<li><a href="#15-custom-css">15. Custom Css</a></li>
+			
+				<li><a href="#16-module-installed">16. Module Installed</a></li>
 			
 		</ul>
 	</section>
@@ -107,9 +135,9 @@
 		<div class="tutorial-main">
 			<p>Thanks for purchase Rabel Magento2 responsive theme, this guide will help you to install and use this great theme in your site, if you have further questions please contact us at gizmocn@gmail.com</p>
 
-<h2 id="i-how-to-install">I. How to install</h2>
+<h2 id="1-how-to-install">1. How to install</h2>
 
-<h2 id="ii-theme-configuration">II. Theme Configuration</h2>
+<h2 id="2-theme-configuration">2. Theme Configuration</h2>
 
 <p>Most theme configuration can be found at <Magento Backend="">-&gt;CATTHEME-&gt;Rabel Theme Config</Magento></p>
 
@@ -119,37 +147,364 @@
 
 <p><img src="../../images/configurations_listing.jpg" alt="Configuration Listing" /></p>
 
+<p>There are many options in these sections, you can input color value, select header type or input header height etc to the options, before we start to discuss all options, please remember,
+after you complete options selection, don’t forget to click “Save Config” button to store your selections to database.</p>
+
+<p><img src="../../images/save_config.jpg" alt="Save Config" /></p>
+
 <p>Now we will discuss details of all there configurations.</p>
 
-<h3 id="1-theme-font-customization">1. Theme Font Customization</h3>
+<h2 id="3-font">3. Font</h2>
 
-<p>In this sections, we divide all font configurations to 6 groups, they are body font, megamenu font, megamenu sub level font, product name font, button font and sales &amp; new icon font.</p>
+<p>Font options will show when you select Custom Option to “Yes”
+In this sections, we divide all font configurations to 6 groups, they are body font, Element Font 1 to Element Font 5</p>
+
+<h3 id="31-body-font">3.1 Body Font</h3>
 
 <p><img src="../../images/theme_font_customization.jpg" alt="Theme Font Customization" /></p>
 
-<p>Body font is global setting for entire website, Others meaning see following picture.</p>
+<p>Body font is global setting for entire website.</p>
 
-<p><img src="../../images/font-area.jpg" alt="Font Customization Area" /></p>
+<p>Body Font Size: select body font size.</p>
 
-<p>Every grounp has same options, we use Megamenu Font as example, other’s options are same as this one.</p>
+<p>Body Font Weight: input body font weight.</p>
 
-<p>Megamenu Size: select megamenu font size;</p>
+<p>Body Font Style: select body font style.</p>
 
-<p>Megamenu Font Weight: input megamenu font weight;</p>
+<p>Body Font Family: you can select system general fonts, or google font, when you select google font option, a new option “Body Font Family - Google Fonts” will appear.</p>
 
-<p>Megamenu Font Style: select megamenu font style;</p>
-
-<p>Megamenu Font Family: you can select system general fonts, or google font, when you select google font option, a new option “Megamenu Font Family - Google Fonts” will appear;</p>
-
-<p>Megamenu Font Family - Google Fonts: you can select google font, after you select a google font, the font preview will be showed.</p>
+<p>Body Font Family - Google Fonts: you can select google font, after you select a google font, the font preview will be showed.</p>
 
 <p>See below picture for a example:</p>
 
-<p><img src="../../images/megamenu_font.jpg" alt="Use google font for Megamenu" /></p>
+<p><img src="../../images/body_font_custom.jpg" alt="Body Font Customization" /></p>
 
-<p>After you select options and then click Save Config button, then go to frontend and you can see the Megamenu font has been changed according your selection。</p>
+<p>Select “Eagle Lake” google font for body and then click “Save Config” button in backend top right corner, now refresh your store frontend and you can find the site font was changed according your selecation.</p>
 
-<p><img src="../../images/font_change_effect.jpg" alt="Megamenu font customization effect" /></p>
+<p><img src="../../images/body_font_effect.jpg" alt="Body Font Effect" /></p>
+
+<h3 id="32-element-font-1---element-font-5">3.2 Element Font 1 - Element Font 5</h3>
+
+<p>With Element Font, we can customize font for specific html element, For example, we want change font family for product name of category and product page, 
+First, we need to find css class or ID of product name by using  browser development tools(Firefox or Chrome).</p>
+
+<p>In Firefox, we find class for product name of 
+category page is ‘.prodduct-item-link’ (don’t forget add “.” for css class and “#” for id).</p>
+
+<p><img src="../../images/product_name_css_element.jpg" alt="Product Name class for category page" /></p>
+
+<p>And class for product name of product page is ‘.product-content-wrapper .page-title’.</p>
+
+<p><img src="../../images/product_name_css_class.jpg" alt="Product Name class for product page" /></p>
+
+<p>So we have Font Element 1 options like below picture:</p>
+
+<p><img src="../../images/element_font.jpg" alt="Element Font Setting" /></p>
+
+<p>we only change font-family and leave element font size, weight and style to theirs default value, 
+So in website frontend, product name style will inherit font size, weight and style setting from theme and only font family is changed to
+ “petit Formal Script”.</p>
+
+<p><img src="../../images/product_name_font_in_category.jpg" alt="Product Name in Category Page" />
+<img src="../../images/product_name_font.jpg" alt="Product Name in Product Page" /></p>
+
+<p>We have 5 Element Font options group, so you can different html element to different font family, size weight and style.</p>
+
+<h2 id="4-color">4. Color</h2>
+
+<p>In this section, we have “predefined Color Scheme” options, you can select different color scheme, if you are not satisfied with default or predefined 
+color, you can select “custom” options to “yes”, and input your color for different area of the website.</p>
+
+<p><img src="../../images/color_setting.jpg" alt="Color Setting" /></p>
+
+<p>After set “custom” option to “yes”, all color input options will be appear, color options are divided into groups (General, Header, Megamenu 
+Category Page, Newsletter Popup, Before Footer, Footer).</p>
+
+<p>In order to color for a option, just click text input field, a color picker will be
+showed, now select the color from picker, of course, if you already have hex color code, just input the code directly to the text input field.</p>
+
+<p><img src="../../images/color_picker.jpg" alt="Color Picker" /></p>
+
+<p>After you complete all you color options, don’t forget to click “Save Config” button to save your choice.</p>
+
+<h2 id="5-general">5. General</h2>
+
+<p>This sections, we can select different site layout (boxed or full width) and site’s background image or pattern.</p>
+
+<p><img src="../../images/general_section.jpg" alt="General Section" /></p>
+
+<p>Please see below picture for difference between full width, boxed layout 1 and boxed layout2.</p>
+
+<p><img src="../../images/layout.jpg" alt="Site Layout" /></p>
+
+<h2 id="6-header-type">6. Header Type</h2>
+
+<p>In this sections, you can select different header and every header has different options like padding and height, some header type has options 
+to add static block to header.</p>
+
+<p>Below pictures show different header:</p>
+
+<p>Header Type 1</p>
+
+<p><img src="../../images/header1.jpg" alt="Header Type 1" /></p>
+
+<p>Header Type 2</p>
+
+<p><img src="../../images/header2.jpg" alt="Header Type 2" /></p>
+
+<p>Header Type 3</p>
+
+<p><img src="../../images/header3.jpg" alt="Header Type 3" /></p>
+
+<p>Header Type 4</p>
+
+<p><img src="../../images/header4.jpg" alt="Header Type 4" /></p>
+
+<p>Header Type 5 is almost same as header type 2, just in homepage, the header will overlap with slider show</p>
+
+<p><img src="../../images/header5.jpg" alt="Header Type 5" /></p>
+
+<p>Header Type 6 is almost same as header type 3, just in homepage, the header will overlap with slider show</p>
+
+<p><img src="../../images/header6.jpg" alt="Header Type 6" /></p>
+
+<p>Header Type 7 is almost same as header type 2, the only difference is the header is full width.</p>
+
+<h2 id="7-megamenu-configuration">7. Megamenu Configuration</h2>
+
+<p>This section options will coordinate with Categories Mega Menu options(Backend -&gt; Products -&gt; Categories -&gt; Mega Menu) to configure Mega menu.</p>
+
+<p>Megamenu Configuration Section(Backend -&gt; Cattheme -&gt; Rabel Theme Config -&gt; Megamenu Configuration) is for general Megamenu setting:</p>
+
+<p><img src="../../images/megamenu_section.jpg" alt="Megamenu Configuration" /></p>
+
+<p>Magemenu Options in Categories (Backend -&gt; Products -&gt; Categories -&gt; Mega Menu) is for dedicated category:</p>
+
+<p><img src="../../images/megamenu.jpg" alt="Megamenu for dedicated category" /></p>
+
+<p>Let’s discuss Megamenu Configuration Secion First.</p>
+
+<h4 id="71-megamenu-configuration-section">7.1 Megamenu Configuration Section</h4>
+
+<h5 id="711-general-group">7.1.1 General Group</h5>
+
+<p>1) General - Enable Megamenu: Enable or disable the megamenu.</p>
+
+<p>2) General - Enable Home Link: Enable or disable Home Link.</p>
+
+<p>3) General - Enable Sticky Menu: Enable or disable sticky menu.</p>
+
+<p>4) General - Sticky Menu Logo: You can add a logo for sticky menu, it is only work for some of header type.</p>
+
+<p>5) General - Enable full width dropdown: Enable or disable full width dropdown. Below pictures show the difference.</p>
+
+<p><img src="../../images/full_width_dropdown.jpg" alt="Enable Full Width Dropdown" /></p>
+
+<p><img src="../../images/disable_full_width_dropdown.jpg" alt="Disable Full Width Dropdown" /></p>
+
+<h5 id="712-thumbnail-image-setting">7.1.2 Thumbnail Image Setting.</h5>
+
+<p>Categories Level definition is shown as follow:</p>
+
+<p><img src="../../images/categories_level.jpg" alt="Categories Level" />
+The specific category thumbnail is upload at (Backend -&gt; Products -&gt; Categories -&gt; Mega Menu -&gt; Item Thumbnail). Here we just set if show 
+categories thumbnail for level1 and level2.</p>
+
+<p>1) Thumbnail Image Setting - If show level 1 categroy thumbnail image: show or not level 1 category thumbnail.</p>
+
+<p>2) Thumbnail Image Setting - If show level 2 categroy thumbnail image: show or not level 2 category thumbnail.</p>
+
+<p>3) Thumbnail Image Setting - Select level 2 category thumbnail image position: select level2 category thumbnail image position.</p>
+
+<p>See below pictures for examples to show  level1 category thumbnial:</p>
+
+<p>Eample 1
+<img src="../../images/category_thumbnail.jpg" alt="Categories Thumbnail Example" /></p>
+
+<p>Example 2
+<img src="../../images/another_category_thumbnail.jpg" alt="Another Categories Thumbnail Example" /></p>
+
+<h5 id="713-custom-menu-setting">7.1.3 Custom Menu Setting</h5>
+
+<p>If you want to add custom menu please set “Enable Custom Link” to Yes, Once you set this option to “Yes”, more options will be appeared.</p>
+
+<p>1) Custom Menu Setting - Enable Custom Link: Enable or disble custom link or dropdown feature.</p>
+
+<p>2) Custom Menu Setting - Select Custom Link: Select custom links to show in main navigation, this is mulit-select box, if you want to select multi items,
+hold “ctrl” in keyboard and click mouse left button.</p>
+
+<ul>
+  <li>Before something showed in this multi-select box, you need  add custom link or custom dropdown in Backend -&gt; Content -&gt; Blocks, add blocks with 
+identifier begin with ctmenu_ or ctmenu_block_ .</li>
+  <li>To add custom menu with link, add static block with identifier begin with ctmenu_ .
+    <div class="highlighter-rouge"><pre class="highlight"><code> Block Title =&gt; as menu title.
+ Menu identifier =&gt; as menu url link last part.
+ Block =&gt; ignore. 
+</code></pre>
+    </div>
+  </li>
+  <li>To add custom menu without link but with dropdown, add static block with idetifier begin with ctmenu_block_.
+    <div class="highlighter-rouge"><pre class="highlight"><code> Block Title =&gt; as menu title.
+ Menu identifier =&gt; ignore
+ Block =&gt; as custom menu dropdown
+</code></pre>
+    </div>
+  </li>
+</ul>
+
+<p>See below picture for a example, we selected two items for “Select Custom Link” option:</p>
+
+<p><img src="../../images/custom_menu.jpg" alt="Custom Link Dropdown Setting" /></p>
+
+<p>After clicked “Save Config” button in top right corner, in you browser to check your website, both “Home Design” and About Us has shown in main
+navigation and as both menu itmes block identifier is begin with ctmenu_block_ , so both custom menu items will show content as dropdown.</p>
+
+<p><img src="../../images/custom_link_dropdown.jpg" alt="Custom Link Dropdown Effect" /></p>
+
+<p>3) Custom Menu Setting - Change Custom Menu Order： Setting mutl custom item order.</p>
+
+<p>Let’s see a example, if you don’t set menu order, the custom menu order is from top to bottom.</p>
+
+<p>Backend Setting
+<img src="../../images/custom_menu_default.jpg" alt="Custom Menu Default Order" /></p>
+
+<p>Frontend Effect:</p>
+
+<p><img src="../../images/frontend_default.jpg" alt="Custom Menu Default Order Frontend" /></p>
+
+<p>Now We set “Change Custom Menu Order” to “2,1,3”, and you can see the different:</p>
+
+<p>Backend Setting
+<img src="../../images/custom_menu_order.jpg" alt="Custom Menu Change Order" /></p>
+
+<p>Frontend Effect:</p>
+
+<p><img src="../../images/custom_menu_order_effect.jpg" alt="Custom Menu Change Order Frontend" /></p>
+
+<h2 id="8-product-label">8. Product Label</h2>
+
+<p>This section set “New” and “Sale” label for proruct item in category and product page.</p>
+
+<p>1) Product Label - Show New Product Label: Enable or disable “New” label.</p>
+
+<p>If you set this options to “yes”, then products with “Set Product As New From”, “Set Product As New To(This date will be in the future)”  options setting in backend product edit page will has “New” label in frontend.</p>
+
+<p><img src="../../images/set_product_new.jpg" alt="New Label" /></p>
+
+<p>2) Product Label - New Label Text: Set New label text, default is “New”.</p>
+
+<p>3) Product Label - Show Sales Product Label: Enable or disable “Sale” Label.</p>
+
+<p>In backend product edit page, click “Advanced Pricing” link for Price option, will open a Advanced pricing popup.</p>
+
+<p><img src="../../images/advanced_pricing.jpg" alt="Advanced Pricing" /></p>
+
+<p>If you set ‘Product Label - Show Sales Product Label’ to ‘Yes’, and in the same time, you set ‘Special Price’, ‘Special Price From’ and 
+‘Special Price To(the future date)’ options in Advanced Pricing Popup, the “Sale” label will be appeared for this prodcut in frontend.</p>
+
+<p><img src="../../images/set_sale_label.jpg" alt="Sale Label" /></p>
+
+<p>4) Product Label - Sale Label Text: Set Sale label text, default is “Sale”.</p>
+
+<p>5) Product Label - Replace sales text with discount rate: If set to yes, Sales label will replace by discount percent rate.</p>
+
+<p>Product Label example in category page:</p>
+
+<p><img src="../../images/product_label_example.jpg" alt="Product labe in category page" /></p>
+
+<p>Product Label example in product page:</p>
+
+<p><img src="../../images/product_label_for_product_details.jpg" alt="Product labe in product page" /></p>
+
+<h2 id="9-category-page">9. Category Page</h2>
+
+<h3 id="91-general">9.1 General</h3>
+
+<p>This section is options for category page.</p>
+
+<p>1) General - If show hero in category page: Enable or disable hero title for category page, if you select “Yes”, more options will be appeared and full width hero title will be show for categories.</p>
+
+<p>2) General - Category Hero Default Image:  Upload default picture for all categories, of course,  you can upload unique picture for specific category in backend cateogry manage page.</p>
+
+<p><img src="../../images/hero_image.jpg" alt="Upload Uniqie Image For a Category" /></p>
+
+<p>3) General - Category Hero Title Height: Input height of Hero title.</p>
+
+<p>4) General - Enable Parallax For Hero Title: Enable or disalbe parallax effect for hero title.</p>
+
+<p>See below for the different of hero title was enabled or disabled:</p>
+
+<p>Enable Hero Title:
+<img src="../../images/enable_hero_title.jpg" alt="Enable Hero Title" /></p>
+
+<p>Disable Hero Title
+<img src="../../images/disable_hero_title.jpg" alt="Disable Hero Title" /></p>
+
+<h3 id="92-category-grid-setting">9.2 Category Grid Setting</h3>
+
+<p>1) Category Grid Setting - Select Category Style: Select different category style.</p>
+
+<p>See pictures below for screen capture for all category style:</p>
+
+<p><img src="../../images/category_style1.jpg" alt="Category Style 1" /></p>
+
+<p><img src="../../images/category_style2.jpg" alt="Category Style 2" /></p>
+
+<p><img src="../../images/category_style3.jpg" alt="Category Style 3" /></p>
+
+<p><img src="../../images/category_style4.jpg" alt="Category Style 4" /></p>
+
+<p><img src="../../images/category_style5.jpg" alt="Category Style 5" /></p>
+
+<p><img src="../../images/category_style6.jpg" alt="Category Style 6" /></p>
+
+<p>2) Category Grid Setting - Select Mobile Category Style: Select different category style for mobile devices.</p>
+
+<p>See pictures below for screen capture for all mobile category style:</p>
+
+<p><img src="../../images/mobile_category_style1.jpg" alt="Mobile Category Style 1" /></p>
+
+<p><img src="../../images/mobile_category_style2.jpg" alt="Mobile Category Style 2" /></p>
+
+<p>3) Category Grid Setting - Move Add to cart and add to buttons to image area: If move add to cart and add to buttons to image area.</p>
+
+<p>See pictures below for details.</p>
+
+<p>Move Buttons:</p>
+
+<p><img src="../../images/move_buttons.jpg" alt="Move Buttons" /></p>
+
+<p>Not Move Buttons:</p>
+
+<p><img src="../../images/no_move_buttons.jpg" alt="Not Move Button" /></p>
+
+<p>4) Category Grid Setting - Columns Per Row: Setting product columns in desktop PC, the columns for tablet and mobile will adjust automatically.</p>
+
+<p>5) Category Grid Setting - Show Alternative Image When Hover: If show alternative image when hover if the product has 2 or more pictures.</p>
+
+<p>6) Category Grid Setting - Show Review: if show review.</p>
+
+<p>7) Category Grid Setting - Show Wishlist and Compare buttons: If show wishlist and compare buttons.</p>
+
+<p>8) Category Grid Setting - Keep Image Aspect Ratio: if keep image aspect ratio. if you set this option to “no”, Image Height option will be appeared.</p>
+
+<p>9) Category Grid Setting - Image Width: Input product picture width, default is 300.</p>
+
+<p>9) Category Grid Setting - Image Height: Input product picture height, default is 300. this option is only appeared when ‘Keep Image Aspect Ratio’ is ‘no’</p>
+
+<h2 id="10-product-view-page">10. Product View Page</h2>
+
+<h2 id="11-newsletter-popup">11. Newsletter Popup</h2>
+
+<h2 id="12-before-footer">12. Before Footer</h2>
+
+<h2 id="13-footer">13. Footer</h2>
+
+<h2 id="14-recent-blog-post-widget-setting">14. Recent Blog Post Widget Setting</h2>
+
+<h2 id="15-custom-css">15. Custom Css</h2>
+
+<h2 id="16-module-installed">16. Module Installed</h2>
 
 
 		</div>
@@ -190,108 +545,6 @@
 					<div>
 						<h3>Use Redis for Magento2 cache and session</h3>
 						<p class="description">Use Redis for Magento2 cache and session</p>
-					</div>
-				</article>
-			</a>
-		</li>
-	
-		<li >
-			<a href="/themes/urban/">
-				<div class="icon">
-		<svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-			<path d="M6 2c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6H6zm7 7V3.5L18.5 9H13z"/>
-			<path d="M0 0h24v24H0z" fill="none"/>
-		</svg>
-</div>
-				<article>
-					<div>
-						<h3>Urban</h3>
-						<p class="description">Jekyll template for digital agencies</p>
-					</div>
-				</article>
-			</a>
-		</li>
-	
-		<li >
-			<a href="/themes/malt/">
-				<div class="icon">
-		<svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-			<path d="M6 2c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6H6zm7 7V3.5L18.5 9H13z"/>
-			<path d="M0 0h24v24H0z" fill="none"/>
-		</svg>
-</div>
-				<article>
-					<div>
-						<h3>Malt</h3>
-						<p class="description">Jekyll template for an event.</p>
-					</div>
-				</article>
-			</a>
-		</li>
-	
-		<li >
-			<a href="/themes/justice/">
-				<div class="icon">
-		<svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-			<path d="M6 2c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6H6zm7 7V3.5L18.5 9H13z"/>
-			<path d="M0 0h24v24H0z" fill="none"/>
-		</svg>
-</div>
-				<article>
-					<div>
-						<h3>Justice</h3>
-						<p class="description">Jekyll template for a small business</p>
-					</div>
-				</article>
-			</a>
-		</li>
-	
-		<li >
-			<a href="/themes/frisco/">
-				<div class="icon">
-		<svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-			<path d="M6 2c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6H6zm7 7V3.5L18.5 9H13z"/>
-			<path d="M0 0h24v24H0z" fill="none"/>
-		</svg>
-</div>
-				<article>
-					<div>
-						<h3>Frisco</h3>
-						<p class="description">A Jekyll theme for a marketing site</p>
-					</div>
-				</article>
-			</a>
-		</li>
-	
-		<li >
-			<a href="/themes/edition/">
-				<div class="icon">
-		<svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-			<path d="M6 2c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6H6zm7 7V3.5L18.5 9H13z"/>
-			<path d="M0 0h24v24H0z" fill="none"/>
-		</svg>
-</div>
-				<article>
-					<div>
-						<h3>Edition</h3>
-						<p class="description">Documentation Jekyll theme</p>
-					</div>
-				</article>
-			</a>
-		</li>
-	
-		<li >
-			<a href="/themes/cause/">
-				<div class="icon">
-		<svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-			<path d="M6 2c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6H6zm7 7V3.5L18.5 9H13z"/>
-			<path d="M0 0h24v24H0z" fill="none"/>
-		</svg>
-</div>
-				<article>
-					<div>
-						<h3>Cause</h3>
-						<p class="description">A not-for-profit theme for Jekyll</p>
 					</div>
 				</article>
 			</a>
