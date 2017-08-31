@@ -121,9 +121,13 @@
 			
 				<li><a href="#14-recent-blog-post-widget-setting">14. Recent Blog Post Widget Setting</a></li>
 			
-				<li><a href="#15-custom-css">15. Custom Css</a></li>
+				<li><a href="#15-custom-css-and-module-installed">15. Custom Css and Module Installed</a></li>
 			
-				<li><a href="#16-module-installed">16. Module Installed</a></li>
+				<li><a href="#16-widgets">16. Widgets</a></li>
+			
+				<li><a href="#17-other-modules">17. Other Modules</a></li>
+			
+				<li><a href="#18-third-party-vendor-modules">18. Third-party vendor modules</a></li>
 			
 		</ul>
 	</section>
@@ -302,7 +306,7 @@ to add static block to header.</p>
 
 <p><img src="../../images/disable_full_width_dropdown.jpg" alt="Disable Full Width Dropdown" /></p>
 
-<h5 id="712-thumbnail-image-setting">7.1.2 Thumbnail Image Setting.</h5>
+<h5 id="712-thumbnail-image-setting">7.1.2 Thumbnail Image Setting</h5>
 
 <p>Categories Level definition is shown as follow:</p>
 
@@ -380,6 +384,60 @@ navigation and as both menu itmes block identifier is begin with ctmenu_block_ ,
 <p>Frontend Effect:</p>
 
 <p><img src="../../images/custom_menu_order_effect.jpg" alt="Custom Menu Change Order Frontend" /></p>
+
+<h4 id="72-magemenu-options-in-categories">7.2 Magemenu Options in Categories</h4>
+
+<p>Now we start to discuss Megamenu options for in Categories, if you want to configure specific category, please go Backend -&gt; Products -&gt; Categories, then 
+select category, and then select Mega Menu.</p>
+
+<p><img src="../../images/megamenu_in_categories.jpg" alt="Magemenu Options in Categories" /></p>
+
+<p>Now, We will discuss all this options usage one by one.</p>
+
+<p>1) Mega Menu - Menu Type: select menu type, Vertical layout and Horizontal layout, see below picture for different of these two type menu type.</p>
+
+<p><img src="../../images/vertical_megamenu.jpg" alt="Vertical Megamenu Layout" /></p>
+
+<p><img src="../../images/horizontal_megamenu.jpg" alt="Horizontal Megamenu Layout" /></p>
+
+<p>2) Mega Menu - Featured Image: if you want to show a image in megamenu for this cateogry, upload the image here, refer to <a href="#712-thumbnail-image-setting">7.1.2 Thumbnail Image Setting</a></p>
+
+<p><em>NOTE</em>: Magento 2.1.0 to Magento 2.1.7 has some issue to upload extra category image, the issue is solved in Magento 2.1.8. For Magento 2.1.0 to 2.1.7, you need to apply patch 
+in order to upload featured image, details is <a href="https://github.com/magento/magento2/pull/5978/commits/70d3468b24ffbbd4233123c8d60916a440975b39">github: category attribute image issue</a></p>
+
+<p>3) Mega Menu - Top Block: Select static block that appeared in top area of megamenu, This field is applicable for level 0 categories only.</p>
+
+<p>4) Mega Menu - Left Block: Select static block that appeared in left side of megamenu, This field is applicable for level 0 categories only.</p>
+
+<p>5) Mega Menu - Right Block Block: Select static block that appeared in right side of megamenu, This field is applicable for level 0 categories only.</p>
+
+<p>6) Mega Menu - Bottom Block: Select static block that appeared in bottom area of megamenu, This field is applicable for level 0 categories only.</p>
+
+<p>7) Mega Menu - Left Block Width: This field is applicable for level 0 categories only. NOTE : Total of “Left Block”, “Category Block Width” and “Right Block Width” must be equal to 12, not more or less than 12.</p>
+
+<p>8) Mega Menu - Right Block Width: This field is applicable for level 0 categories only. NOTE : Total of “Left Block”, “Category Block Width” and “Right Block Width” must be equal to 12, not more or less than 12.</p>
+
+<p>9) Mega Menu - Category Width: This field is applicable for level 0 categories only. NOTE : Total of “Left Block”, “Category Block Width” and “Right Block Width” must be equal to 12, not more or less than 12.</p>
+
+<p>10) Mega Menu - Category Column: Set megamenu dropdown category columns, this field is applicable for level 0 categories only.</p>
+
+<p>Below picture show the meaning of Mega Menu 3-9 options:</p>
+
+<p>Megamenu Backend Confugurations:</p>
+
+<p><img src="../../images/megamenu_blocks_backend.jpg" alt="Megamenu Backend Configuration" /></p>
+
+<p>Megamenu Frontend Effect:</p>
+
+<p><img src="../../images/megamenu_and_blocks.jpg" alt="Megamenu Frontend Effect" /></p>
+
+<p>11) Mega Menu - Category Label: Input Category Label text content, for example “New”, “Hot!”, “Sale!”.</p>
+
+<p>12) Mega Menu - Category Label Background Color: Input category label background color. Example “#ff0000”, “#ffff00”</p>
+
+<p>Below picture show example of category label:</p>
+
+<p><img src="../../images/category_label_example.jpg" alt="Category Label Example" /></p>
 
 <h2 id="8-product-label">8. Product Label</h2>
 
@@ -494,17 +552,319 @@ navigation and as both menu itmes block identifier is begin with ctmenu_block_ ,
 
 <h2 id="10-product-view-page">10. Product View Page</h2>
 
+<p>This section is for product details apge.</p>
+
+<p>1) Product View Page - Gallery Width: Select Gallery width, Gallery and product info total width is 12, for example, if you select gallery width to 7, then
+product info width will be set to 5 automatically, see below picture for details:</p>
+
+<p><img src="../../images/gallery_width.jpg" alt="Gallery Width" /></p>
+
+<p>2) Product View Page - Enable vertical thumbnails: Enable or disable vertical thumbnails. See below picture for frontend example.</p>
+
+<p>Eanble vertical thumbnail:</p>
+
+<p><img src="../../images/vertical_thumbnails.jpg" alt="Enable vertical thumbnail" /></p>
+
+<p>3) Product View Page - Enable Product Picture Zoom: Enable or disable product picture zoom effect. If enable product zoom, when mouse hover on
+product picture, zooom effect will be trigger, see below picture for details:</p>
+
+<p><img src="../../images/gallery_zoom.jpg" alt="Enable product picture zoom" /></p>
+
+<p>4) Product View Page - Enable Full Width Tabs Layout: Enable or disable full width tabs layout, see below pictures for different for layouts:</p>
+
+<p>Generall Tabs Layout:</p>
+
+<p><img src="../../images/general_tabs.jpg" alt="General Tabs Layout" /></p>
+
+<p>Full Width Tabs Layout:</p>
+
+<p><img src="../../images/full_width_tabs.jpg" alt="Full Width Tabs Layout" /></p>
+
+<p>5) Product View Page - Input your social code: Input your social code copied from addthis.com or other sites, or leave it empty to disable this feature.</p>
+
+<p>Social code example:</p>
+
+<p><img src="../../images/icon_share_feature.jpg" alt="Social Code Example" /></p>
+
+<p>Frontend Socail Button position:</p>
+
+<p><img src="../../images/social_buttons.jpg" alt="Frontend social buttons position" /></p>
+
 <h2 id="11-newsletter-popup">11. Newsletter Popup</h2>
+
+<p>This section configure homepage newsletter popup feature.</p>
+
+<p>1) Newsletter popup - Enable: Enable or disable homepage newsletter popup, if you set this option to “yes”, more options for newsletter popup will be appeared.</p>
+
+<p>2) Newsletter pupup - Popup expires end: Set period in days after which popup will be shown again if customer has already subscribed or chosen option Don’t show this popup again.</p>
+
+<p>3) Newsletter popup - Newsletter Logo: If you want to show logo in newsletter popup, please upload logo here.</p>
+
+<p>4) Newsletter popup - Popup Content Text: Input newsletter popup content text here.</p>
+
+<p>5) Newsletter popup - Newsletter Popup Width: Input newsletter popup width: for example 500, default is 600.</p>
+
+<p>6) Newsletter popup - Newsletter Popup Height: Input newsletter popup height: for example 500, default is 450.</p>
+
+<p>7) Newsletter popup - Popup Background Image: Upload newsletter popup background image.</p>
+
+<p>Below pictures show Newsletter popup backend configuration and appearance of frontend, you can compare theme and get to know the meaning of some options.</p>
+
+<p>Newsletter Popup Background Configurations:</p>
+
+<p><img src="../../images/newsletter_backend.jpg" alt="Newsletter Popup Background Configuratons" /></p>
+
+<p>Newsletter Popups Frontend Appearance:</p>
+
+<p><img src="../../images/newsletter_frontend.jpg" alt="Newsletter Popup Frontend Appearance" /></p>
 
 <h2 id="12-before-footer">12. Before Footer</h2>
 
+<p>This section is simple, only two options:</p>
+
+<p>1) Before Footer - Enable: Enable or disable before footer, if you set this option to “yes”, new option will be appeared.</p>
+
+<p>2) Before Footer - Select Static Block for Before Footer: Select a static block for before footer. see below picture for the example of before footer.</p>
+
+<p><img src="../../images/before_footer.jpg" alt="Before Footer" /></p>
+
 <h2 id="13-footer">13. Footer</h2>
+
+<p>This section is for footer of the site.</p>
+
+<p>In order to understand footer options meaning, please see below picture for footer layout:</p>
+
+<p><img src="../../images/footer_layout.jpg" alt="Footer Layout" /></p>
+
+<p>Footer consists of footer first row, second row and footer bottom, you can put 1-4 static blocks for first row and second row respectively.</p>
+
+<p>1) Footer - Custom Css class for footer: Add a unique CSS class for footer area.</p>
+
+<p>2) Footer - Static Block for Column 1: Select static block for first row column 1.</p>
+
+<p>3) Footer - Column 1 Width: Select Column 1 width, total width for first row is 12.</p>
+
+<p>4) Footer - Static Block for Column 2: Select static block for first row column 2.</p>
+
+<p>5) Footer - Column 2 Width: Select Column 2 width, total width for first row is 12.</p>
+
+<p>6) Footer - Static Block for Column 3: Select static block for first row column 3.</p>
+
+<p>7) Footer - Column 3 Width: Select Column 3 width, total width for first row is 12.</p>
+
+<p>8) Footer - Static Block for Column 4: Select static block for first row column 4.</p>
+
+<p>9) Footer - Column 4 Width: Select Column 4 width, total width for first row is 12.</p>
+
+<p>10) Footer - Enable Second Row: Enable or disable footer second row, if you select “yes” for this option, more options for second row will
+be appeared.</p>
+
+<p>11) Footer - Static Block for Second Row Column 1: Select static block for second row column 1.</p>
+
+<p>12) Footer - Second Row Column 1 Width: Select Second Row Column 1 width, total width for second row is 12.</p>
+
+<p>13) Footer - Static Block for Second Row Column 1: Select static block for second row column 2.</p>
+
+<p>14) Footer - Second Row Column 2 Width: Select Second Row Column 2 width, total width for second row is 12.</p>
+
+<p>15) Footer - Static Block for Second Row Column 1: Select static block for second row column 3.</p>
+
+<p>16) Footer - Second Row Column 3 Width: Select Second Row Column 3 width, total width for second row is 12.</p>
+
+<p>17) Footer - Static Block for Second Row Column 1: Select static block for second row column 4.</p>
+
+<p>18) Footer - Second Row Column 4 Width: Select Second Row Column 4 width, total width for second row is 12.</p>
+
+<p>19) Footer - Show Store Switcher: Enable or disable store switcher, for multi-store site, if set this option to “yes”, a store switch will 
+be appeared in footer bottom area.</p>
+
+<p>20) Footer - Footer Logo: If you want to show a logo in footer area, please upload logo here.</p>
 
 <h2 id="14-recent-blog-post-widget-setting">14. Recent Blog Post Widget Setting</h2>
 
-<h2 id="15-custom-css">15. Custom Css</h2>
+<p>This section is for recent blog post widget, you need to add the recent blog post widget first(Refer to <a href="#167-recent-blog-posts-widget">16.7 Recent Blog Posts Widget</a>)</p>
 
-<h2 id="16-module-installed">16. Module Installed</h2>
+<p>1) Recent Blog Post Widget Setting - If show background image: If show background image, if you set this option to “Yes”, more options will
+be appeared.</p>
+
+<p>2) Recent Blog Post Widget Setting - Background Image: upload background image for this widget.</p>
+
+<p>3) Recent Blog Post Widget Setting - Background Repeat: set background repeat.</p>
+
+<p>4) Recent Blog Post Widget Setting - Background Size: set background size.</p>
+
+<p>5) Recent Blog Post Widget Setting - If show featured image for every post: if show featured image for posts.</p>
+
+<p>6) Recent Blog Post Widget Setting - If show short content for every post: if show short content for posts.</p>
+
+<h2 id="15-custom-css-and-module-installed">15. Custom Css and Module Installed</h2>
+
+<h4 id="custom-css">Custom Css</h4>
+
+<p>You can add custom Css in “Add Custom Css” textarea, or add to file “app/design/frontend/Cattheme/rabel/web/css/custom.css”.</p>
+
+<h4 id="module-installed">Module Installed</h4>
+<p>You can see all module and its version that come with our theme.</p>
+
+<h2 id="16-widgets">16. Widgets</h2>
+
+<p>In our theme, we add several widgets to let you insert content easily, for how to use Magento widget, please refer official user guide. 
+If you want to insert widget to CMS page or block, please refer <a href="http://docs.magento.com/m2/ce/user_guide/cms/editor-widget.html">Inserting a Widget</a>, or you 
+can insert widget from Backend-&gt; Content -&gt; Widgets, refer official guide <a href="http://docs.magento.com/m2/ce/user_guide/cms/widget-create.html">Creating a Widget</a></p>
+
+<h4 id="161-cattheme-brands-list-widget">16.1 Cattheme Brands List Widget</h4>
+
+<h4 id="162-cattheme-cms-layout-widget">16.2 Cattheme CMS Layout Widget</h4>
+
+<p>By using this widget, you can put one or multiple static block in one row to frontend. Let’s discuss this widget.</p>
+
+<p>Below picture show options for this widget:</p>
+
+<p><img src="../../images/cms_layout_widget.jpg" alt="CMS Layout Widget" /></p>
+
+<p>1) Layout: You can put several blocks in one row, we have some examples for the meaning of the options:</p>
+
+<ul>
+  <li>1/4 + 1/4 + 1/4 + 1/4: Put 4 blocks in one row, and every row has 1/4 (25%) width.</li>
+  <li>1/4 + 1/4 + 2/4: put 3 blocks in one row, first and second blocks occupy 25%(1/4) width, the third block has 50%(2/4) width.</li>
+  <li>1/1: put 1 block in one row, this block occupy 100% width.</li>
+  <li>1/2 + 1/2: pub 2 blocks in one row, every block has 50% width.</li>
+</ul>
+
+<p>2) to 5): Select blocks to show, if you select 4 blocks layout, you need to select all 4 options, if you layout is only need 2 blocks, just select Area 1 and Area 2 blocks.</p>
+
+<p>6) If include Bootstrap container class in layout: if include bootstrap container class.</p>
+
+<p>7) Custom Css class: Add unique custom css class for this widget</p>
+
+<h4 id="163-cattheme-categroy-list-widget">16.3 Cattheme Categroy List Widget</h4>
+
+<p>By using this widget, you can put selected categoreis in website frontend, the widget options is discussed as follows:</p>
+
+<p><img src="../../images/category_list_widget.jpg" alt="Category List Widget" /></p>
+
+<p>1) Widget Title: This title will be showed as header of widget block, Empty to disable.</p>
+
+<p>2) Choose Categories: Choose one or several categories to show in frontend, hold down “Ctrl” key, you can select multiple category by click mouse left button.</p>
+
+<p>3) If display category image: if show category image, here the image is the one upload in Megamenu tab of backend category page, see below picture for details.</p>
+
+<p><img src="../../images/category_list_widget_image.jpg" alt="Category List Widget Image" /></p>
+
+<p>4) Image Width: Category image width, for example 250, default is 150.</p>
+
+<p>5) Image Height: Category image height, for example 250, default is 150.</p>
+
+<p>6) Show total number of products: if show number of products in the category.</p>
+
+<p>7) Columns per row: Columns of categories per row, default is 3.</p>
+
+<h4 id="164-cattheme-google-map-widget">16.4 Cattheme Google Map Widget</h4>
+
+<p>You can use this widget to insert google map in everywhere of you website, the below picture show the options of this widget.</p>
+
+<p><img src="../../images/google_map_widget.jpg" alt="Google Map Widget" /></p>
+
+<p>The options are self-explanatory, you can easily to input value for these options according our widget configuration example picture.</p>
+
+<h4 id="165-cattheme-owl-slider-widget">16.5 Cattheme Owl Slider Widget</h4>
+
+<p>This widget has only one option, just select the slider you want to show.</p>
+
+<h4 id="166-cattheme-products-list-widget">16.6 Cattheme Products List Widget</h4>
+
+<p>Use this widget to show latest, bestseller, popular product etc to everywhere in your website. Below picture show the options of this widget:</p>
+
+<p><img src="../../images/product_list_widget.jpg" alt="Product List Widget" /></p>
+
+<p>All options of this widget will discuss as follows:</p>
+
+<p>1) Title: Widget Title.</p>
+
+<p>2) Product Type</p>
+
+<ul>
+  <li>
+    <p>Latest Products (Show products that you import to site most recently)</p>
+  </li>
+  <li>
+    <p>New Products(Show products that have “Set Product As New From” and “Set Products as New To” defined in backend product page)</p>
+  </li>
+  <li>
+    <p>Special Products(Show products with special price)</p>
+  </li>
+  <li>
+    <p>Popular Products(Most view products)</p>
+  </li>
+  <li>
+    <p>Bestsell Products(Best Sell products)</p>
+  </li>
+  <li>
+    <p>Top Rated Products(Top rated products)</p>
+  </li>
+  <li>
+    <p>Random Products</p>
+  </li>
+  <li>
+    <p>Featured Products(Show products that have “Is Featured” to “Yes” in backend product page)</p>
+  </li>
+  <li>
+    <p>Deal Products(Show product that have special price and have “Special Price From” and “Special Price To” setting. If you select “Deal Products”,
+a deal countdown will be appeared in frontend, see below pictures for details.</p>
+
+    <p><img src="../../images/special_price_countdown.jpg" alt="Product Deal Template" /></p>
+
+    <p>if you set Product Type to “Deal Products” and Template to “Product Deal Template”, special price countdown will has different style, see below picture for details</p>
+
+    <p><img src="../../images/product_deal_template.jpg" alt="Special Price Countdown" /></p>
+  </li>
+</ul>
+
+<p>3) Number of Products to Show: Set total products to show.</p>
+
+<p>4) Number of Columns: Set products columns.</p>
+
+<p>5) Tempalte: Select tempalte.</p>
+
+<p>6) Product Grid Style: This option is only work for Product Grid Template, Please select product widget grid style, If you do not select this, 
+   the Style will be same as Category Grid Style, for appearance of every grid style, please refer to <a href="#92-category-grid-setting">9.2 Category Grid Setting</a>.</p>
+
+<p>7) Display Page Control: Enable or disable Page Control.</p>
+
+<h4 id="167-recent-blog-posts-widget">16.7 Recent Blog Posts Widget</h4>
+
+<p>Use this widget to show recent blog post in every where of your website, let’s discuss all options of this widget.</p>
+
+<p>1) Title: Please specify title you want to display on the frontend. You can leave it blank if necessary.</p>
+
+<p>2) Number of Posts: Please indicate number of recent posts you want to display. Leave blank to use predefined “Posts Per Page” value.</p>
+
+<p>3) Blog Category: Leave blank to display posts from all categories.</p>
+
+<p>4) Custom Template: Leave blank to use default template Magefan_Blog::widget/recent.phtml. Magefan_Blog::widget/recent_masonry.phtml template is also available out of the box.</p>
+
+<p><em>Note</em>: There are extra setting for recent blog posts widget in system configuration, please refer to <a href="#14-recent-blog-post-widget-setting">14. Recent Blog Post Widget Setting</a>.</p>
+
+<h2 id="17-other-modules">17. Other Modules</h2>
+
+<h2 id="18-third-party-vendor-modules">18. Third-party vendor modules</h2>
+
+<p>We use several third-party vendor modules in our theme, we already have these modules in our theme package, so you don’t need to 
+install theme, for usage, you can find guide for these modules in third-party vendor’s website, details is as follows:</p>
+
+<h4 id="magento-2-advance-product-quick-view-and-ajax-cart">Magento 2 Advance Product Quick View and Ajax Cart</h4>
+
+<p>https://www.weltpixel.com/advance-product-quick-view.html</p>
+
+<h4 id="swissuplabs-easy-tabs">Swissuplabs Easy Tabs</h4>
+
+<p>http://docs.swissuplabs.com/m2/extensions/easytabs/</p>
+
+<p>We have chagne its backend menu a little bit, please go Backend -&gt; Cattheme -&gt; Swissup Easytabs -&gt; EasyTabs to configure it.</p>
+
+<h4 id="magefan-blog">Magefan Blog</h4>
+
+<p>https://magefan.com/magento2-blog-extension/</p>
 
 
 		</div>
