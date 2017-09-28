@@ -140,6 +140,70 @@
 			<p>Thanks for purchase Rabel Magento2 responsive theme, this guide will help you to install and use this great theme in your site, if you have further questions please contact us at gizmocn@gmail.com</p>
 
 <h2 id="1-how-to-install">1. How to install</h2>
+<p>Except theme files package, we also provide a quickstart package, the quickstart package should be installed as test site to learn theme’s setting and featured, please
+don’t use quickstart for live site.</p>
+
+<h3 id="11-theme-installation">1.1 Theme installation</h3>
+
+<p>Theme installation is after Magento 2.x installation.</p>
+
+<p>After your Magento 2.x is ready(new Magento installtion or existed Magento 2.x site), you can start to install Rabel theme.</p>
+
+<ol>
+  <li>
+    <p>Backup your Magento 2.x site(All files, folders and database).</p>
+
+    <div class="warning">Warning: We strongly recommend you to backup all files, folders and database before upload theme file</div>
+  </li>
+  <li>
+    <p>Theme files upload</p>
+
+    <p>Unzip Rabel Theme &gt; rabel_theme.zip  and upload all directories(Therea are 2 directories - app, pub) to Magento 2.x root directory.
+you can use ftp sftp or cpanel to do this.</p>
+  </li>
+  <li>
+    <p>Active Cattheme Theme and Extensions.</p>
+
+    <p>Open command line in Magneto root folder. and run below Magneto command:</p>
+
+    <div class="language-bash highlighter-rouge"><pre class="highlight"><code> <span class="nv">$ </span>php bin/magento setup:upgrade
+</code></pre>
+    </div>
+  </li>
+  <li>
+    <p>Select Rabel Theme in Magneto Backend</p>
+
+    <p>Lgoin Magento backend and goes to  Content -&gt; Design -&gt; Configuration  then select the Store View you want to applied this theme and then click Edit link.</p>
+
+    <p>Select Applied Theme to Cattheme Rabel Default,  and then click Save Configuration button, see below picture:</p>
+
+    <p><img src="../../images/applied_theme.jpg" alt="Applied Theme" /></p>
+  </li>
+  <li>
+    <p>Demo Installation</p>
+
+    <p>In Magento Backend, goes to Cattheme -&gt;  Cattheme Theme Install -&gt; Theme Install.  There are 3 options for here:</p>
+
+    <ul>
+      <li>Select Demo to Import: Select the demo you want to import.</li>
+      <li>Overwrite Existing Blocks and Pages: If you want to overwrite existing same id Blocks and Pages, select Yes or No.</li>
+      <li>Configuration Scope: Select store you want to applied this demo.</li>
+    </ul>
+
+    <p>See below picture for a example:</p>
+
+    <p><img src="../../images/demo_installation.jpg" alt="Demo Installation" /></p>
+
+    <p>After you selected all options, click Import Configuration Button and now refresh your website frontend and select storeview you applied this theme, the demo will
+ be installed.</p>
+
+    <div class="notice">Notice: If you encounter "can not save configuration file" error, it mostly is caused by folder or file owner and permission, please refer
+     Magento official guide to change owner or permission <a href="http://devdocs.magento.com/guides/v2.1/install-gde/install-quick-ref.html">http://devdocs.magento.com/guides/v2.1/install-gde/install-quick-ref.html</a>
+ </div>
+  </li>
+</ol>
+
+<h3 id="12-quickstart-installation">1.2 Quickstart Installation</h3>
 
 <h2 id="2-theme-configuration">2. Theme Configuration</h2>
 
@@ -322,11 +386,13 @@ categories thumbnail for level1 and level2.</p>
 
 <p>See below pictures for examples to show  level1 category thumbnial:</p>
 
-<p>Eample 1
-<img src="../../images/category_thumbnail.jpg" alt="Categories Thumbnail Example" /></p>
+<p>Eample 1</p>
 
-<p>Example 2
-<img src="../../images/another_category_thumbnail.jpg" alt="Another Categories Thumbnail Example" /></p>
+<p><img src="../../images/category_thumbnail.jpg" alt="Categories Thumbnail Example" /></p>
+
+<p>Example 2</p>
+
+<p><img src="../../images/another_category_thumbnail.jpg" alt="Another Categories Thumbnail Example" /></p>
 
 <h5 id="713-custom-menu-setting">7.1.3 Custom Menu Setting</h5>
 
@@ -714,6 +780,36 @@ can insert widget from Backend-&gt; Content -&gt; Widgets, refer official guide 
 
 <h4 id="161-cattheme-brands-list-widget">16.1 Cattheme Brands List Widget</h4>
 
+<p>This widget will show brands logo in frontend, when you click the logo, it will go to the brand product search page.</p>
+
+<p><img src="../../images/brands_list.jpg" alt="Brands List Widget" /></p>
+
+<p>In order to use this wiget, you first have to prepare brands logo, you can use gif png or jpg format and logo’s named as brands name,  just use lowercase and “_”, for example: if brand name is 
+RABEL, the image name should be rabel.gif( or rabel.png, rabel.jpg), another example: River Bridge is your brand name, so the image name will be river_bridge.gif (or river_bridge.png, river_bridge.jpg), 
+all logo must be same image format.</p>
+
+<p>After you completed all logo image, upload all logos image to folder <your Magento="" root="">/pub/media/cattheme/rabel/brands.</your></p>
+
+<p>Now go to Magento backend-&gt; STORES -&gt; Attributes -&gt; Product, select Manufacturer attribute, In Manage Options(Values of Your Attribute), add options like below picture:</p>
+
+<p><img src="../../images/manufacturer_attribute.jpg" alt="Manufacturer Attribute" /></p>
+
+<p><em>Note: Value for Default Store View should be brand name, for example your brand is River Bridge, input “River Bridge” for Default Store View, the widget will convert this name to river_bridge and load relative logo image.</em></p>
+
+<p>You can add widget now, check below simple widget configuration:</p>
+
+<p><img src="../../images/brandslist_widget.jpg" alt="Brands List Widget" /></p>
+
+<p>1) Brands: select brands you want to show in frontend, Hold down ctrl and then use mouse to select multi-brands.</p>
+
+<p>2) Title: Widget Title.</p>
+
+<p>3) If link to brands’ products: if you store have products with manufacturer attribute, you can set this option to “yes”, so when you click the brand logo, it will go to this brand search page.</p>
+
+<p>4) Link to new window or not: select if open new window or not when click brand logo.</p>
+
+<p>5) Image Format: your logo image format.</p>
+
 <h4 id="162-cattheme-cms-layout-widget">16.2 Cattheme CMS Layout Widget</h4>
 
 <p>By using this widget, you can put one or multiple static block in one row to frontend. Let’s discuss this widget.</p>
@@ -846,6 +942,209 @@ a deal countdown will be appeared in frontend, see below pictures for details.</
 <p><em>Note</em>: There are extra setting for recent blog posts widget in system configuration, please refer to <a href="#14-recent-blog-post-widget-setting">14. Recent Blog Post Widget Setting</a>.</p>
 
 <h2 id="17-other-modules">17. Other Modules</h2>
+
+<h3 id="171-cattheme-owlslider-module">17.1 Cattheme OwlSlider Module</h3>
+
+<h4 id="1711-manage-sliders">17.1.1 Manage Sliders</h4>
+
+<p>OwlSlider Module can add slider to homepage or other page, we use this module to add homepage slider for every demo.</p>
+
+<p>To add new slider, go to Magento Backend -&gt; CATTHEME -&gt; Cattheme OwlSlider</p>
+
+<p><img src="../../images/cattheme_owlslider_module.jpg" alt="Cattheme OwlSlider Module" /></p>
+
+<p>Here, you can find Manage Sliders and Manage Banners, First we need to add a slider and then add any number banners to the slider you just added.</p>
+
+<p>Click Manage Sliders and open sliders list window, it list all sliders for the store,　click “Add New Slider” button to add new slider, click “select” to edit or delete existed slider.</p>
+
+<p><img src="../../images/sliders_list_window.jpg" alt="OwlSlider Moduel Sliders List Window" /></p>
+
+<p>We now try to add a new slider, so click “Add New Slider” button, open slider edit window:</p>
+
+<p><img src="../../images/add_new_slider.jpg" alt="Add New Slider" /></p>
+
+<p>The options meaning is explained as follows:</p>
+
+<ul>
+  <li>Title: Slider Name.</li>
+  <li>Identifier: Slider unique ID string.</li>
+  <li>Slider Status: Enable or disable the slider.</li>
+  <li>Layout: Select from “Full Width”, “Full Screen”　or “Fixed Width”.</li>
+  <li>Slider Height: For “Full Width” and “Fxied Width” Layout, you need to input slider height.</li>
+  <li>Animate In: Select effect when background image enter view.</li>
+  <li>Animate Out: Select effect when background iamge leave view.</li>
+  <li>Autoplay: Enable or disabel autoplay.</li>
+  <li>Pause on mouse hover: Enable or disable pause when mouse hover.</li>
+  <li>Autoplay speed: Input autoplay speed, default is 3000, meaning switch banners per every 3 seconds.</li>
+  <li>Loop: Enable or disable loop.</li>
+  <li>Show next and prev navigation: Show or hide next/prev navigation button.</li>
+  <li>
+    <p>Show paging navigation: Show or hide paging navigation(dot).</p>
+
+    <div class="notice">
+      Note: if ignore both animate in and animateout options, the banner switch effect is slider in and slider out.
+  </div>
+  </li>
+</ul>
+
+<p>After fill all options, Click “Save Slider” button and then return to sliders list window, now record the ID and Title of the slider you just added, we will need this ID when adding the slider to web page and we 
+will need  the Title when assigning banners to the slider.</p>
+
+<p><img src="../../images/remember_slider_id.jpg" alt="Remember Slider ID" /></p>
+
+<h4 id="1712-manage-banners">17.1.2 Manage Banners</h4>
+
+<p>After add a slider, now we can use “Manage Banners” to assign banners to the slider, click Magento Bankend -&gt; CATTHEME -&gt; Manage Banners, banners list window will be opened:</p>
+
+<p><img src="../../images/banners_list_window.jpg" alt="Banners List Window" /></p>
+
+<p>In banners list window, you can add new banners, edit or delete existed banners.</p>
+
+<p>Now we will add new banner, so click “Add New Banner” button, then open banner edit window:</p>
+
+<p><img src="../../images/add_new_banners.jpg" alt="Add a New Banner" /></p>
+
+<p>The options in this window is explained as follows:</p>
+
+<ul>
+  <li>Status: Enable or disabel the banner.</li>
+  <li>Assigned to Slider: This select box will list all Slider Title, select the slider that you want to assign this banner to.</li>
+  <li>Order: You can assign any number banners to a slider, here input the order of current banner, for example 0, 1 etc.</li>
+  <li>Banner Content Add banner content here, see note for details.</li>
+  <li>Banner Image: Select a image to upload as banner background.</li>
+  <li>Background Color: Input banner background color.</li>
+</ul>
+
+<h5 id="details-about-banner-conent">Details about Banner Conent</h5>
+
+<p>We add several predefined class to help to add banner content easily, the Let’s see a typical banner content:</p>
+
+<p>Code:</p>
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code>&lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">"slide-content slide-left slide-background"</span>&gt;  
+    &lt;p <span class="nv">class</span><span class="o">=</span><span class="s2">"middle-txt white"</span>&gt;Nam libero tempore&lt;/p&gt;
+    &lt;p <span class="nv">class</span><span class="o">=</span><span class="s2">"big-txt white  cursive"</span>&gt;Excepteur sint occaecat&lt;/p&gt;
+    &lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">"transparent-btn"</span>&gt;&lt;a&gt;Buy it now&lt;/a&gt;&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+</div>
+
+<p>Actuall Effect:
+<img src="../../images/banner_content.jpg" alt="Actual Effect of Banner Content" /></p>
+
+<p>For div with class slide-content, you can add following class: slide-left, slide-right, slide-middle, content-fadein, slide-background, align-center, top, bottom.</p>
+
+<p>For p element inside div.slide-content, you can add following class: white, golden, red, shadow, black, small-txt, mdddle-txt, big-txt, extra-txt, middle-red, small-red.</p>
+
+<p>You can also add animate effect for p element: slideBounceInDownFast, slideBounceInDownSlow, slideBounceInDownVerySlow, slideFadeIn.</p>
+
+<p>For button div: you can add red-btn, transparent-btn.</p>
+
+<p>Of course, you can add more class as you wish.</p>
+
+<h4 id="1713-add-slider-to-page">17.1.3 Add Slider to page</h4>
+
+<p>We have several method to add slider to a page.</p>
+
+<p>1 add to page’s Layout Update XML:</p>
+
+<p><img src="../../images/add_slider_to_layout_update.jpg" alt="Add Slider to Layout Update XML" /></p>
+
+<p>Code:</p>
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code>&lt;referenceContainer <span class="nv">name</span><span class="o">=</span><span class="s2">"ctowlslider"</span>&gt;
+      &lt;block <span class="nv">class</span><span class="o">=</span><span class="s2">"Cattheme</span><span class="se">\O</span><span class="s2">wlSlider</span><span class="se">\B</span><span class="s2">lock</span><span class="se">\W</span><span class="s2">idget</span><span class="se">\O</span><span class="s2">wlSlider"</span>&gt;
+        &lt;action <span class="nv">method</span><span class="o">=</span><span class="s2">"setData"</span>&gt;
+         &lt;argument <span class="nv">name</span><span class="o">=</span><span class="s2">"name"</span> xsi:type<span class="o">=</span><span class="s2">"string"</span>&gt;slider_id&lt;/argument&gt;
+         &lt;argument <span class="nv">name</span><span class="o">=</span><span class="s2">"value"</span> xsi:type<span class="o">=</span><span class="s2">"string"</span>&gt;7&lt;/argument&gt;
+     &lt;/action&gt;
+&lt;/block&gt;
+<span class="gp">&lt;/referenceContainer&gt; </span>
+</code></pre>
+</div>
+
+<p>2 add to page’s content:</p>
+
+<p>Code:</p>
+
+<pre>
+
+{{block class="Cattheme\OwlSlider\Block\Widget\OwlSlider" name="slider6" slider_id="7"}}
+
+</pre>
+
+<p>3 add from widget:</p>
+
+<p>We have add a widget named as Cattheme Owl Slider to help to add slider to different area easily. it is simple widget, just one option to select Slide to put to.</p>
+
+<h3 id="172-cattheme-simpletabs-module">17.2 Cattheme Simpletabs Module</h3>
+
+<p>Use this module, you can show multi-categories products in tabs, See below for actuall example of this module:</p>
+
+<p><img src="../../images/cattheme_simpletabs_module.jpg" alt="Cattheme Simpletabs Module" /></p>
+
+<p>to configure this module click Magento backend -&gt; CATTHEME -&gt; Cattheme Simpletabs -&gt; Simpletabs Config, it will open the module configuration window:</p>
+
+<p><img src="../../images/simpletabs_configuration.jpg" alt="Cattheme Simpletabs Module Configuration" /></p>
+
+<p>Below we give the details of all module configuration options:</p>
+
+<ul>
+  <li>General - Enable Simpletabs: Enable or disable this module.</li>
+  <li>General - Title: The module title.</li>
+  <li>
+    <p>General - Action to switch tab: Select mouse action to switch tab, you can select “Click” or “Hover”</p>
+  </li>
+  <li>Product Selection - Select Category: Select categies that will show in frontend of you website, Hold down Ctrl and then you can select multi-categories.</li>
+  <li>Product Selection - Product Field to Order By: Select product type to show in tabs, You can select from Name, Id, Data Created, Price, Top Rating, Most Reviews, Most Viewed, Most Selling Random.</li>
+  <li>Product Selection - Ordering Direction: Select ASC or DESC</li>
+  <li>
+    <p>Product Selection - Product Limitation: Input number of products to show in every tab.</p>
+  </li>
+  <li>Tabs Options - Categories Order By: Select Tabs order, you can select Random, Name, Id Position.</li>
+  <li>
+    <p>Tabs Options - Categories Ordering Direction: Select ASC or DESC.</p>
+  </li>
+  <li>Product Dispaly Setting - If dispaly products image: If show product image.</li>
+  <li>Product Dispaly Setting - Image Width. Product Width, example 300.</li>
+  <li>Product Dispaly Setting - Image Height: Product Height, example 300.</li>
+</ul>
+
+<p>After you have fill all options, Click “Save Config” to save module configuration. Now you can add the module in you page.</p>
+
+<p>We can add the module to page’s Layout Update XML or page’s Content.</p>
+
+<p>The code to add module at Layout Update XML</p>
+
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code>&lt;referenceContainer <span class="nv">name</span><span class="o">=</span><span class="s2">"content"</span>&gt;
+   &lt;block <span class="nv">class</span><span class="o">=</span><span class="s2">"Cattheme</span><span class="se">\S</span><span class="s2">impletabs</span><span class="se">\B</span><span class="s2">lock</span><span class="se">\S</span><span class="s2">impletabs"</span> <span class="nv">name</span><span class="o">=</span><span class="s2">"simpletabs.theme"</span> /&gt;
+<span class="gp">&lt;/referenceContainer&gt; </span>
+</code></pre>
+</div>
+
+<p>The code to add module to page’s content:</p>
+
+<pre>
+
+{{block class="Cattheme\Simpletabs\Block\Simpletabs" name="simpletabs1" }}
+
+</pre>
+
+<p>Of course, we can also fill more options in the code, this way you can add multi-moduel with different configuration to page.</p>
+
+<p>Full configuration code for Layout</p>
+
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code>&lt;referenceContainer <span class="nv">name</span><span class="o">=</span><span class="s2">"content"</span>&gt;
+   &lt;block <span class="nv">class</span><span class="o">=</span><span class="s2">"Cattheme</span><span class="se">\S</span><span class="s2">impletabs</span><span class="se">\B</span><span class="s2">lock</span><span class="se">\S</span><span class="s2">impletabs"</span> <span class="nv">name</span><span class="o">=</span><span class="s2">"simpletabs.theme"</span> <span class="nv">title</span><span class="o">=</span><span class="s2">"Latest Products"</span> <span class="nv">switch_action</span><span class="o">=</span><span class="s2">"click"</span> <span class="nv">product_category</span><span class="o">=</span><span class="s2">"10, 15, 30"</span> <span class="nv">product_order_by</span><span class="o">=</span><span class="s2">"created_at"</span> <span class="nv">product_order_dir</span><span class="o">=</span><span class="s2">"ASC"</span> <span class="nv">product_limitation</span><span class="o">=</span><span class="s2">"5"</span> <span class="nv">categories_order_by</span><span class="o">=</span><span class="s2">"position"</span>  <span class="nv">categories_order_dir</span><span class="o">=</span><span class="s2">"ASC"</span> product_image_disp＝<span class="s2">"yes"</span> <span class="nv">product_image_width</span><span class="o">=</span><span class="s2">"300"</span> <span class="nv">product_image_height</span><span class="o">=</span><span class="s2">"300"</span> /&gt;
+<span class="gp">&lt;/referenceContainer&gt; </span>
+</code></pre>
+</div>
+
+<p>Full configuration code for page’s content</p>
+
+<pre>
+
+{{block class="Cattheme\Simpletabs\Block\Simpletabs" name="simpletabs1" title="Latest Products" switch_action="click" product_category="10, 15, 30" product_order_by="created_at" product_order_dir="ASC" product_limitation="5" categories_order_by="position"  categories_order_dir="ASC" product_image_disp＝"yes" product_image_width="300" product_image_height="300" }}
+
+</pre>
 
 <h2 id="18-third-party-vendor-modules">18. Third-party vendor modules</h2>
 

@@ -235,7 +235,8 @@ h4 {
   margin: 0 0 20px 0; }
 
 img {
-  max-width: 100%; }
+  max-width: 100%;
+  border: 2px solid #666; }
 
 ul, ol {
   margin-top: 20px;
@@ -254,6 +255,16 @@ code, pre, tt {
   color: #FAFAFA;
   border-radius: 2px;
   padding: 2px 5px; }
+
+.warning, .notice {
+  background: #fcf2f2;
+  border-left: 5px solid #ff0000;
+  padding: 10px 20px;
+  margin-bottom: 10px; }
+
+.notice {
+  background: #dcf3e1;
+  border-color: darkgreen; }
 
 .count {
   color: #ccc;

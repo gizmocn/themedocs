@@ -1,6 +1,70 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="http://jekyllrb.com" version="3.4.3">Jekyll</generator><link href="http://docs.cattheme.com/feed.xml" rel="self" type="application/atom+xml" /><link href="http://docs.cattheme.com/" rel="alternate" type="text/html" /><updated>2017-08-31T09:19:35+08:00</updated><id>http://docs.cattheme.com/</id><title type="html">Cattheme Docs</title><subtitle>Cattheme.com Document.</subtitle><author><name>{&quot;name&quot;=&gt;nil, &quot;email&quot;=&gt;nil, &quot;twitter&quot;=&gt;nil}</name></author><entry><title type="html">Rabel</title><link href="http://docs.cattheme.com/themes/rabel/" rel="alternate" type="text/html" title="Rabel" /><published>2017-06-18T00:00:00+08:00</published><updated>2017-06-18T00:00:00+08:00</updated><id>http://docs.cattheme.com/themes/rabel</id><content type="html" xml:base="http://docs.cattheme.com/themes/rabel/">&lt;p&gt;Thanks for purchase Rabel Magento2 responsive theme, this guide will help you to install and use this great theme in your site, if you have further questions please contact us at gizmocn@gmail.com&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="http://jekyllrb.com" version="3.4.3">Jekyll</generator><link href="http://docs.cattheme.com/feed.xml" rel="self" type="application/atom+xml" /><link href="http://docs.cattheme.com/" rel="alternate" type="text/html" /><updated>2017-09-28T21:03:11+08:00</updated><id>http://docs.cattheme.com/</id><title type="html">Cattheme Docs</title><subtitle>Cattheme.com Document.</subtitle><author><name>{&quot;name&quot;=&gt;nil, &quot;email&quot;=&gt;nil, &quot;twitter&quot;=&gt;nil}</name></author><entry><title type="html">Rabel</title><link href="http://docs.cattheme.com/themes/rabel/" rel="alternate" type="text/html" title="Rabel" /><published>2017-06-18T00:00:00+08:00</published><updated>2017-06-18T00:00:00+08:00</updated><id>http://docs.cattheme.com/themes/rabel</id><content type="html" xml:base="http://docs.cattheme.com/themes/rabel/">&lt;p&gt;Thanks for purchase Rabel Magento2 responsive theme, this guide will help you to install and use this great theme in your site, if you have further questions please contact us at gizmocn@gmail.com&lt;/p&gt;
 
 &lt;h2 id=&quot;1-how-to-install&quot;&gt;1. How to install&lt;/h2&gt;
+&lt;p&gt;Except theme files package, we also provide a quickstart package, the quickstart package should be installed as test site to learn theme’s setting and featured, please
+don’t use quickstart for live site.&lt;/p&gt;
+
+&lt;h3 id=&quot;11-theme-installation&quot;&gt;1.1 Theme installation&lt;/h3&gt;
+
+&lt;p&gt;Theme installation is after Magento 2.x installation.&lt;/p&gt;
+
+&lt;p&gt;After your Magento 2.x is ready(new Magento installtion or existed Magento 2.x site), you can start to install Rabel theme.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Backup your Magento 2.x site(All files, folders and database).&lt;/p&gt;
+
+    &lt;div class=&quot;warning&quot;&gt;Warning: We strongly recommend you to backup all files, folders and database before upload theme file&lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Theme files upload&lt;/p&gt;
+
+    &lt;p&gt;Unzip Rabel Theme &amp;gt; rabel_theme.zip  and upload all directories(Therea are 2 directories - app, pub) to Magento 2.x root directory.
+you can use ftp sftp or cpanel to do this.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Active Cattheme Theme and Extensions.&lt;/p&gt;
+
+    &lt;p&gt;Open command line in Magneto root folder. and run below Magneto command:&lt;/p&gt;
+
+    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;php bin/magento setup:upgrade
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Select Rabel Theme in Magneto Backend&lt;/p&gt;
+
+    &lt;p&gt;Lgoin Magento backend and goes to  Content -&amp;gt; Design -&amp;gt; Configuration  then select the Store View you want to applied this theme and then click Edit link.&lt;/p&gt;
+
+    &lt;p&gt;Select Applied Theme to Cattheme Rabel Default,  and then click Save Configuration button, see below picture:&lt;/p&gt;
+
+    &lt;p&gt;&lt;img src=&quot;../../images/applied_theme.jpg&quot; alt=&quot;Applied Theme&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Demo Installation&lt;/p&gt;
+
+    &lt;p&gt;In Magento Backend, goes to Cattheme -&amp;gt;  Cattheme Theme Install -&amp;gt; Theme Install.  There are 3 options for here:&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;Select Demo to Import: Select the demo you want to import.&lt;/li&gt;
+      &lt;li&gt;Overwrite Existing Blocks and Pages: If you want to overwrite existing same id Blocks and Pages, select Yes or No.&lt;/li&gt;
+      &lt;li&gt;Configuration Scope: Select store you want to applied this demo.&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;p&gt;See below picture for a example:&lt;/p&gt;
+
+    &lt;p&gt;&lt;img src=&quot;../../images/demo_installation.jpg&quot; alt=&quot;Demo Installation&quot; /&gt;&lt;/p&gt;
+
+    &lt;p&gt;After you selected all options, click Import Configuration Button and now refresh your website frontend and select storeview you applied this theme, the demo will
+ be installed.&lt;/p&gt;
+
+    &lt;div class=&quot;notice&quot;&gt;Notice: If you encounter &quot;can not save configuration file&quot; error, it mostly is caused by folder or file owner and permission, please refer
+     Magento official guide to change owner or permission &lt;a href=&quot;http://devdocs.magento.com/guides/v2.1/install-gde/install-quick-ref.html&quot;&gt;http://devdocs.magento.com/guides/v2.1/install-gde/install-quick-ref.html&lt;/a&gt;
+ &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;12-quickstart-installation&quot;&gt;1.2 Quickstart Installation&lt;/h3&gt;
 
 &lt;h2 id=&quot;2-theme-configuration&quot;&gt;2. Theme Configuration&lt;/h2&gt;
 
@@ -183,11 +247,13 @@ categories thumbnail for level1 and level2.&lt;/p&gt;
 
 &lt;p&gt;See below pictures for examples to show  level1 category thumbnial:&lt;/p&gt;
 
-&lt;p&gt;Eample 1
-&lt;img src=&quot;../../images/category_thumbnail.jpg&quot; alt=&quot;Categories Thumbnail Example&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Eample 1&lt;/p&gt;
 
-&lt;p&gt;Example 2
-&lt;img src=&quot;../../images/another_category_thumbnail.jpg&quot; alt=&quot;Another Categories Thumbnail Example&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;../../images/category_thumbnail.jpg&quot; alt=&quot;Categories Thumbnail Example&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Example 2&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../../images/another_category_thumbnail.jpg&quot; alt=&quot;Another Categories Thumbnail Example&quot; /&gt;&lt;/p&gt;
 
 &lt;h5 id=&quot;713-custom-menu-setting&quot;&gt;7.1.3 Custom Menu Setting&lt;/h5&gt;
 
@@ -575,6 +641,36 @@ can insert widget from Backend-&amp;gt; Content -&amp;gt; Widgets, refer officia
 
 &lt;h4 id=&quot;161-cattheme-brands-list-widget&quot;&gt;16.1 Cattheme Brands List Widget&lt;/h4&gt;
 
+&lt;p&gt;This widget will show brands logo in frontend, when you click the logo, it will go to the brand product search page.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../../images/brands_list.jpg&quot; alt=&quot;Brands List Widget&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;In order to use this wiget, you first have to prepare brands logo, you can use gif png or jpg format and logo’s named as brands name,  just use lowercase and “_”, for example: if brand name is 
+RABEL, the image name should be rabel.gif( or rabel.png, rabel.jpg), another example: River Bridge is your brand name, so the image name will be river_bridge.gif (or river_bridge.png, river_bridge.jpg), 
+all logo must be same image format.&lt;/p&gt;
+
+&lt;p&gt;After you completed all logo image, upload all logos image to folder &lt;your Magento=&quot;&quot; root=&quot;&quot;&gt;/pub/media/cattheme/rabel/brands.&lt;/your&gt;&lt;/p&gt;
+
+&lt;p&gt;Now go to Magento backend-&amp;gt; STORES -&amp;gt; Attributes -&amp;gt; Product, select Manufacturer attribute, In Manage Options(Values of Your Attribute), add options like below picture:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../../images/manufacturer_attribute.jpg&quot; alt=&quot;Manufacturer Attribute&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Note: Value for Default Store View should be brand name, for example your brand is River Bridge, input “River Bridge” for Default Store View, the widget will convert this name to river_bridge and load relative logo image.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;You can add widget now, check below simple widget configuration:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../../images/brandslist_widget.jpg&quot; alt=&quot;Brands List Widget&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;1) Brands: select brands you want to show in frontend, Hold down ctrl and then use mouse to select multi-brands.&lt;/p&gt;
+
+&lt;p&gt;2) Title: Widget Title.&lt;/p&gt;
+
+&lt;p&gt;3) If link to brands’ products: if you store have products with manufacturer attribute, you can set this option to “yes”, so when you click the brand logo, it will go to this brand search page.&lt;/p&gt;
+
+&lt;p&gt;4) Link to new window or not: select if open new window or not when click brand logo.&lt;/p&gt;
+
+&lt;p&gt;5) Image Format: your logo image format.&lt;/p&gt;
+
 &lt;h4 id=&quot;162-cattheme-cms-layout-widget&quot;&gt;16.2 Cattheme CMS Layout Widget&lt;/h4&gt;
 
 &lt;p&gt;By using this widget, you can put one or multiple static block in one row to frontend. Let’s discuss this widget.&lt;/p&gt;
@@ -707,6 +803,209 @@ a deal countdown will be appeared in frontend, see below pictures for details.&l
 &lt;p&gt;&lt;em&gt;Note&lt;/em&gt;: There are extra setting for recent blog posts widget in system configuration, please refer to &lt;a href=&quot;#14-recent-blog-post-widget-setting&quot;&gt;14. Recent Blog Post Widget Setting&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h2 id=&quot;17-other-modules&quot;&gt;17. Other Modules&lt;/h2&gt;
+
+&lt;h3 id=&quot;171-cattheme-owlslider-module&quot;&gt;17.1 Cattheme OwlSlider Module&lt;/h3&gt;
+
+&lt;h4 id=&quot;1711-manage-sliders&quot;&gt;17.1.1 Manage Sliders&lt;/h4&gt;
+
+&lt;p&gt;OwlSlider Module can add slider to homepage or other page, we use this module to add homepage slider for every demo.&lt;/p&gt;
+
+&lt;p&gt;To add new slider, go to Magento Backend -&amp;gt; CATTHEME -&amp;gt; Cattheme OwlSlider&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../../images/cattheme_owlslider_module.jpg&quot; alt=&quot;Cattheme OwlSlider Module&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Here, you can find Manage Sliders and Manage Banners, First we need to add a slider and then add any number banners to the slider you just added.&lt;/p&gt;
+
+&lt;p&gt;Click Manage Sliders and open sliders list window, it list all sliders for the store,　click “Add New Slider” button to add new slider, click “select” to edit or delete existed slider.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../../images/sliders_list_window.jpg&quot; alt=&quot;OwlSlider Moduel Sliders List Window&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;We now try to add a new slider, so click “Add New Slider” button, open slider edit window:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../../images/add_new_slider.jpg&quot; alt=&quot;Add New Slider&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The options meaning is explained as follows:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Title: Slider Name.&lt;/li&gt;
+  &lt;li&gt;Identifier: Slider unique ID string.&lt;/li&gt;
+  &lt;li&gt;Slider Status: Enable or disable the slider.&lt;/li&gt;
+  &lt;li&gt;Layout: Select from “Full Width”, “Full Screen”　or “Fixed Width”.&lt;/li&gt;
+  &lt;li&gt;Slider Height: For “Full Width” and “Fxied Width” Layout, you need to input slider height.&lt;/li&gt;
+  &lt;li&gt;Animate In: Select effect when background image enter view.&lt;/li&gt;
+  &lt;li&gt;Animate Out: Select effect when background iamge leave view.&lt;/li&gt;
+  &lt;li&gt;Autoplay: Enable or disabel autoplay.&lt;/li&gt;
+  &lt;li&gt;Pause on mouse hover: Enable or disable pause when mouse hover.&lt;/li&gt;
+  &lt;li&gt;Autoplay speed: Input autoplay speed, default is 3000, meaning switch banners per every 3 seconds.&lt;/li&gt;
+  &lt;li&gt;Loop: Enable or disable loop.&lt;/li&gt;
+  &lt;li&gt;Show next and prev navigation: Show or hide next/prev navigation button.&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Show paging navigation: Show or hide paging navigation(dot).&lt;/p&gt;
+
+    &lt;div class=&quot;notice&quot;&gt;
+      Note: if ignore both animate in and animateout options, the banner switch effect is slider in and slider out.
+  &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;After fill all options, Click “Save Slider” button and then return to sliders list window, now record the ID and Title of the slider you just added, we will need this ID when adding the slider to web page and we 
+will need  the Title when assigning banners to the slider.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../../images/remember_slider_id.jpg&quot; alt=&quot;Remember Slider ID&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;1712-manage-banners&quot;&gt;17.1.2 Manage Banners&lt;/h4&gt;
+
+&lt;p&gt;After add a slider, now we can use “Manage Banners” to assign banners to the slider, click Magento Bankend -&amp;gt; CATTHEME -&amp;gt; Manage Banners, banners list window will be opened:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../../images/banners_list_window.jpg&quot; alt=&quot;Banners List Window&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;In banners list window, you can add new banners, edit or delete existed banners.&lt;/p&gt;
+
+&lt;p&gt;Now we will add new banner, so click “Add New Banner” button, then open banner edit window:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../../images/add_new_banners.jpg&quot; alt=&quot;Add a New Banner&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The options in this window is explained as follows:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Status: Enable or disabel the banner.&lt;/li&gt;
+  &lt;li&gt;Assigned to Slider: This select box will list all Slider Title, select the slider that you want to assign this banner to.&lt;/li&gt;
+  &lt;li&gt;Order: You can assign any number banners to a slider, here input the order of current banner, for example 0, 1 etc.&lt;/li&gt;
+  &lt;li&gt;Banner Content Add banner content here, see note for details.&lt;/li&gt;
+  &lt;li&gt;Banner Image: Select a image to upload as banner background.&lt;/li&gt;
+  &lt;li&gt;Background Color: Input banner background color.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h5 id=&quot;details-about-banner-conent&quot;&gt;Details about Banner Conent&lt;/h5&gt;
+
+&lt;p&gt;We add several predefined class to help to add banner content easily, the Let’s see a typical banner content:&lt;/p&gt;
+
+&lt;p&gt;Code:&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;div &lt;span class=&quot;nv&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;slide-content slide-left slide-background&quot;&lt;/span&gt;&amp;gt;  
+    &amp;lt;p &lt;span class=&quot;nv&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;middle-txt white&quot;&lt;/span&gt;&amp;gt;Nam libero tempore&amp;lt;/p&amp;gt;
+    &amp;lt;p &lt;span class=&quot;nv&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;big-txt white  cursive&quot;&lt;/span&gt;&amp;gt;Excepteur sint occaecat&amp;lt;/p&amp;gt;
+    &amp;lt;div &lt;span class=&quot;nv&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;transparent-btn&quot;&lt;/span&gt;&amp;gt;&amp;lt;a&amp;gt;Buy it now&amp;lt;/a&amp;gt;&amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Actuall Effect:
+&lt;img src=&quot;../../images/banner_content.jpg&quot; alt=&quot;Actual Effect of Banner Content&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;For div with class slide-content, you can add following class: slide-left, slide-right, slide-middle, content-fadein, slide-background, align-center, top, bottom.&lt;/p&gt;
+
+&lt;p&gt;For p element inside div.slide-content, you can add following class: white, golden, red, shadow, black, small-txt, mdddle-txt, big-txt, extra-txt, middle-red, small-red.&lt;/p&gt;
+
+&lt;p&gt;You can also add animate effect for p element: slideBounceInDownFast, slideBounceInDownSlow, slideBounceInDownVerySlow, slideFadeIn.&lt;/p&gt;
+
+&lt;p&gt;For button div: you can add red-btn, transparent-btn.&lt;/p&gt;
+
+&lt;p&gt;Of course, you can add more class as you wish.&lt;/p&gt;
+
+&lt;h4 id=&quot;1713-add-slider-to-page&quot;&gt;17.1.3 Add Slider to page&lt;/h4&gt;
+
+&lt;p&gt;We have several method to add slider to a page.&lt;/p&gt;
+
+&lt;p&gt;1 add to page’s Layout Update XML:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../../images/add_slider_to_layout_update.jpg&quot; alt=&quot;Add Slider to Layout Update XML&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Code:&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;referenceContainer &lt;span class=&quot;nv&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;ctowlslider&quot;&lt;/span&gt;&amp;gt;
+      &amp;lt;block &lt;span class=&quot;nv&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Cattheme&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\O&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;wlSlider&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\B&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;lock&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\W&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;idget&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\O&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;wlSlider&quot;&lt;/span&gt;&amp;gt;
+        &amp;lt;action &lt;span class=&quot;nv&quot;&gt;method&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;setData&quot;&lt;/span&gt;&amp;gt;
+         &amp;lt;argument &lt;span class=&quot;nv&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;name&quot;&lt;/span&gt; xsi:type&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;string&quot;&lt;/span&gt;&amp;gt;slider_id&amp;lt;/argument&amp;gt;
+         &amp;lt;argument &lt;span class=&quot;nv&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;value&quot;&lt;/span&gt; xsi:type&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;string&quot;&lt;/span&gt;&amp;gt;7&amp;lt;/argument&amp;gt;
+     &amp;lt;/action&amp;gt;
+&amp;lt;/block&amp;gt;
+&lt;span class=&quot;gp&quot;&gt;&amp;lt;/referenceContainer&amp;gt; &lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;2 add to page’s content:&lt;/p&gt;
+
+&lt;p&gt;Code:&lt;/p&gt;
+
+&lt;pre&gt;
+
+{{block class=&quot;Cattheme\OwlSlider\Block\Widget\OwlSlider&quot; name=&quot;slider6&quot; slider_id=&quot;7&quot;}}
+
+&lt;/pre&gt;
+
+&lt;p&gt;3 add from widget:&lt;/p&gt;
+
+&lt;p&gt;We have add a widget named as Cattheme Owl Slider to help to add slider to different area easily. it is simple widget, just one option to select Slide to put to.&lt;/p&gt;
+
+&lt;h3 id=&quot;172-cattheme-simpletabs-module&quot;&gt;17.2 Cattheme Simpletabs Module&lt;/h3&gt;
+
+&lt;p&gt;Use this module, you can show multi-categories products in tabs, See below for actuall example of this module:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../../images/cattheme_simpletabs_module.jpg&quot; alt=&quot;Cattheme Simpletabs Module&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;to configure this module click Magento backend -&amp;gt; CATTHEME -&amp;gt; Cattheme Simpletabs -&amp;gt; Simpletabs Config, it will open the module configuration window:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../../images/simpletabs_configuration.jpg&quot; alt=&quot;Cattheme Simpletabs Module Configuration&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Below we give the details of all module configuration options:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;General - Enable Simpletabs: Enable or disable this module.&lt;/li&gt;
+  &lt;li&gt;General - Title: The module title.&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;General - Action to switch tab: Select mouse action to switch tab, you can select “Click” or “Hover”&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Product Selection - Select Category: Select categies that will show in frontend of you website, Hold down Ctrl and then you can select multi-categories.&lt;/li&gt;
+  &lt;li&gt;Product Selection - Product Field to Order By: Select product type to show in tabs, You can select from Name, Id, Data Created, Price, Top Rating, Most Reviews, Most Viewed, Most Selling Random.&lt;/li&gt;
+  &lt;li&gt;Product Selection - Ordering Direction: Select ASC or DESC&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Product Selection - Product Limitation: Input number of products to show in every tab.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Tabs Options - Categories Order By: Select Tabs order, you can select Random, Name, Id Position.&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Tabs Options - Categories Ordering Direction: Select ASC or DESC.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Product Dispaly Setting - If dispaly products image: If show product image.&lt;/li&gt;
+  &lt;li&gt;Product Dispaly Setting - Image Width. Product Width, example 300.&lt;/li&gt;
+  &lt;li&gt;Product Dispaly Setting - Image Height: Product Height, example 300.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;After you have fill all options, Click “Save Config” to save module configuration. Now you can add the module in you page.&lt;/p&gt;
+
+&lt;p&gt;We can add the module to page’s Layout Update XML or page’s Content.&lt;/p&gt;
+
+&lt;p&gt;The code to add module at Layout Update XML&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;referenceContainer &lt;span class=&quot;nv&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;content&quot;&lt;/span&gt;&amp;gt;
+   &amp;lt;block &lt;span class=&quot;nv&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Cattheme&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\S&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;impletabs&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\B&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;lock&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\S&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;impletabs&quot;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;simpletabs.theme&quot;&lt;/span&gt; /&amp;gt;
+&lt;span class=&quot;gp&quot;&gt;&amp;lt;/referenceContainer&amp;gt; &lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;The code to add module to page’s content:&lt;/p&gt;
+
+&lt;pre&gt;
+
+{{block class=&quot;Cattheme\Simpletabs\Block\Simpletabs&quot; name=&quot;simpletabs1&quot; }}
+
+&lt;/pre&gt;
+
+&lt;p&gt;Of course, we can also fill more options in the code, this way you can add multi-moduel with different configuration to page.&lt;/p&gt;
+
+&lt;p&gt;Full configuration code for Layout&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;referenceContainer &lt;span class=&quot;nv&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;content&quot;&lt;/span&gt;&amp;gt;
+   &amp;lt;block &lt;span class=&quot;nv&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Cattheme&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\S&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;impletabs&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\B&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;lock&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\S&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;impletabs&quot;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;simpletabs.theme&quot;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Latest Products&quot;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;switch_action&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;click&quot;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;product_category&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;10, 15, 30&quot;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;product_order_by&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;created_at&quot;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;product_order_dir&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;ASC&quot;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;product_limitation&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;5&quot;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;categories_order_by&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;position&quot;&lt;/span&gt;  &lt;span class=&quot;nv&quot;&gt;categories_order_dir&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;ASC&quot;&lt;/span&gt; product_image_disp＝&lt;span class=&quot;s2&quot;&gt;&quot;yes&quot;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;product_image_width&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;300&quot;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;product_image_height&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;300&quot;&lt;/span&gt; /&amp;gt;
+&lt;span class=&quot;gp&quot;&gt;&amp;lt;/referenceContainer&amp;gt; &lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Full configuration code for page’s content&lt;/p&gt;
+
+&lt;pre&gt;
+
+{{block class=&quot;Cattheme\Simpletabs\Block\Simpletabs&quot; name=&quot;simpletabs1&quot; title=&quot;Latest Products&quot; switch_action=&quot;click&quot; product_category=&quot;10, 15, 30&quot; product_order_by=&quot;created_at&quot; product_order_dir=&quot;ASC&quot; product_limitation=&quot;5&quot; categories_order_by=&quot;position&quot;  categories_order_dir=&quot;ASC&quot; product_image_disp＝&quot;yes&quot; product_image_width=&quot;300&quot; product_image_height=&quot;300&quot; }}
+
+&lt;/pre&gt;
 
 &lt;h2 id=&quot;18-third-party-vendor-modules&quot;&gt;18. Third-party vendor modules&lt;/h2&gt;
 
