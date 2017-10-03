@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="http://jekyllrb.com" version="3.4.3">Jekyll</generator><link href="http://docs.cattheme.com/feed.xml" rel="self" type="application/atom+xml" /><link href="http://docs.cattheme.com/" rel="alternate" type="text/html" /><updated>2017-09-28T21:03:11+08:00</updated><id>http://docs.cattheme.com/</id><title type="html">Cattheme Docs</title><subtitle>Cattheme.com Document.</subtitle><author><name>{&quot;name&quot;=&gt;nil, &quot;email&quot;=&gt;nil, &quot;twitter&quot;=&gt;nil}</name></author><entry><title type="html">Rabel</title><link href="http://docs.cattheme.com/themes/rabel/" rel="alternate" type="text/html" title="Rabel" /><published>2017-06-18T00:00:00+08:00</published><updated>2017-06-18T00:00:00+08:00</updated><id>http://docs.cattheme.com/themes/rabel</id><content type="html" xml:base="http://docs.cattheme.com/themes/rabel/">&lt;p&gt;Thanks for purchase Rabel Magento2 responsive theme, this guide will help you to install and use this great theme in your site, if you have further questions please contact us at gizmocn@gmail.com&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="http://jekyllrb.com" version="3.4.3">Jekyll</generator><link href="http://docs.cattheme.com/feed.xml" rel="self" type="application/atom+xml" /><link href="http://docs.cattheme.com/" rel="alternate" type="text/html" /><updated>2017-10-03T21:00:13+08:00</updated><id>http://docs.cattheme.com/</id><title type="html">Cattheme Docs</title><subtitle>Cattheme.com Document.</subtitle><author><name>{&quot;name&quot;=&gt;nil, &quot;email&quot;=&gt;nil, &quot;twitter&quot;=&gt;nil}</name></author><entry><title type="html">Rabel</title><link href="http://docs.cattheme.com/themes/rabel/" rel="alternate" type="text/html" title="Rabel" /><published>2017-06-18T00:00:00+08:00</published><updated>2017-06-18T00:00:00+08:00</updated><id>http://docs.cattheme.com/themes/rabel</id><content type="html" xml:base="http://docs.cattheme.com/themes/rabel/">&lt;p&gt;Thanks for purchase Rabel Magento2 responsive theme, this guide will help you to install and use this great theme in your site, if you have further questions please contact us at gizmocn@gmail.com&lt;/p&gt;
 
 &lt;h2 id=&quot;1-how-to-install&quot;&gt;1. How to install&lt;/h2&gt;
 &lt;p&gt;Except theme files package, we also provide a quickstart package, the quickstart package should be installed as test site to learn theme’s setting and featured, please
@@ -55,7 +55,9 @@ you can use ftp sftp or cpanel to do this.&lt;/p&gt;
 
     &lt;p&gt;&lt;img src=&quot;../../images/demo_installation.jpg&quot; alt=&quot;Demo Installation&quot; /&gt;&lt;/p&gt;
 
-    &lt;p&gt;After you selected all options, click Import Configuration Button and now refresh your website frontend and select storeview you applied this theme, the demo will
+    &lt;p&gt;After you selected all options, click Import Configuration Button.&lt;/p&gt;
+
+    &lt;p&gt;Now Please clean Magento cache and refresh your website frontend and select storeview you applied this theme, the demo will
  be installed.&lt;/p&gt;
 
     &lt;div class=&quot;notice&quot;&gt;Notice: If you encounter &quot;can not save configuration file&quot; error, it mostly is caused by folder or file owner and permission, please refer
@@ -65,6 +67,75 @@ you can use ftp sftp or cpanel to do this.&lt;/p&gt;
 &lt;/ol&gt;
 
 &lt;h3 id=&quot;12-quickstart-installation&quot;&gt;1.2 Quickstart Installation&lt;/h3&gt;
+&lt;p&gt;We provide quickstart installation package for you to learn the theme’s configuration and features, it just for test purpose and don’t use this quickstart for production site.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Unzip Rabel Theme &amp;gt; quickstart_rabel.zip  and upload all directories and files to the directory that you want to install the test site. you can use ftp sftp or cpanel to do this. Assign 
+suitable permission and owner for all directories and files.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Create a new database for this test site.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;We include database dump file named “database.sql” in quickstart package directory, now import “database.sql” to the new database you have just created in step 2.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Now we can start web installation. Browser your test site’s url you will get Magento 2.x installation screen:&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&quot;../../images/web_installation_1.jpg&quot; alt=&quot;Magento Web Installation 1&quot; /&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Click “Agree and Setup Magento” button, Radiness Check windows will be appeared:&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&quot;../../images/web_installation_2.jpg&quot; alt=&quot;Magento Web Installation 2&quot; /&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Click “Start Readiness Check” button, Readiness check process will start, it will take a while, if any check fails, you need to fine the reason and start again, if everything is ok, you will see below screen:&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&quot;../../images/web_installation_3.jpg&quot; alt=&quot;Magento Web Installation 3&quot; /&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Click “Next” button to continue, Below windo will appears, input the database (you create at step 2) info:&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&quot;../../images/web_installation_4.jpg&quot; alt=&quot;Magento Web Installation 4&quot; /&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;After you fill all database info, click “Next” button, Web Configuration screen will appears, remember your test site frontend and backend url:&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&quot;../../images/web_installation_5.jpg&quot; alt=&quot;Magento Web Installation 5&quot; /&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Click “Next” button, Customize Your Store will appears, just use default value:&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&quot;../../images/web_installation_6.jpg&quot; alt=&quot;Magento Web Installation 6&quot; /&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Click “Next” button, Create Admin Account screen will appears, input admin info:&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&quot;../../images/web_installation_7.jpg&quot; alt=&quot;Magento Web Installation 7&quot; /&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Click “Next” button, and final step window will shows:&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&quot;../../images/web_installation_8.jpg&quot; alt=&quot;Magento Web Installation 8&quot; /&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Click “Install Now” button, now wait the installation process to complete, if everything is ok, you will see the screen window:&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&quot;../../images/web_installation_9.jpg&quot; alt=&quot;Magento Web Installation 9&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Now, you need to reindex the index and clean Magento cache, login the backend to learn theme’s configuration and features.&lt;/p&gt;
 
 &lt;h2 id=&quot;2-theme-configuration&quot;&gt;2. Theme Configuration&lt;/h2&gt;
 
