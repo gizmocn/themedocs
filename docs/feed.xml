@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="http://jekyllrb.com" version="3.4.3">Jekyll</generator><link href="http://docs.cattheme.com/feed.xml" rel="self" type="application/atom+xml" /><link href="http://docs.cattheme.com/" rel="alternate" type="text/html" /><updated>2017-10-03T21:00:13+08:00</updated><id>http://docs.cattheme.com/</id><title type="html">Cattheme Docs</title><subtitle>Cattheme.com Document.</subtitle><author><name>{&quot;name&quot;=&gt;nil, &quot;email&quot;=&gt;nil, &quot;twitter&quot;=&gt;nil}</name></author><entry><title type="html">Rabel</title><link href="http://docs.cattheme.com/themes/rabel/" rel="alternate" type="text/html" title="Rabel" /><published>2017-06-18T00:00:00+08:00</published><updated>2017-06-18T00:00:00+08:00</updated><id>http://docs.cattheme.com/themes/rabel</id><content type="html" xml:base="http://docs.cattheme.com/themes/rabel/">&lt;p&gt;Thanks for purchase Rabel Magento2 responsive theme, this guide will help you to install and use this great theme in your site, if you have further questions please contact us at gizmocn@gmail.com&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="http://jekyllrb.com" version="3.4.3">Jekyll</generator><link href="http://docs.cattheme.com/feed.xml" rel="self" type="application/atom+xml" /><link href="http://docs.cattheme.com/" rel="alternate" type="text/html" /><updated>2017-11-03T20:12:03+08:00</updated><id>http://docs.cattheme.com/</id><title type="html">Cattheme Docs</title><subtitle>Cattheme.com Document.</subtitle><author><name>{&quot;name&quot;=&gt;nil, &quot;email&quot;=&gt;nil, &quot;twitter&quot;=&gt;nil}</name></author><entry><title type="html">Rabel</title><link href="http://docs.cattheme.com/themes/rabel/" rel="alternate" type="text/html" title="Rabel" /><published>2017-06-18T00:00:00+08:00</published><updated>2017-06-18T00:00:00+08:00</updated><id>http://docs.cattheme.com/themes/rabel</id><content type="html" xml:base="http://docs.cattheme.com/themes/rabel/">&lt;p&gt;Thanks for purchase Rabel Magento2 responsive theme, this guide will help you to install and use this great theme in your site, if you have further questions please contact us at gizmocn@gmail.com&lt;/p&gt;
 
 &lt;h2 id=&quot;1-how-to-install&quot;&gt;1. How to install&lt;/h2&gt;
 &lt;p&gt;Except theme files package, we also provide a quickstart package, the quickstart package should be installed as test site to learn theme’s setting and featured, please
@@ -36,7 +36,7 @@ you can use ftp sftp or cpanel to do this.&lt;/p&gt;
 
     &lt;p&gt;Lgoin Magento backend and goes to  Content -&amp;gt; Design -&amp;gt; Configuration  then select the Store View you want to applied this theme and then click Edit link.&lt;/p&gt;
 
-    &lt;p&gt;Select Applied Theme to Cattheme Rabel Default,  and then click Save Configuration button, see below picture:&lt;/p&gt;
+    &lt;p&gt;Select Applied Theme to Cattheme Rabel,  and then click Save Configuration button, see below picture:&lt;/p&gt;
 
     &lt;p&gt;&lt;img src=&quot;../../images/applied_theme.jpg&quot; alt=&quot;Applied Theme&quot; /&gt;&lt;/p&gt;
   &lt;/li&gt;
@@ -1080,8 +1080,8 @@ will need  the Title when assigning banners to the slider.&lt;/p&gt;
 
 &lt;h2 id=&quot;18-third-party-vendor-modules&quot;&gt;18. Third-party vendor modules&lt;/h2&gt;
 
-&lt;p&gt;We use several third-party vendor modules in our theme, we already have these modules in our theme package, so you don’t need to 
-install theme, for usage, you can find guide for these modules in third-party vendor’s website, details is as follows:&lt;/p&gt;
+&lt;p&gt;We use 3 third-party vendor free modules in our theme, You need to download the third-party vendor modules from their’s website, for usage, you 
+can find guide for these modules in third-party vendor’s website, details is as follows:&lt;/p&gt;
 
 &lt;h4 id=&quot;magento-2-advance-product-quick-view-and-ajax-cart&quot;&gt;Magento 2 Advance Product Quick View and Ajax Cart&lt;/h4&gt;
 
@@ -1090,8 +1090,6 @@ install theme, for usage, you can find guide for these modules in third-party ve
 &lt;h4 id=&quot;swissuplabs-easy-tabs&quot;&gt;Swissuplabs Easy Tabs&lt;/h4&gt;
 
 &lt;p&gt;http://docs.swissuplabs.com/m2/extensions/easytabs/&lt;/p&gt;
-
-&lt;p&gt;We have chagne its backend menu a little bit, please go Backend -&amp;gt; Cattheme -&amp;gt; Swissup Easytabs -&amp;gt; EasyTabs to configure it.&lt;/p&gt;
 
 &lt;h4 id=&quot;magefan-blog&quot;&gt;Magefan Blog&lt;/h4&gt;
 
